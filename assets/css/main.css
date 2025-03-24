@@ -4062,3 +4062,43 @@
 			margin-top: 0;
 			padding-top: 0;
 		}
+
+/* General Typeahead Input Styling */
+    /* Typeahead Dropdown Menu */
+    .tt-menu {
+        width: 100%;
+        max-width: 300px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        margin-top: 5px;
+        padding: 5px 0;
+    }
+
+    /* Suggestions Styling */
+    .tt-suggestion {
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+
+    .tt-suggestion:hover {
+        background: #f0f0f0;
+    }
+
+    /* Active Selection Styling */
+    .tt-suggestion.tt-cursor {
+        background: #007bff;
+        color: #fff;
+    }
+
+    /* Optional: Header Titles */
+    .tt-header {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 8px 10px;
+        background: #f0f0f0;
+        border-bottom: 1px solid #ccc;
+    }

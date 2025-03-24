@@ -5,6 +5,25 @@
 */
 
 (function($) {
+	var pagesBloodhound = new Bloodhound({
+		datumTokenizer: Bloodhound.tokenizers.obj.whitespace('title'),
+		queryTokenizer: Bloodhound.tokenizers.whitespace,
+		prefetch: baseurl + '/search.json'
+	});
+
+	$('#query').typeahead({
+		hint: true,
+		highlight: true,
+		minLength: 1
+	},	{
+		name: 'pages',
+		display: 'title',
+		source: pagesBloodhound
+	});
+
+	$('#query').bind('typeahead:select', function(ev, suggestion) {
+		window.location.href = suggestion.url;
+	});
 
 	skel.breakpoints({
 		xlarge: '(max-width: 1680px)',
@@ -17,7 +36,6 @@
 	});
 
 	$(function() {
-
 		var	$window = $(window),
 			$head = $('head'),
 			$body = $('body');
@@ -279,7 +297,6 @@
 					});
 
 				});
-
 	});
 
 })(jQuery);
