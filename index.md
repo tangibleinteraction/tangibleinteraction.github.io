@@ -5,35 +5,35 @@ layout: default
 <!-- Section -->
 <section>
 	<header class="major">
-		<h2>Erat lacinia</h2>
+		<h2>Purpose of this blog</h2>
 	</header>
 	<div class="features">
 		<article>
 			<span class="icon fa-diamond"></span>
 			<div class="content">
-				<h3>Portitor ullamcorper</h3>
-				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+				<h3>Progress</h3>
+				<p>This blog serves to document the progress of the group work at least once a week.</p>
 			</div>
 		</article>
 		<article>
 			<span class="icon fa-paper-plane"></span>
 			<div class="content">
-				<h3>Sapien veroeros</h3>
-				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+				<h3>Concepts</h3>
+				<p>All of the concept ideas should be made available in your project blogs.</p>
 			</div>
 		</article>
 		<article>
 			<span class="icon fa-rocket"></span>
 			<div class="content">
-				<h3>Quam lorem ipsum</h3>
-				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+				<h3>Implementation</h3>
+				<p>The general ideas for implementing your ideas should be made clear, including the necessary tools and technologies. You can also add links to source code repositories.</p>
 			</div>
 		</article>
 		<article>
 			<span class="icon fa-signal"></span>
 			<div class="content">
-				<h3>Sed magna finibus</h3>
-				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+				<h3>Evaluation</h3>
+				<p>Also the evaluation of your concepts should be made available in your project blogs.</p>
 			</div>
 		</article>
 	</div>
@@ -42,15 +42,15 @@ layout: default
 <!-- Section -->
 <section>
 	<header class="major">
-		<h2>Ipsum sed dolor</h2>
+		<h2>Teams</h2>
 	</header>
 	<div class="posts">
 		<article>
 			<a href="#" class="image"><img src="assets/images/pic01.jpg" alt="" /></a>
-			<h3>Interdum aenean</h3>
+			<h3>Group One</h3>
 			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 			<ul class="actions">
-				<li><a href="#" class="button">More</a></li>
+				<li><a href="{{ 'group_one.html' | absolute_url }}" class="button">More</a></li>
 			</ul>
 		</article>
 		<article>
@@ -80,14 +80,6 @@ layout: default
 		<article>
 			<a href="#" class="image"><img src="assets/images/pic05.jpg" alt="" /></a>
 			<h3>Feugiat lorem aenean</h3>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-			<ul class="actions">
-				<li><a href="#" class="button">More</a></li>
-			</ul>
-		</article>
-		<article>
-			<a href="#" class="image"><img src="assets/images/pic06.jpg" alt="" /></a>
-			<h3>Amet varius aliquam</h3>
 			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 			<ul class="actions">
 				<li><a href="#" class="button">More</a></li>

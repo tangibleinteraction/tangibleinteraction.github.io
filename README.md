@@ -1,10 +1,17 @@
-# (WIP) Editorial - Jekyll Theme
+# Photo Credits
 
-A Jekyll version of the "Editorial" theme by [HTML5 UP](https://html5up.net/).
+Photo by <a href="https://unsplash.com/de/@kellysikkema?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kelly Sikkema</a> auf <a href="https://unsplash.com/de/fotos/spielbaustein-spielzeug-fur-kleinkinder-JRVxgAkzIsM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      
+
+# Theme Credits
+
+## (WIP) Editorial - Jekyll Theme
+
+A Jekyll version of the "Editorial" theme by [HTML5 UP](https://html5up.net/). Find the original here. [https://github.com/andrewbanchich/editorial-jekyll-theme](https://github.com/andrewbanchich/editorial-jekyll-theme).
 
 ![Editorial Theme](assets/images/screenshot.jpg "Editorial Theme")
 
-# How to Use
+## How to Use
 
 For those unfamiliar with how Jekyll works, check out [https://jekyllrb.com/](https://jekyllrb.com/) for all the details,
 or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/),
@@ -13,18 +20,18 @@ and [creating pages](https://jekyllrb.com/docs/pages/).
 - **GitLab**: Simply fork this repository and start editing the `_config.yml` file!
 - **GitHub**: Fork this reposity and create a branch named `gh-pages`, then start editing the `_config.yml` file!
 
-# Added Features
+## Added Features
 
 * Add your **social profiles** easily in `_config.yml`.
 
-# Configuration
+## Configuration
 
 You can use the following custom parameters in `_config.yml`.
 
-## Site
+### Site
 - `subtitle` sets the text for the lighter colored text next to your site's title.
 
-## Social
+### Social
 - `500px_url`
 - `facebook_url`
 - `github_url`
@@ -36,7 +43,7 @@ You can use the following custom parameters in `_config.yml`.
 - `slack_url`
 - `twitter_url`
 
-# Credits
+## Credits
 
 Original README from HTML5 UP:
 
