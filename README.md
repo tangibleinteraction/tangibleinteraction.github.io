@@ -1,6 +1,6 @@
 # Tangible Interaction Project Blog
 
-This blog serves as the documentation of the projects in the module Tangible Interaction at the University of Applied Sciences in Dresden.
+This blog serves as the documentation of the projects in the module Tangible Interaction at the University of Applied Sciences in Dresden. The blog is hosted via Github Pages: [https://tangibleinteraction.github.io](https://tangibleinteraction.github.io).
 
 ## Using the Blog
 
