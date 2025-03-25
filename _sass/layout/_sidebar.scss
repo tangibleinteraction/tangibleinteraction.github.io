@@ -4,6 +4,8 @@
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
+@use "sass:math";
+
 /* Sidebar */
 
 	#search {
@@ -35,7 +37,7 @@
 	}
 
 	#sidebar {
-		$pad: calc(2em / 0.9em);
+		$pad: math.div(2em, 0.9);
 
 		@include vendor('flex-grow', '0');
 		@include vendor('flex-shrink', '0');
@@ -118,7 +120,7 @@
 		}
 
 		@include breakpoint(xlarge) {
-			$pad: calc(1.5em / 0.9em);
+			$pad: math.div(1.5em, 0.9);
 
 			width: _size(sidebar-width-alt);
 
