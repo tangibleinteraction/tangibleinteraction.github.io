@@ -4,8 +4,6 @@
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
-@use "sass:math";
-
 /* Sidebar */
 
 	#search {
@@ -37,7 +35,7 @@
 	}
 
 	#sidebar {
-		$pad: math.div(2em, 0.9);
+		$pad: calc(2em / 0.9);
 
 		@include vendor('flex-grow', '0');
 		@include vendor('flex-shrink', '0');
@@ -78,9 +76,9 @@
 			> .alt {
 				background-color: darken(_palette(bg-alt), 2);
 				border-bottom: 0;
-				margin: ($pad * -1) 0 ($pad * 2) ($pad * -1);
+				margin: calc(#{$pad} * -1) 0 calc(#{$pad} * 2) calc(#{$pad} * -1);
 				padding: $pad;
-				width: calc(100% + #{$pad * 2});
+				width: calc(100% + calc(#{$pad} * 2));
 			}
 		}
 
@@ -120,7 +118,7 @@
 		}
 
 		@include breakpoint(xlarge) {
-			$pad: math.div(1.5em, 0.9);
+			$pad: calc(1.5em / 0.9);
 
 			width: _size(sidebar-width-alt);
 
@@ -129,9 +127,9 @@
 				width: _size(sidebar-width-alt);
 
 				> .alt {
-					margin: ($pad * -1) 0 ($pad * 2) ($pad * -1);
+					margin: calc(#{$pad} * -1) 0 calc(#{$pad} * 2) calc(#{$pad} * -1);
 					padding: $pad;
-					width: calc(100% + #{$pad * 2});
+					width: calc(100% + calc(#{$pad} * 2));
 				}
 			}
 
