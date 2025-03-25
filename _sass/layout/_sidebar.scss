@@ -35,7 +35,7 @@
 	}
 
 	#sidebar {
-		$pad: calc(2em / 0.9);
+		$pad: calc(2em / 0.9em);
 
 		@include vendor('flex-grow', '0');
 		@include vendor('flex-shrink', '0');
@@ -118,7 +118,7 @@
 		}
 
 		@include breakpoint(xlarge) {
-			$pad: calc(1.5em / 0.9);
+			$pad: calc(1.5em / 0.9em);
 
 			width: _size(sidebar-width-alt);
 
