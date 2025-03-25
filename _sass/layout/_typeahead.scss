@@ -1,24 +1,8 @@
 $typeahead-bg: #fff;
 $typeahead-border: #ccc;
 $typeahead-hover: #f0f0f0;
-$typeahead-active: #007bff;
+$typeahead-active: #999;
 $typeahead-shadow: rgba(0, 0, 0, 0.1);
-
-.typeahead {
-    width: 100%;
-    max-width: 300px;
-    padding: 10px;
-    border: 1px solid $typeahead-border;
-    border-radius: 4px;
-    font-size: 16px;
-    transition: all 0.2s ease-in-out;
-
-    &:focus {
-        border-color: $typeahead-active;
-        outline: none;
-        box-shadow: 0 0 5px $typeahead-shadow;
-    }
-}
 
 // Typeahead dropdown menu
 .tt-menu {

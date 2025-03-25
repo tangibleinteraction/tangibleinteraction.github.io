@@ -4064,6 +4064,7 @@
 		}
 
 /* General Typeahead Input Styling */
+
     /* Typeahead Dropdown Menu */
     .tt-menu {
         width: 100%;
@@ -4090,7 +4091,7 @@
 
     /* Active Selection Styling */
     .tt-suggestion.tt-cursor {
-        background: #007bff;
+        background: #999;
         color: #fff;
     }
 
