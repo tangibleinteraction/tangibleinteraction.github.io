@@ -50,7 +50,7 @@ layout: default
 			<h3>Group One</h3>
 			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 			<ul class="actions">
-				<li><a href="{{ 'group_one.html' | absolute_url }}" class="button">More</a></li>
+				<li><a href="{{ 'group_one' | absolute_url }}" class="button">More</a></li>
 			</ul>
 		</article>
 		<article>

@@ -10,7 +10,7 @@ Add/edit a new Markdown file in the root directory for your project team, e.g. `
 <li>
 	<span class="opener">Teams</span>
 	<ul>
-	<li><a href="{{ 'group_one.html' | absolute_url }}">Group 1</a></li>
+	<li><a href="{{ 'group_onel' | absolute_url }}">Group 1</a></li>
 	<li><a href="#">Group 2</a></li>
 	<li><a href="#">Group 3</a></li>
 	<li><a href="#">Group 4</a></li>
@@ -32,7 +32,7 @@ Feel free to rename your team with an individual group name at the beginning or 
 			<h3>Group One</h3>
 			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 			<ul class="actions">
-				<li><a href="{{ 'group_one.html' | absolute_url }}" class="button">More</a></li>
+				<li><a href="{{ 'group_one' | absolute_url }}" class="button">More</a></li>
 			</ul>
 		</article>
 		...
