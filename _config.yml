@@ -27,3 +27,4 @@ twitter_url:
 
 # Build settings
 markdown: kramdown
+permalink: pretty
