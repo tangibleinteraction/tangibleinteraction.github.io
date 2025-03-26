@@ -14,6 +14,7 @@
 {% for post in site.posts %}
   {
     "title": "{{ post.title | escape }}",
+    "terms": "{{ post.title | escape }}",
     "url": "{{ post.url | prepend: site.baseurl | remove_last: ".html" }}"
   },
   {% endfor %}
@@ -21,11 +22,32 @@
   {% for page in pages %}
    {
       "title": "{{ page.title | escape }}",
+      "terms": "{{ page.title | escape }}",
       "url": "{{ page.url | prepend: site.baseurl | remove_last: ".html" }}"
    },
   {% endfor %}
+  {% assign tags = "" | split: "," %}
+  {% for page in site.pages %}
+    {% for tag in page.tags %}
+      {% unless tags contains tag %}
+        {% assign tags = tags | push: tag %}
+      {% endunless %}
+    {% endfor %}
+  {% endfor %}
+  {% for tag in tags %}
+    {% for page in site.pages %}
+      {% if page.tags contains tag %}
+      {
+        "title": "{{ page.title | escape }}",
+        "terms": "{{ tag | escape }}",
+        "url": "{{ page.url | prepend: site.baseurl | remove_last: ".html" }}"
+      },
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
   {
     "title": "Home",
+    "terms": "Homepage Start",
     "url": "/"
   }
 ]

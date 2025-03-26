@@ -5,8 +5,11 @@
 */
 
 (function($) {
+	// Clear local storage after an update (e.g., when new data is available)
+	localStorage.clear();
+
 	var pagesBloodhound = new Bloodhound({
-		datumTokenizer: Bloodhound.tokenizers.obj.whitespace('title'),
+		datumTokenizer: Bloodhound.tokenizers.obj.whitespace('terms'),
 		queryTokenizer: Bloodhound.tokenizers.whitespace,
 		prefetch: baseurl + '/search.json'
 	});
@@ -15,7 +18,7 @@
 		hint: true,
 		highlight: true,
 		minLength: 1
-	},	{
+	}, {
 		name: 'pages',
 		display: 'title',
 		source: pagesBloodhound

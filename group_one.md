@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Group One
+tags: toys puzzle
 ---
 
 ## Example Blog
