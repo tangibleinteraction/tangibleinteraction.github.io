@@ -4,10 +4,13 @@ $typeahead-hover: #f0f0f0;
 $typeahead-active: #999;
 $typeahead-shadow: rgba(0, 0, 0, 0.1);
 
+.twitter-typeahead {
+    display: block !important;
+}
+
 // Typeahead dropdown menu
 .tt-menu {
     width: 100%;
-    max-width: 300px;
     background: $typeahead-bg;
     border: 1px solid $typeahead-border;
     border-radius: 4px;
