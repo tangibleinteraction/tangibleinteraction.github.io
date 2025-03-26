@@ -6,7 +6,7 @@
 
 (function($) {
 	// Clear local storage after an update (e.g., when new data is available)
-	localStorage.clear();
+	//localStorage.clear();
 
 	var pagesBloodhound = new Bloodhound({
 		datumTokenizer: Bloodhound.tokenizers.obj.whitespace('terms'),
