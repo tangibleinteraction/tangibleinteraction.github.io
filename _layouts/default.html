@@ -15,17 +15,25 @@
 
         <!-- Main -->
         <div id="main">
-            <div class="inner">
+            <div class="w-full px-4">
+                <div class="w-full">
+                    {% include header.html %}
+                </div>
 
-                {% include header.html %}
-                {% include banner.html %}
+                <div class="flex flex-row">
+                    <div class="w-4/16">
+                        {% include sidebar.html %}
+                    </div>
 
-                {{ content }}
+                    <div class="w-9/16">
+                        {% include banner.html %}
+                        {{ content }}
+                    </div>
 
+                    <div class="w-3/16"></div>
+                </div>
             </div>
         </div>
-
-        {% include sidebar.html %}
 
     </div>
 
