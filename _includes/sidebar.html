@@ -61,7 +61,12 @@
           </header>
           <p>For any inquiries direct your questions to the individual teams or supervisors of the course.</p>
           <ul class="contact">
-            <li class="fa-envelope-o"><a href="#">{{ site.email }}</a></li>
+                <li class="fa-envelope-o">
+                <span id="email-display"
+                      data-user="{{ site.email | split: '@' | first }}"
+                      data-domain="{{ site.email | split: '@' | last | split: '.' | first }}"
+                      data-tld="{{ site.email | split: '@' | last | split: '.' | last }}"></span>
+                </li>
             <li class="fa-home">{{ site.street_address }}<br />
             {{ site.city }}, {{ site.state }} {{ site.zip_code }}<br />
             {{ site.country }}</li>
