@@ -1,84 +1,76 @@
 <!-- Sidebar -->
-<div id="sidebar">
+  <div id="sidebar">
     <div class="inner">
-        <!-- Search -->
-        <section id="search" class="alt">
-            <form>
-                <input type="text" id="query" name="query" class="typeahead" placeholder="Search"/>
-            </form>
-        </section>
+      <!-- Search -->
+      <section id="search" class="alt">
+        <form>
+            <input type="text" id="query" name="query" class="typeahead" placeholder="Search" />
+        </form>
+      </section>
 
-        <!-- Menu -->
+      <!-- Menu -->
         <nav id="menu">
-            <header class="major">
-                <h2>Menu</h2>
-            </header>
-            <ul>
-                <li><a href="{{site.url}}">Homepage</a></li>
+          <header class="major">
+            <h2>Menu</h2>
+          </header>
+          <ul>
+            <li><a href="{{site.url}}">Homepage</a></li>
 
-                <li>
-                    <span class="opener">Teams</span>
-                    <ul>
-                        <li><a href="{{ 'group_one' | absolute_url }}">Group 1</a></li>
-                        <li><a href="#">Group 2</a></li>
-                        <li><a href="#">Group 3</a></li>
-                        <li><a href="#">Group 4</a></li>
-                        <li><a href="#">Group 5</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <li>
+              <span class="opener">Projects</span>
+              <ul>
+                <li><a href="{{ 'group_one' | absolute_url }}">Group 1</a></li>
+                <li><a href="#">Group 2</a></li>
+                <li><a href="#">Group 3</a></li>
+                <li><a href="#">Group 4</a></li>
+                <li><a href="#">Group 5</a></li>
+              </ul>
+            </li>
+          </ul>
         </nav>
 
-        <!-- Section -->
-        <!--
-          <section>
-            <header class="major">
-              <h2>Ante interdum</h2>
-            </header>
-            <div class="mini-posts">
-              <article>
-                <a href="#" class="image"><img src="assets/images/pic07.jpg" alt="" /></a>
-                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-              </article>
-              <article>
-                <a href="#" class="image"><img src="assets/images/pic08.jpg" alt="" /></a>
-                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-              </article>
-              <article>
-                <a href="#" class="image"><img src="assets/images/pic09.jpg" alt="" /></a>
-                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-              </article>
-            </div>
-            <ul class="actions">
-              <li><a href="#" class="button">More</a></li>
-            </ul>
-          </section>
-        -->
-        <!-- Section -->
+      <!-- Section -->
+      <!--
         <section>
-            <header class="major">
-                <h2>Get in touch</h2>
-            </header>
-            <p>For any inquiries direct your questions to the individual teams or supervisors of the course.</p>
-            <ul class="contact">
-                <li class="fa-envelope-o">
-                <span id="email-display"
-                      data-user="{{ site.email | split: '@' | first }}"
-                      data-domain="{{ site.email | split: '@' | last | split: '.' | first }}"
-                      data-tld="{{ site.email | split: '@' | last | split: '.' | last }}"></span>
-                </li>
-                <li class="fa-home">{{ site.street_address }}<br/>
-                    {{ site.city }}, {{ site.state }} {{ site.zip_code }}<br/>
-                    {{ site.country }}
-                </li>
-            </ul>
+          <header class="major">
+            <h2>Ante interdum</h2>
+          </header>
+          <div class="mini-posts">
+            <article>
+              <a href="#" class="image"><img src="assets/images/pic07.jpg" alt="" /></a>
+              <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+            </article>
+            <article>
+              <a href="#" class="image"><img src="assets/images/pic08.jpg" alt="" /></a>
+              <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+            </article>
+            <article>
+              <a href="#" class="image"><img src="assets/images/pic09.jpg" alt="" /></a>
+              <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+            </article>
+          </div>
+          <ul class="actions">
+            <li><a href="#" class="button">More</a></li>
+          </ul>
         </section>
-        <!-- Footer -->
+      -->
+      <!-- Section -->
+        <section>
+          <header class="major">
+            <h2>Get in touch</h2>
+          </header>
+          <p>For any inquiries direct your questions to the individual teams or supervisors of the course.</p>
+          <ul class="contact">
+            <li class="fa-envelope-o"><a href="#">{{ site.email }}</a></li>
+            <li class="fa-home">{{ site.street_address }}<br />
+            {{ site.city }}, {{ site.state }} {{ site.zip_code }}<br />
+            {{ site.country }}</li>
+          </ul>
+        </section>
+      <!-- Footer -->
         <footer id="footer">
-            <p class="copyright">&copy; {{ site.title }}. All rights reserved. Images if not stated otherwise: <a
-                    href="https://unsplash.com">Unsplash</a>. Original Theme Design: <a href="https://html5up.net">HTML5
-                UP</a>. Jekyll integration: <a href="https://andrewbanchi.ch">Andrew Banchich</a>.</p>
+          <p class="copyright">&copy; {{ site.title }}. All rights reserved. Images if not stated otherwise: <a href="https://unsplash.com">Unsplash</a>. Original Theme Design: <a href="https://html5up.net">HTML5 UP</a>. Jekyll integration: <a href="https://andrewbanchi.ch">Andrew Banchich</a>.</p>
         </footer>
 
     </div>
-</div>
+  </div>
