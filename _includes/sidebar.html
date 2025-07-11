@@ -9,14 +9,25 @@
           <ul>
             <li><a href="{{site.url}}">Homepage</a></li>
 
-            <li>
-              <span class="opener">Projects</span>
-              <ul>
-                <li><a href="{{ 'group_one' | absolute_url }}">Group 1</a></li>
-                <li><a href="{{ 'group_two' | absolute_url }}">Group 2</a></li>
-                <li><a href="{{ 'group_three' | absolute_url }}">Group 3</a></li>
-                <li><a href="{{ 'group_four' | absolute_url }}">Group 4</a></li>
-              </ul>
+           <li>
+              <span class="opener active">Projects</span>
+               {% comment %}
+               Reference: https://github.com/MichaelCurrin/nested-jekyll-menus/blob/master/_includes/list-sections.html
+               Displaying all project folders regardless of current page
+               {% endcomment %}
+
+               <ul>
+                   {% for item in site.pages %}
+                   {% if item.url contains '/projects/' %}
+                   {% assign path_parts = item.url | split: '/' %}
+                   {% if path_parts.size == 3 and item.name == 'index.md' %}
+                   <li>
+                       <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                   </li>
+                   {% endif %}
+                   {% endif %}
+                   {% endfor %}
+               </ul>
             </li>
           </ul>
         </nav>
