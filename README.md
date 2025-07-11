@@ -2,61 +2,33 @@
 
 This blog serves as the documentation of the projects in the module Tangible Interaction at the University of Applied Sciences in Dresden. The blog is hosted via Github Pages: [https://tangibleinteraction.github.io](https://tangibleinteraction.github.io).
 
-## Using the Blog
+## Getting Started
 
-Add/edit a new Markdown file in the root directory for your project team, e.g. `group_one.md`. Make sure your team blog is properly linked to in the file `_includes/sidebar.html` in the list of teams:
+### Prerequisites
+- Ruby
+- Bundler
 
-```html
-<li>
-	<span class="opener">Teams</span>
-	<ul>
-	<li><a href="{{ 'group_onel' | absolute_url }}">Group 1</a></li>
-	<li><a href="#">Group 2</a></li>
-	<li><a href="#">Group 3</a></li>
-	<li><a href="#">Group 4</a></li>
-	<li><a href="#">Group 5</a></li>
-	</ul>
-</li>
-```
+### Local Development
+You can preview the site locally by following these steps:
 
-Feel free to rename your team with an individual group name at the beginning or during the semester. Make sure your team is also properly linked in the file `index.md` in the section on teams:
+1. **Set up your environment**:
+   ```bash
+   # If using Nix (optional)
+   nix-shell shell.nix
+   
+   # Install dependencies
+   bundle install
+   ```
 
-```html
-<section>
-	<header class="major">
-		<h2>Teams</h2>
-	</header>
-	<div class="posts">
-		<article>
-			<a href="#" class="image"><img src="assets/images/pic01.jpg" alt="" /></a>
-			<h3>Group One</h3>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-			<ul class="actions">
-				<li><a href="{{ 'group_one' | absolute_url }}" class="button">More</a></li>
-			</ul>
-		</article>
-		...
-```
+2. **Run the local server**:
+   ```bash
+   bundle exec jekyll serve
+   ```
 
-Name your team members briefly in the description of your group. Please find and add a copyright free image of your group, project or as an inspiration. 
+3. **View the site** at `http://localhost:4000`
 
-Edit your continuous group blog in your markdown file in the root directory. Please add images and videos (copyright free) in the directory `assets`. You may create a sub folder for your group there. You can mix HTML and Markdown in your file as you like: 
-
-```yaml
----
-layout: page
-title: Group One
----
-
-## Example Blog
-
-### Week 1: Start of the project
-
-Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem sapien ut odio odio nunc. Ac adipiscing nibh porttitor erat risus justo adipiscing adipiscing amet placerat accumsan. Vis. Faucibus odio magna tempus adipiscing a non. In mi primis arcu ut non 
-accumsan vivamus ac blandit adipiscing adipiscing arcu metus praesent turpis eu ac lacinia nunc ac commodo gravida adipiscing eget accumsan ac nunc adipiscing adipiscing lorem ipsum dolor sit amet nullam veroeros adipiscing.
-
-...
-```
+## How to add content for a new project
+View instrucutions specified in this file: [readme.md](assets/template/readme.md)
 
 ## Photo Credits
 
