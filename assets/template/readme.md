@@ -48,9 +48,12 @@ html
     <p>Your project paragraph. You can also use <strong>bold</strong> text!</p>
   </div>
 </div>
+
 ➡️ You can duplicate and modify these blocks as needed.
 
-✅ That's it!
-Once you're done editing, your project will appear beautifully on the site with your chosen layout and content.
 
-Need help creating new styles or customizing your layout further? Don’t hesitate to ask!
+# Now upload your project folder into the 'projects' folder
+
+
+## ✅ That's it!
+Once you're done editing, your project will appear beautifully on the site with your chosen layout and content.
