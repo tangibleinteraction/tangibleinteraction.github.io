@@ -2,25 +2,27 @@
 layout: default
 ---
 
+<!-- Pages subtitle -->
+<h2 class="absolute top-8 right-4" >learning and teaching interdisciplinary</h2>
+
+<!-- Banner -->
+  <section id="banner">
+    <div class="content">
+      <header>
+        <p>University of Applied Sciences Dresden</p>
+      </header>
+      <p>This website serves as the documentation of the projects in the module Tangible Interaction at the University of Applied Sciences in Dresden.</p>
+      <ul class="actions">
+        <li><a href="https://docs.google.com/presentation/d/1dQfnnQ4p35d3vIbqroQQj-R2uSmmAal-G7cSwRrMZ7M/edit?usp=sharing" class="button big">Introduction Slides</a></li>
+      </ul>      
+    </div>
+    <span class="image object">
+      <img src="assets/images/splash-kelly-sikkema.jpg" alt="" />
+    </span>
+  </section>
 
 <!-- Section -->
-<section id="projets">
-  <h2>Tangible Interactions</h2>
-  {% for project in site.pages %}
-    {% if project.path contains "projects/" %}
-      <div class="carte-projet">
-        <div class="image-zone">
-          <img src="{{ project.image | prepend: project.url | replace: 'index.html', '' }}" alt="Image of project {{ project.title }}">
-        </div>
-        <div class="titre-zone">
-          <h3>{{ project.title }}</h3>
-        </div>
-        <div class="description-zone">
-          <p>{{ project.description }}</p>
-          <a href="{{ project.url }}" class="btn-projet">To the project →</a>
-        </div>
-      </div>
-      <hr class="separateur">
-    {% endif %}
-  {% endfor %}
+<section>
+    View the latest projects:
+    <a href="{{ 'projects' | absolute_url }}" class="button">Projects</a>
 </section>
