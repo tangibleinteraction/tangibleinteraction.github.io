@@ -1,8 +1,8 @@
 # Site settings
 title: Tangible Interaction
-subtitle: Project Blog
+subtitle: 
 email: kammer@htw-dresden.de
-description: Tangible Interaction Project Blog
+description: Tangible Interaction
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tangibleinteraction.github.io/" # the base hostname & protocol for your site
 author:

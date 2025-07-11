@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: tangibleinteraction/tangibleinteraction.github.io
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "projects"
+    label: "Projets"
+    folder: "projects"
+    create: true
+    slug: "{{slug}}"
+    media_folder: ""
+    public_folder: ""
+    fields:
+      - { label: "Nom du projet", name: "title", widget: "string" }
+      - { label: "Image vignette", name: "thumbnail", widget: "image" }
+      - label: "Blocs visuels"
+        name: "sections"
+        widget: "list"
+        allow_add: true
+        fields:
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Texte associé", name: "text", widget: "text" }
+      - { label: "Contenu libre", name: "body", widget: "markdown" }
+

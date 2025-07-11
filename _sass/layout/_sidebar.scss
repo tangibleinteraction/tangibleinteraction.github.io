@@ -36,7 +36,7 @@
 	}
 
 	#sidebar {
-		$pad: calc(2em / 0.9);
+		$pad: 1em;
 
 		@include vendor('flex-grow', '0');
 		@include vendor('flex-shrink', '0');
@@ -44,7 +44,6 @@
 			'margin-left 0.5s ease',
 			'box-shadow 0.5s ease'
 		));
-		background-color: _palette(bg-alt);
 		font-size: 0.9em;
 		position: relative;
 		width: _size(sidebar-width);
@@ -60,8 +59,8 @@
 
 			> * {
 				border-bottom: solid 2px _palette(border);
-				margin: 0 0 (_size(element-margin) * 1.75) 0;
-				padding: 0 0 (_size(element-margin) * 1.75) 0;
+				margin: 0 0 2em 0;
+				padding: 0 0 0 0;
 
 				> :last-child {
 					margin-bottom: 0;
