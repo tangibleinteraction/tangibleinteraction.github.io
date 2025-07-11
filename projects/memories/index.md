@@ -1,6 +1,6 @@
 ---
-title: IntroductionProjects
-description: Introduction to the tangibles projects
+title: Memories
+description: How to store and collect memories using tangible interactions.
 layout: default
 ---
 <!-- Pages subtitle -->
@@ -10,7 +10,7 @@ layout: default
 <section id="projets">
   <h2>{{page.title}}</h2>
   {% for project in site.pages %}
-    {% if project.path contains "projects/introduction-project/" and project.path != "projects/introduction-project/index.md" %}
+    {% if project.path contains "projects/memories/" and project.path != "projects/memories/index.md" %}
       <div class="carte-projet">
         <div class="image-zone">
           <img src="{{ project.image | prepend: project.url | replace: 'index.html', '' }}" alt="Image of project {{ project.title }}">
