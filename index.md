@@ -5,7 +5,7 @@ layout: default
 
 <!-- Section -->
 <section id="projets">
-  <h2>Projects</h2>
+  <h2>Tangible Interactions</h2>
   {% for project in site.pages %}
     {% if project.path contains "projects/" %}
       <div class="carte-projet">
