@@ -5,24 +5,12 @@ layout: default
 <!-- Pages subtitle -->
 <h2 class="absolute top-8 right-4" >learning and teaching interdisciplinary</h2>
 
-<!-- Banner -->
-  <section id="banner">
-    <div class="content">
-      <header>
-        <p>University of Applied Sciences Dresden</p>
-      </header>
-      <p>This website serves as the documentation of the projects in the module Tangible Interaction at the University of Applied Sciences in Dresden.</p>
-      <ul class="actions">
-        <li><a href="https://docs.google.com/presentation/d/1dQfnnQ4p35d3vIbqroQQj-R2uSmmAal-G7cSwRrMZ7M/edit?usp=sharing" class="button big">Introduction Slides</a></li>
-      </ul>      
-    </div>
-    <span class="image object">
-      <img src="assets/images/splash-kelly-sikkema.jpg" alt="" />
-    </span>
-  </section>
+<div>
+<p class="text-sm leading-snug">Design Practice 1 X<br/>Tangible Interaction,<br/>Summer 2025</p>
+<p class="text-sm">
+Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles. Ma quande lingues coalesce, li grammatica del resultant lingue.
+</p>
 
-<!-- Section -->
-<section>
-    View the latest projects:
-    <a href="{{ 'projects' | absolute_url }}" class="button">Projects</a>
-</section>
+
+Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.
+</div>
