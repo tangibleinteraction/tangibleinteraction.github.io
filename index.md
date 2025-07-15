@@ -4,7 +4,9 @@ layout: default
 
 <!-- Pages subtitle -->
 <h2 class="absolute top-8 right-4" >learning and teaching interdisciplinary</h2>
-
+<div class="text-5xl">
+text-5xl
+</div>
 <div>
 <p class="text-sm leading-snug">Design Practice 1 X<br/>Tangible Interaction,<br/>Summer 2025</p>
 <p class="text-sm">

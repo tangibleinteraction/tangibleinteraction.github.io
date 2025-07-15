@@ -2,6 +2,7 @@
 title: Memories
 description: How to store and collect memories using tangible interactions.
 layout: default
+menu-order: 1
 ---
 <!-- Pages subtitle -->
 <h2 class="absolute top-8 right-4">[{{ page.title }}]</h2>
