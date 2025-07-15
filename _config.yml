@@ -1,8 +1,8 @@
 # Site settings
-title: Tangible Interaction
+title: create code design
 subtitle: 
 email: kammer@htw-dresden.de
-description: Tangible Interaction
+description: create code design
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tangibleinteraction.github.io/" # the base hostname & protocol for your site
 author:
