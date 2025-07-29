@@ -2,30 +2,8 @@
 title: Memories
 description: Design Practice 1 X Tangible Interaction
 time: Summer 2025
-layout: default
-menu-order: 1
+layout: projects
+menu-order: 0
 ---
-<!-- Pages subtitle -->
-<h2 class="absolute top-8 right-4">[{{ page.title }}]</h2>
 
-<!-- Section -->
-<section id="projets">
-  <h2>{{page.title}}</h2>
-  {% for project in site.pages %}
-    {% if project.path contains "projects/memories/" and project.path != "projects/memories/index.md" %}
-      <div class="carte-projet">
-        <div class="image-zone">
-          <img src="{{ project.image | prepend: project.url | replace: 'index.html', '' }}" alt="Image of project {{ project.title }}">
-        </div>
-        <div class="titre-zone">
-          <h3>{{ project.title }}</h3>
-        </div>
-        <div class="description-zone">
-          <p>{{ project.description }}</p>
-          <a href="{{ project.url }}" class="btn-projet">To the project →</a>
-        </div>
-      </div>
-      <hr class="separateur">
-    {% endif %}
-  {% endfor %}
-</section>
+During the summer term 2025, an interdisciplinary course at the University of Applied Sciences Dresden brought together Master’s students from Design and Computer Science to explore the possibilities of Tangible Interaction. At the start of the course, students were given a short-term project titled "Memories", designed to quickly immerse them in the topic. The challenge was to create a tangible device that enables users to store, recall, or generate memories through physical interaction. Working in small, interdisciplinary teams, students developed rapid prototypes that not only introduced them to core concepts of Tangible Interaction, but also helped them get to know each other, establish workflows, and lay the groundwork for collaboration throughout the rest of the course. The resulting projects—also presented on this website—reflect the diversity of approaches and the creative potential of combining design and technology from the very beginning.

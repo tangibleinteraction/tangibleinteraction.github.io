@@ -6,7 +6,8 @@
         {% assign path_parts = item.url | split: '/' %}
         {% if path_parts.size == 2 and item.name == 'index.md' and item.menu-order %}
         <li class="sidebar-list-item list-none">
-            {% if page.url == item.url %}
+            {% assign item_title = item.title | downcase %}
+            {% if page.url contains item_title %}
             <a href="{{ item.url | relative_url }}">[{{ item.title }}]</a>
             {% else %}
             <a href="{{ item.url | relative_url }}">{{ item.title }}</a>

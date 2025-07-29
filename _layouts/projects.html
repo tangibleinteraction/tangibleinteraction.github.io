@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+{% include head.html %}
+
+<body>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="w-full px-4">
+                <div class="w-full">
+                    {% include header.html %}
+                </div>
+
+                <div class="flex flex-row">
+                    <div class="w-4/16">
+                        {% include sidebar.html %}
+                    </div>
+
+                    <h2 class="medium-subheading">[{{ page.title }}]</h2>
+
+                    <div class="w-16/16">
+                        <div class="flex justify-end">
+                            <div class="w-12/16 margin-right mb-[60px]!">
+                                {{ content }}
+                            </div>
+                        </div>
+
+                        <!-- Section -->
+                        <section class="margin-right">
+
+                        {% for project in site.pages %}
+                            {% assign projectsname = page.title | downcase %}
+                            {% if project.url contains projectsname and project.url != page.url %}
+
+                                <div class="flex gap-6 p-4 project-card">
+                                    <!-- Image (fixed square) -->
+                                    <div class="w-[330px] h-[330px] flex-shrink-0">
+                                        <img src="{{ project.teaser | prepend: project.url | replace: 'index.html', '' }}" alt="Project image" class="w-full h-full object-cover" />
+                                    </div>
+
+                                    <!-- Title -->
+                                    <div class="flex items-start pt-2 w-3/12 mt-2!">
+                                        <h3 class="text-xl font-semibold">{{ project.title }}</h3>
+                                    </div>
+
+                                    <!-- Author info (top) + Description (bottom) -->
+                                    <div class="flex flex-col justify-between w-4/12 mt-2! project-text">
+                                        <div>
+                                            <p class="text-sm font-medium">
+                                                {% assign authors = project.authors | split: ', ' %}
+                                                {% for author in authors %}
+                                                <span class="block mb-[20px]!">{{ author }}</span>
+                                                {% endfor %}
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm mb-[0px]!">
+                                                {{ project.description }}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>
+
+

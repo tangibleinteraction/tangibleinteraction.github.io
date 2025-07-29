@@ -8,7 +8,7 @@ public_folder: "/assets/uploads"
 
 collections:
   - name: "projects"
-    label: "Projets"
+    label: "Projects"
     folder: "projects"
     create: true
     slug: "{{slug}}"

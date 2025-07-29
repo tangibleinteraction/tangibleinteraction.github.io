@@ -7,7 +7,7 @@ details-1: The "Vegetable Geniuses" project presents an interactive model bed th
 details-2: At the beginning, a model was made from blue foam to understand the basic game system with modeling clay figures. A prototype was then created from plywood using a laser cutter. The final model was built as a sturdy wooden box with integrated LED rings and diffuser plates for uniform illumination. The surface was laser-engraved to permanently display moisture and sun zones without obscuring the natural structure of the wood.
 details-3: The project is aimed specifically at children in grades 1 and 2 in school and learning gardens. By actively experimenting with the hand-crocheted vegetable models, young learners can independently test plant combinations without fear of "failure" or damaging real plants. The multisensory design appeals to different learning types and supports sustainable knowledge anchoring.
 details-4: The vegetable models are abstract, symbolic representations with a soft, warm feel that invites children to touch and play. The interactive garden bed uses RFID technology to recognize the models and determine their position, creating a connection between physical play and digital feedback.
-image: veggi-genies-5.png
+teaser: veggi-genies-5.png
 image-detail-1: veggi-genies-5.png
 image-detail-2: veggi-genies-4.jpg
 image-detail-3: veggi-genies-3.jpg
