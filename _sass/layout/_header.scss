@@ -8,7 +8,7 @@
 
 	#header {
 		@include vendor('display', 'flex');
-		padding: 21px 22px 0px 22px;
+		padding: 21px 22px 22px 22px;
 		position: relative;
 
 		.logo {

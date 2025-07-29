@@ -91,6 +91,21 @@ nav {
     font-size: 28px;
     line-height: 140%;
     letter-spacing: 0px;
+
+
+    @include breakpoint(xlarge) {
+        font-size: 28px;
+    }
+
+    @include breakpoint(large) {
+        font-size: 20px;
+        letter-spacing: 0px;
+    }
+
+    @include breakpoint(xxsmall) {
+        font-size: 12px;
+        letter-spacing: 0px;
+    }
 }
 
 .list-none {
@@ -123,4 +138,8 @@ nav {
 
 .margin-right {
     margin-right: _size(side-margin);
+}
+
+.max-content-width {
+    max-width: 1200px !important;
 }
