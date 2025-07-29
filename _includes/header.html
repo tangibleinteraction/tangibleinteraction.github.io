@@ -1,13 +1,11 @@
 <header id="header" class="flex justify-between items-center w-full">
     <h1 id="title" class="w-2/16">
-        <a href="{{ '' | absolute_url }}" class="inter">
-            <strong class="block" style="line-height: 0.9;">
-                {% assign words = site.title | split: ' ' %}
-                {% for word in words %}
-                <span class="block">{{ word }}</span>
-                {% endfor %}
-            </strong>
-            <span class="block">{{ site.subtitle }}</span>
+        <a href="{{ '' | absolute_url }}">
+            {% assign words = site.title | split: ' ' %}
+            {% for word in words %}
+            <span>{{ word }}</span>
+            {% endfor %}
         </a>
+        <span class="dividing-line"></span>
     </h1>
 </header>
