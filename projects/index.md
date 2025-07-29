@@ -1,5 +1,8 @@
 ---
+title: Projects
+description: Section containing information about the projects.
 layout: default
+menu-order: 1
 ---
 
 <!-- Pages subtitle -->
