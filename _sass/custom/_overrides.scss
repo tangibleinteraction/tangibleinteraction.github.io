@@ -37,12 +37,22 @@ h1 {
 }
 
 h2 {
+    position: absolute;
+    top: 21px;
+    right: 22px;
     font-family: _font(family-heading);
     font-weight: 500;
     font-size: 32px;
-    line-height: 80px;
+    line-height: 40px;
     letter-spacing: -1px;
     text-align: right;
+    color: _palette(accent);
+
+    &.large-subheading {
+        margin-top: 40px;
+        font-size: 100px;
+        letter-spacing: -4px;
+    }
 }
 
 .dividing-line {
@@ -63,4 +73,17 @@ nav {
 
 .list-none {
     padding-left: 0em !important;
+}
+
+.imprint {
+    margin-top: 280px;
+}
+
+.sidebar-list-item {
+    margin-bottom: 2px;
+}
+
+.sidebar-submenu li:first-child {
+    margin-top: 2px !important;
+    color: green;
 }

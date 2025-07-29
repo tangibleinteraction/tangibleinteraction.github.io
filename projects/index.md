@@ -6,7 +6,7 @@ menu-order: 1
 ---
 
 <!-- Pages subtitle -->
-<h2 class="absolute top-8 right-4">[PROJECTS]</h2>
+<h2 class="absolute top-4 right-6 large-subheading">[PROJECTS]</h2>
 
 <div class="flex flex-wrap gap-8 justify-center">
   <!-- Card 1 -->

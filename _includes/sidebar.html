@@ -1,11 +1,11 @@
 <!-- Sidebar -->
 <nav>
-    <ul class="m-0 p-0">
+    <ul>
         {% assign sorted_pages = site.pages | sort: 'menu-order' %}
         {% for item in sorted_pages %}
         {% assign path_parts = item.url | split: '/' %}
         {% if path_parts.size == 2 and item.name == 'index.md' and item.menu-order %}
-        <li class="mb-2 list-none">
+        <li class="sidebar-list-item list-none">
             {% if page.url == item.url %}
             <a href="{{ item.url | relative_url }}">[{{ item.title }}]</a>
             {% else %}
@@ -13,11 +13,11 @@
             {% endif %}
 
             {% if item.url == '/projects/' and page.url contains '/projects/' %}
-            <ul class="pl-4 mt-1 mb-3">
+            <ul class="sidebar-submenu">
                 {% for subitem in sorted_pages %}
                 {% assign sub_path_parts = subitem.url | split: '/' %}
                 {% if sub_path_parts.size == 3 and subitem.name == 'index.md' and sub_path_parts[1] == 'projects' %}
-                <li class="mb-1 list-none">
+                <li class="sidebar-list-item list-none">
                     {% if page.url == subitem.url %}
                     <a href="{{ subitem.url | relative_url }}">[{{ subitem.title }}]</a>
                     {% else %}
@@ -31,7 +31,6 @@
         </li>
         {% endif %}
         {% endfor %}
+        <li class="list-none imprint">Imprint</li>
     </ul>
-
-    <div style="padding-left: 1em; color: black;margin-top: 5em; font-size: 28px;">Imprint</div>
 </nav>
