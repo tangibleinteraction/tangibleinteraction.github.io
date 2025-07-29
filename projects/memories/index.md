@@ -1,6 +1,7 @@
 ---
 title: Memories
-description: How to store and collect memories using tangible interactions.
+description: Design Practice 1 X Tangible Interaction
+time: Summer 2025
 layout: default
 menu-order: 1
 ---

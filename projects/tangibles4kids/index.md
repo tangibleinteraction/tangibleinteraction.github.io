@@ -1,6 +1,7 @@
 ---
 title: Tangibles4Kids
-description: Interactive projects for children
+description: Design Practice 1 X Tangible Interaction
+time: Summer 2025
 layout: default
 menu-order: 0
 ---
