@@ -7,7 +7,7 @@ details-1: The “Mugshot Memories” project presents an interactive cardboard 
   By pressing the buttons, children (and curious adults) can build unique faces, experiment with variations, and reflect on how individual features combine to form expressions and identities. The familiar, controller-like layout invites playful interaction and lowers barriers to engagement, especially for younger users.
 details-2: Which faces do we recognize? Which features stick in our minds, and which do we mix up or forget? This hands-on, multi-sensory approach supports intuitive learning and fosters creativity.
   “Mugshot Memories” is aimed at children in educational settings but also appeals to anyone interested in playful explorations of perception and design.
-image: mugshot-memories-2.jpg
+teaser: mugshot-memories-2.jpg
 image-detail-1: mugshot-memories-2.jpg
 image-detail-2: mugshot-memories-1.jpg
 ---

@@ -1,37 +1,38 @@
-<!-- Sidebar -->
-<nav>
-    <ul class="m-0 p-0">
-        {% assign sorted_pages = site.pages | sort: 'menu-order' %}
-        {% for item in sorted_pages %}
-        {% assign path_parts = item.url | split: '/' %}
-        {% if path_parts.size == 2 and item.name == 'index.md' and item.menu-order %}
-        <li class="mb-2 list-none">
-            {% if page.url == item.url %}
-            <a href="{{ item.url | relative_url }}" style="font-size: 28px;">[{{ item.title }}]</a>
-            {% else %}
-            <a href="{{ item.url | relative_url }}" style="font-size: 28px;">{{ item.title }}</a>
-            {% endif %}
-
-            {% if item.url == '/projects/' and page.url contains '/projects/' %}
-            <ul class="pl-4 mt-1 mb-3">
-                {% for subitem in sorted_pages %}
-                {% assign sub_path_parts = subitem.url | split: '/' %}
-                {% if sub_path_parts.size == 3 and subitem.name == 'index.md' and sub_path_parts[1] == 'projects' %}
-                <li class="mb-1 list-none">
-                    {% if page.url == subitem.url %}
-                    <a href="{{ subitem.url | relative_url }}" style="font-size: 28px;">[{{ subitem.title }}]</a>
-                    {% else %}
-                    <a href="{{ subitem.url | relative_url }}" style="font-size: 28px;">{{ subitem.title }}</a>
-                    {% endif %}
-                </li>
+<aside class="w-90">
+    <nav>
+        <ul>
+            {% assign sorted_pages = site.pages | sort: 'menu-order' %}
+            {% for item in sorted_pages %}
+            {% assign path_parts = item.url | split: '/' %}
+            {% if path_parts.size == 2 and item.name == 'index.md' and item.menu-order %}
+            <li class="sidebar-list-item list-none">
+                {% assign item_title = item.title | downcase %}
+                {% if page.url contains item_title %}
+                <a href="{{ item.url | relative_url }}">[{{ item.title }}]</a>
+                {% else %}
+                <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
                 {% endif %}
-                {% endfor %}
-            </ul>
-            {% endif %}
-        </li>
-        {% endif %}
-        {% endfor %}
-    </ul>
 
-<div style="padding-left: 1em; color: black;margin-top: 5em; font-size: 28px;">Imprint</div>
-</nav>
+                {% if item.url == '/projects/' and page.url contains '/projects/' %}
+                <ul class="sidebar-submenu">
+                    {% for subitem in sorted_pages %}
+                    {% assign sub_path_parts = subitem.url | split: '/' %}
+                    {% if sub_path_parts.size == 3 and subitem.name == 'index.md' and sub_path_parts[1] == 'projects' %}
+                    <li class="sidebar-list-item list-none">
+                        {% if page.url == subitem.url %}
+                        <a href="{{ subitem.url | relative_url }}">[{{ subitem.title }}]</a>
+                        {% else %}
+                        <a href="{{ subitem.url | relative_url }}">{{ subitem.title }}</a>
+                        {% endif %}
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </li>
+            {% endif %}
+            {% endfor %}
+            <li class="list-none imprint">Imprint</li>
+        </ul>
+    </nav>
+</aside>

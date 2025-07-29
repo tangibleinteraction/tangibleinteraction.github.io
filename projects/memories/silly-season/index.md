@@ -8,7 +8,7 @@ details-2: What memories does it evoke?
   The public outdoor pool of childhood. From small towns and the countryside. A collective yet deeply personal memory shaped by the smells and sounds of chlorine, diving boards, cheerful commotion, lifeguards, and the ever-present kiosk selling fries, candy, and ice cream. All tied to the slow rhythm of summer holidays.
 
   This interactive installation takes the shape of a bowl of fries, just like the ones from the poolside kiosk. Three fries stick out and can be lifted. Each movement triggers a distinct sound, evoking shared memories of a day at the public pool, capturing the atmosphere and sensory experience of those timeless summer moments.
-image: Teaser.JPG
+teaser: Teaser.JPG
 image-detail-1: Bild1.JPG
 image-detail-2: Bild2.JPG
 ---

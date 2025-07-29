@@ -1,32 +1,9 @@
 ---
 title: Tangibles4Kids
-description: Interactive projects for children
-layout: default
+description: Design Practice 1 X Tangible Interaction
+time: Summer 2025
+layout: projects
 menu-order: 0
 ---
 
-
-<!-- Pages subtitle -->
-<h2 class="absolute top-8 right-4">[{{page.title}}]</h2>
-
-<!-- Section -->
-<section id="projets">
-  <h2>{{page.title}}</h2>
-  {% for project in site.pages %}
-    {% if project.path contains "projects/tangibles4kids" and project.path != "projects/tangibles4kids/index.md" %}
-      <div class="carte-projet">
-        <div class="image-zone">
-          <img src="{{ project.image | prepend: project.url | replace: 'index.html', '' }}" alt="Image of project {{ project.title }}">
-        </div>
-        <div class="titre-zone">
-          <h3>{{ project.title }}</h3>
-        </div>
-        <div class="description-zone">
-          <p>{{ project.description }}</p>
-          <a href="{{ project.url }}" class="btn-projet">To the project →</a>
-        </div>
-      </div>
-      <hr class="separateur">
-    {% endif %}
-  {% endfor %}
-</section>
+In the summer term 2025, an interdisciplinary teaching format was implemented at the University of Applied Sciences Dresden, bringing together Master’s students from Design and Computer Science to explore how digital interaction can be made tangible. Focusing on Tangibles for Kids, the course aimed to design interactive systems that support playful learning and embodied exploration for young children. User studies were conducted in cooperation with a kindergarten in Dresden, providing direct insights into child-centered interaction design. Through project-based teamwork, students combined creative and technical approaches to develop physical-digital prototypes that respond to the cognitive and sensory needs of children. The results presented below illustrate the potential of collaborative learning between design and computer science in shaping future-oriented interaction concepts.

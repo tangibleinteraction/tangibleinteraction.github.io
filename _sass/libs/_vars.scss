@@ -16,15 +16,17 @@
 		element-margin:		2em,
 		sidebar-width:		26em,
 		sidebar-width-alt:	24em,
-		gutter:				3em
+		gutter:				3em,
+		side-margin:        22px,
+		top-margin:         21px
 	);
 
 // Font.
 	$font: (
-		family:				('Open Sans', sans-serif),
-		family-heading:		('Roboto Slab', serif),
+		family:				('Geist Mono', monospace),
+		family-heading:		('InterVariable', serif),
 		family-fixed:		('Courier New', monospace),
-		weight:				400,
+		weight:				300,
 		weight-bold:		600,
 		weight-heading:		700,
 		weight-heading-alt:	400,
@@ -35,7 +37,7 @@
 	$palette: (
 		bg:					#ffffff,
 		bg-alt:				#f5f6f7,
-		fg:					#7f888f,
+		fg:					#000000,
 		fg-bold:			#3d4449,
 		fg-light:			#9fa3a6,
 		border:				rgba(210,215,217,0.75),
