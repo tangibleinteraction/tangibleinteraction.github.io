@@ -15,9 +15,10 @@
 
         <!-- Main -->
         <div id="main">
-            <div class="w-full px-4">
-                
-                {% include header.html %}
+
+            {% include header.html %}
+
+            <div class="w-full px-4">                
                 
                 <h2 class="medium-subheading">{{ page.title }}</h2>
 
@@ -31,7 +32,13 @@
                                 <img src="{{ page.teaser | prepend: project.url | replace: 'index.html', '' }}" alt="Project image" class="w-full object-cover mb-8!"/>
 
                                 {% for image in page.images %}
+                                    {% unless image.space-above == null or image.space-above == "" %}
+                                        <div class="lg:h-{{ image.space-above }}!"></div>
+                                    {% endunless %}
                                     <img src="{{ image.url | prepend: project.url | replace: 'index.html', '' }}" alt="{{ image.image }}" class="w-full object-cover mb-8!"/>
+                                    {% unless image.space-below == null or image.space-below == "" %}
+                                        <div class="lg:h-{{ image.space-below }}!"></div>
+                                    {% endunless %}
                                 {% endfor %}
                             </div>
                             <div class="w-1/2 project-contents">
@@ -43,13 +50,13 @@
                                     <strong>{{ page.description }}</strong>
                                 </p>
                                 {{ content }}
+                                <div class="h-22!"></div>
                             </div>
-                        </div>
-                    </maion>
-                </div>
+                        </div>                        
+                    </main>
+                </div>                
             </div>
         </div>
-
     </div>
 
     {% include footer.html %}
