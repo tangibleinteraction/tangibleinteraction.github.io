@@ -30,4 +30,8 @@
     text-align: inherit;
     position: relative !important;
   }
+
+  li:last-child {
+    padding-bottom: 1.75em;
+  }
 }
