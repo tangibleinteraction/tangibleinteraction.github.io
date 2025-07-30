@@ -29,10 +29,10 @@
                     <main class="flex flex-1 justify-center">
                         <div class="flex gap-6 w-full max-w-6xl">
                             <div class="w-1/2">
-                                <img src="{{ page.teaser | prepend: project.url | replace: 'index.html', '' }}" alt="Project image" class="mb-8!"/>
+                                <img src="{{ page.teaser | prepend: project.url | replace: 'index.html', '' }}" alt="Project image" class="w-full object-cover mb-8!"/>
 
                                 {% for image in page.images %}
-                                    <img src="{{ image.url | prepend: project.url | replace: 'index.html', '' }}" alt="{{ image.image }}" class="mb-8!"/>
+                                    <img src="{{ image.url | prepend: project.url | replace: 'index.html', '' }}" alt="{{ image.image }}" class="w-full object-cover mb-8!"/>
                                 {% endfor %}
                             </div>
                             <div class="w-1/2 project-contents">
