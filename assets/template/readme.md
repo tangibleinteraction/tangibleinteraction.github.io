@@ -7,8 +7,8 @@ Welcome! This guide explains how to build your own project page for the site. Fo
 ## 🧩 Step 1: Copy the Template Folder
 
 - Go to `assets/template/`
-- Copy the folder named `template_project`
-- Rename the copied folder to match your project name (e.g. `interactive_sound`)
+- Copy the folder named `template_project` to the main project directory in `projects/.../<your-project>`.
+- Rename the copied folder to match your project name (e.g. `interactive-sound`)
 
 ---
 
@@ -24,36 +24,40 @@ Welcome! This guide explains how to build your own project page for the site. Fo
 
 At the top of the `index.md` file, update the front matter:
 
-
+```yaml
 ---
-title: My Project Title
-description: A short description of what your project is about.
-image: name-of-your-thumbnail.jpg
-layout: page
+layout: project
+title: Echoes
+authors: Some Name, Some Other
+description: This is the teaser text that appears first on the project site and in the overview of the projects
+teaser: echoes.jpg
+images: 
+  - image: Development process
+    url: echoes.jpg
+    space-above: 20
+    space-below: 30
+  - image: Target audience and approach
+    url: echoes.jpg
+  - image: Technology and models
+    url: echoes.jpg
 ---
 
-## ✏️ Step 4: Customize the HTML Content
-Inside index.md, you can modify the HTML structure to tell the story of your project.
+```
 
-Each content block looks like this:
+In the list of `images` you have to add an image caption (for the `alt` text). Below you need to reference one of your uploaded images by its name including the extension. Optionally, you can provide `space-above` and `space-below` to adjust the vertical position of the images next to the text on the right side.
 
-html
-<div class="markdown-row">
-  <div class="image-side">
-    <img src="your-image.jpg" alt="Description">
-    <p class="caption">Your image caption goes here.</p>
-  </div>
-  <div class="text-side">
-    <h2 class="block-title">Section Title</h2>
-    <p>Your project paragraph. You can also use <strong>bold</strong> text!</p>
-  </div>
-</div>
+## ✏️ Step 4: Customize the Content
 
-➡️ You can duplicate and modify these blocks as needed.
+Inside index.md, you can add your content using strict Markdown (or Kramdown) syntax:
 
+```md
+## Project Overview
 
-# Now upload your project folder into the 'projects' folder
+This text appears on the right side of the project page. You can adjust the image positioning of the images on the left side (which is generated automatically from the list in the front matter above) by applying `space-above` and `space-below` to match this text.
+```
 
+Note that the author names and description text is automatically added as the first content, along with the teaser image.
 
-## ✅ That's it!
-Once you're done editing, your project will appear beautifully on the site with your chosen layout and content.
+## Finalize
+
+You can now upload your project folder to the Github repository. Once you're done editing, your project will appear beautifully on the site with your chosen layout and content.

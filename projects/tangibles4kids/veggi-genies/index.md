@@ -3,8 +3,6 @@ layout: project
 title: Veggi Genies
 authors: Amelie Gruhn, Alexander Schulz
 description: Veggi Genies is an interactive model bed using crocheted vegetable figures, info cards, and visual feedback to playfully teach mixed cultivation, water, and sun needs – for children and curious adults.
-details-3: The project is aimed specifically at children in grades 1 and 2 in school and learning gardens. By actively experimenting with the hand-crocheted vegetable models, young learners can independently test plant combinations without fear of "failure" or damaging real plants. The multisensory design appeals to different learning types and supports sustainable knowledge anchoring.
-details-4: The vegetable models are abstract, symbolic representations with a soft, warm feel that invites children to touch and play. The interactive garden bed uses RFID technology to recognize the models and determine their position, creating a connection between physical play and digital feedback.
 teaser: veggi-genies-5.png
 images: 
   - image: Development process

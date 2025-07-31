@@ -2,16 +2,23 @@
 
 This blog serves as the documentation of the projects in the module Tangible Interaction at the University of Applied Sciences in Dresden. The blog is hosted via Github Pages: [https://tangibleinteraction.github.io](https://tangibleinteraction.github.io).
 
-## Getting Started
+## How to add content for a new project
+
+View instrucutions specified in this file: [readme.md](assets/template/readme.md)
+
+## Development
 
 ### Prerequisites
+
 - Ruby
 - Bundler
 
 ### Local Development
+
 You can preview the site locally by following these steps:
 
 1. **Set up your environment**:
+
    ```bash
    # If using Nix (optional)
    nix-shell shell.nix
@@ -21,59 +28,26 @@ You can preview the site locally by following these steps:
    ```
 
 2. **Run the local server**:
+
    ```bash
    bundle exec jekyll serve
    ```
 
 3. **View the site** at `http://localhost:4000`
 
-## How to add content for a new project
-View instrucutions specified in this file: [readme.md](assets/template/readme.md)
+### Tailwind
 
-## Photo Credits
-
-Photo by <a href="https://unsplash.com/de/@kellysikkema?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kelly Sikkema</a> auf <a href="https://unsplash.com/de/fotos/spielbaustein-spielzeug-fur-kleinkinder-JRVxgAkzIsM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-      
+This site uses [Tailwind](https://tailwindcss.com/) for easy styling.
 
 ## Theme Credits
+
+This website is based on the following theme. See links for more details.
 
 ### (WIP) Editorial - Jekyll Theme
 
 A Jekyll version of the "Editorial" theme by [HTML5 UP](https://html5up.net/). Find the original here. [https://github.com/andrewbanchich/editorial-jekyll-theme](https://github.com/andrewbanchich/editorial-jekyll-theme).
 
 ![Editorial Theme](assets/images/screenshot.jpg "Editorial Theme")
-
-### How to Use
-
-For those unfamiliar with how Jekyll works, check out [https://jekyllrb.com/](https://jekyllrb.com/) for all the details,
-or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/),
-and [creating pages](https://jekyllrb.com/docs/pages/).
-
-- **GitLab**: Simply fork this repository and start editing the `_config.yml` file!
-- **GitHub**: Fork this reposity and create a branch named `gh-pages`, then start editing the `_config.yml` file!
-
-### Added Features
-
-* Add your **social profiles** easily in `_config.yml`.
-
-### Configuration
-
-You can use the following custom parameters in `_config.yml`.
-
-#### Site
-- `subtitle` sets the text for the lighter colored text next to your site's title.
-
-#### Social
-- `500px_url`
-- `facebook_url`
-- `github_url`
-- `gitlab_url`
-- `googleplus_url`
-- `instagram_url`
-- `linkedin_url`
-- `pinterest_url`
-- `slack_url`
-- `twitter_url`
 
 ### Credits
 
