@@ -5,51 +5,51 @@ authors: Benjamin Emereau, Lilli Rothe
 description: …is a modular, analog play system designed to get children moving. Inspired by research on physical activity and cognitive development, it offers interactive tools that promote motion, focus, and creative engagement through play.
 teaser: teaser.jpg
 images:
-  - image: Electornics
+  - image: Sketch
     url: moduplay-1.jpg
-  - image: Prototype
+  - image: Sketch
     url: moduplay-2.png
-  - image: Sketches
+  - image: Sketch
     url: moduplay-3.png
-  - image: Picture Questions
+  - image: Sketch
     url: moduplay-4.png
-  - image: Electornics
+  - image: Sketch
     url: moduplay-5.png
-  - image: Prototype
+  - image: Refrains
     url: moduplay-6.jpeg
-  - image: Sketches
+  - image: Electornics
     url: moduplay-7.png
-  - image: Picture Questions
+  - image: Electornics
     url: moduplay-8.png
   - image: Electornics
     url: moduplay-9.png
-  - image: Prototype
+  - image: Electornics
     url: moduplay-10.png
-  - image: Sketches
+  - image: Playable Objects
     url: moduplay-11.png
-  - image: Picture Questions
+  - image: Playable Objects
     url: moduplay-12.png
-  - image: Electornics
+  - image: Playable Objects
     url: moduplay-13.png
-  - image: Prototype
+  - image: Playable Objects
     url: moduplay-14.png
-  - image: Sketches
+  - image: Playable Objects
     url: moduplay-15.png
-  - image: Picture Questions
+  - image: Playable Objects
     url: moduplay-16.png
-  - image: Prototype
+  - image: Screenshot Website
     url: moduplay-17.jpg
-  - image: Sketches
+  - image: Screenshot Website
     url: moduplay-18.jpg
-  - image: Picture Questions
+  - image: Screenshot Website
     url: moduplay-19.jpg
-  - image: Electornics
+  - image: Paperwork
     url: moduplay-20.png
-  - image: Prototype
+  - image: Poster
     url: moduplay-21.jpg
-  - image: Sketches
+  - image: Poster
     url: moduplay-22.jpg
-  - image: Sketches
+  - image: Kid playing with MODUPLAY
     url: moduplay-23.jpg
 ---
 
