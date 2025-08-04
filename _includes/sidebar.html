@@ -18,8 +18,9 @@
                     {% for subitem in sorted_pages %}
                     {% assign sub_path_parts = subitem.url | split: '/' %}
                     {% if sub_path_parts.size == 3 and subitem.name == 'index.md' and sub_path_parts[1] == 'projects' %}
+                    {% assign menuentry = subitem.title | downcase %}
                     <li class="sidebar-list-item list-none">
-                        {% if page.url == subitem.url %}
+                        {% if page.url contains menuentry %}
                         <a href="{{ subitem.url | relative_url }}">[{{ subitem.title }}]</a>
                         {% else %}
                         <a href="{{ subitem.url | relative_url }}">{{ subitem.title }}</a>
@@ -29,10 +30,18 @@
                     {% endfor %}
                 </ul>
                 {% endif %}
+
             </li>
             {% endif %}
             {% endfor %}
             <li class="list-none imprint">Imprint</li>
         </ul>
+
+        <!-- Search -->
+        <!-- <section id="search" class="alt">
+            <form>
+                <input type="text" id="query" name="query" class="typeahead" placeholder="Search" />
+            </form>
+        </section> -->
     </nav>
 </aside>

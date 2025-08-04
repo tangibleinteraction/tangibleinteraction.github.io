@@ -10,6 +10,10 @@
 		form {
 			@include icon;
 			position: relative;
+			margin-top: _size(top-margin);
+			margin-left: _size(side-margin);
+			margin-right: _size(side-margin);
+			font-family: _font(family-heading);
 
 			&:before {
 				@include vendor('transform', 'scaleX(-1)');
@@ -17,7 +21,7 @@
 				content: '\f002';
 				cursor: default;
 				display: block;
-				font-size: 1.5em;
+				font-size: 1em;
 				height: calc(#{_size(element-height)} / 1.375);
 				line-height: calc(#{_size(element-height)} / 1.375);
 				opacity: 0.325;
