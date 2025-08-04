@@ -5,26 +5,25 @@ authors: Lara Loreen Balkanski, Lea Sophie Rochner, Lilli Rothe
 description: An interactive GPS-based audio guide for kids in Dresden Neustadt. It plays sounds at key locations, offers playful explanations, and invites children to complete tasks, bringing art, places, and stories to life.
 teaser: teaser.png
 images:
-  - image: Cubetto Testing
+  - image: Electornics
     url: city-explorers-1.png
-    #space-above: 80
-  - image: Participatory Design
+    space-above: 90
+  - image: House walls
     url: city-explorers-2.png
-    #space-above: 110
-  - image: Input Board 1
+  - image: Sketchtes Animated
     url: city-explorers-3.png
-  - image: Input Board 2
+  - image: Prototype
     url: city-explorers-4.png
-  - image: Concepts
+  - image: Sketches
     url: city-explorers-5.png
-  - image: Fox Robot
+  - image: Picture Questions
     url: city-explorers-6.png
 ---
 
 ## Project Description
 
 This project introduces an interactive audio guide designed for children exploring the vibrant district of Dresden Neustadt. Equipped with a child-friendly wearable device featuring a GPS sensor, kids embark on a playful journey through the city. As they reach specific stations, the device triggers a sound signal, guiding them to stop and discover the next adventure.
-At each location, children receive age-appropriate explanations about the place, enriched with fun interactive tasks that invite them to engage with their surroundings. The experience is part of the **Blickwinkel-Erlebnispfad**, highlighting memories of artists and important sites within the urban landscape.
+At each location, children receive age-appropriate explanations about the place, enriched with fun interactive tasks that invite them to engage with their surroundings. The experience is part of the *Blickwinkel-Erlebnispfad*, highlighting memories of artists and important sites within the urban landscape.
 Designed with flexibility in mind, this concept can be adapted to other cities, offering young explorers a unique and educational way to connect with their local culture and history.
 
 
@@ -32,7 +31,7 @@ Designed with flexibility in mind, this concept can be adapted to other cities, 
 
 During the implementation phase, the team encountered technical issues with the GPS module, which proved to be unreliable for accurately triggering location-based audio playback. To ensure consistent functionality, the decision was made to switch to RFID technology. This alternative allowed for precise, location-specific interaction without dependency on satellite signals.
 
-As a result, the final prototype successfully plays audio files at three stations along the **Blickwinkel-Erlebnispfad** in the Kunsthofpassage of Dresden Neustadt. Each station offers a unique auditory experience designed for children, combining storytelling with local art and cultural insights.
+As a result, the final prototype successfully plays audio files at three stations along the *Blickwinkel-Erlebnispfad* in the Kunsthofpassage of Dresden Neustadt. Each station offers a unique auditory experience designed for children, combining storytelling with local art and cultural insights.
 
 ## Design Process
 
