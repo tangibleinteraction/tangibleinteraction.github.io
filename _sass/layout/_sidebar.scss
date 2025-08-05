@@ -36,11 +36,9 @@ nav {
 #sidebar {
 	font-size: _font(medium-size);
 	position: relative;
-	box-sizing: border-box;
 	min-width: _size(sidebar-width);
 	max-width: _size(sidebar-width);
 	margin-left: _size(side-margin);
-	margin-right: _size(side-margin);
 
 	@include breakpoint(large) {
 		display: flex;
@@ -48,6 +46,13 @@ nav {
 		max-width: _size(column-width-alt) * 2 + _size(side-margin);
 		width: 100%;
 		order: 2;
+	}
+
+	@include breakpoint(medium) {
+		margin-right: _size(side-margin);
+		min-width: auto;
+		max-width: auto;
+		width: auto;
 	}
 
 	ul {

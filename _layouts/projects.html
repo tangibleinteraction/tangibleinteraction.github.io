@@ -41,27 +41,25 @@
                                             <div class="project-card-image">
                                                 <a href="{{ project.url }}"><img src="{{ project.teaser | prepend: project.url | replace: 'index.html', '' }}" alt="Project image"/></a>
                                             </div>
-
+                                            
                                             <!-- Title -->
                                             <div class="project-card-title">
                                                 <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
                                             </div>
 
-                                            <!-- Author info (top) + Description (bottom) -->
+                                            <div  class="project-card-authors">
+                                                <p>
+                                                    {% assign authors = project.authors | split: ', ' %}
+                                                    {% for author in authors %}
+                                                    <span class="block">{{ author }}</span>
+                                                    {% endfor %}
+                                                </p>
+                                            </div>
+
                                             <div class="project-text">
-                                                <div>
-                                                    <p>
-                                                        {% assign authors = project.authors | split: ', ' %}
-                                                        {% for author in authors %}
-                                                        <span class="block bold">{{ author }}</span>
-                                                        {% endfor %}
-                                                    </p>
-                                                </div>
-                                                <div>
-                                                    <p>
-                                                        {{ project.description }}
-                                                    </p>
-                                                </div>
+                                                <p>
+                                                    {{ project.description }}
+                                                </p>
                                             </div>
                                         </div>
                                     {% endif %}

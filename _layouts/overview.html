@@ -34,7 +34,7 @@
                         {% if sub_path_parts.size == 3 and subitem.name == 'index.md' and sub_path_parts[1] == 'projects' %}
                         <div class="project-column">
                             <a href="{{ subitem.url | relative_url }}">
-                                <div class="w-full bg-gray-300">
+                                <div class="project-column-image-container">
                                     <img src="/assets/images/{{ subitem.title | downcase }}.jpg">
                                 </div>
                                 <p class="project-description">

@@ -13,7 +13,7 @@
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
 	}
 
-	input::placeholder { text-align: center; }
+	input::placeholder { text-align: center; font-size: _font(medium-size); }
 
 	input[type="text"],
 	input[type="password"],
@@ -23,6 +23,7 @@
 	input[type="url"],
 	select,
 	textarea {
+		box-sizing: border-box;
 		background: _palette(bg);
 		border-radius: _size(border-radius);
 		border: solid 2px _palette(border);
