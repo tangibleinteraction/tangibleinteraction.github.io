@@ -14,23 +14,33 @@
             </div>
         </div>
         <div id="subheadline">
+            {% assign path_parts = page.url | split: '/' %}
             <h2>
-                {% if page.title %}
-                    {{ page.title }}
+                {% if path_parts.size > 1 %}
+                    {{ path_parts[1] }}
                 {% else %}
                     find out
                 {% endif %}
             </h2>
-            {% assign path_parts = page.url | split: '/' %}
-            {% if page.title and path_parts.size == 3 %}
-                <h3>
-                    {{ page.title }}
-                </h3>
-            {% else %}
+            <div class="subheadline-subtitle">
+            {% if page.title contains "about" or page.url == "/" %}
                 <h3>
                     {{ site.subtitle }}
                 </h3>
+            {% elsif path_parts.size > 2 %}
+                <h3>
+                    {{ page.title | downcase }}
+                </h3>
+                {% if page.authors != '' %}
+                <div>
+                    {% assign authors = page.authors | split: ', ' %}
+                    {% for author in authors %}
+                        <p>{{ author }}</p>
+                    {% endfor %}
+                </div>
+                {% endif %}
             {% endif %}
+            </div>
         </div>
     </header>
 </div>

@@ -1,6 +1,6 @@
 <aside id="sidebar">
     <nav>
-        <ul>
+        <ul class="sidebar-menu">
             <li>
                 <a href="{{ 'about' | absolute_url }}">
                     about
@@ -13,7 +13,7 @@
             <li>
                 {% assign item_title = item.title | downcase %}
                 {% if page.url contains item_title %}
-                <a href="{{ item.url | relative_url }}">[{{ item.title | downcase }}]</a>
+                <a href="{{ item.url | relative_url }}" class="underline">{{ item.title | downcase }}</a>
                 {% else %}
                 <a href="{{ item.url | relative_url }}">{{ item.title | downcase }}</a>
                 {% endif %}
@@ -26,7 +26,7 @@
                     {% assign menuentry = subitem.title | downcase %}
                     <li>
                         {% if page.url contains menuentry %}
-                        <a href="{{ subitem.url | relative_url }}">[{{ subitem.title }}]</a>
+                        <a href="{{ subitem.url | relative_url }}" class="underline">{{ subitem.title }}</a>
                         {% else %}
                         <a href="{{ subitem.url | relative_url }}">{{ subitem.title }}</a>
                         {% endif %}
@@ -39,15 +39,17 @@
             </li>
             {% endif %}
             {% endfor %}
-
+        </ul>
+        <ul class="sidebar-bottom-menu">
             <!-- Search -->
-            <section id="search" class="alt">
+            <section id="search" class="{% unless page.title %}index{% endunless %}">
                 <form>
                     <input type="text" id="query" name="query" class="typeahead" placeholder="search" />
                 </form>
             </section>
 
-            <li class="list-none imprint">imprint</li>
+            <li class="list-none imprint"><a href="https://www.htw-dresden.de/">HTWD &#8599;</a></li>
+            <li class="list-none"><a href="{{ 'imprint' | absolute_url }}">imprint</a></li>
         </ul>
     </nav>
 </aside>

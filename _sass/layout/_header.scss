@@ -99,5 +99,16 @@
 
 			@include breakpoint(small) {}
 		}
+
+		.subheadline-subtitle {
+			display: flex;
+			flex-direction: column;
+
+			p {
+				font-size: _font(medium-size);
+				margin: 0px;
+				padding-bottom: 4px;
+			}
+		}
 	}
 }

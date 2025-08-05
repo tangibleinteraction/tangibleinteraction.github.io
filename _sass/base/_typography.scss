@@ -135,8 +135,16 @@ hr {
 	}
 }
 
+.block {
+	display: block;
+}
+
 .bold {
 	font-weight: _font(weight-bold);
+}
+
+.underline {
+	text-decoration: underline;
 }
 
 .align-left {
