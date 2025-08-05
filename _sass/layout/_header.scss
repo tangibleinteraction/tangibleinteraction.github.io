@@ -6,35 +6,98 @@
 
 /* Header */
 
-	#header {
-		@include vendor('display', 'flex');
-		padding: 21px 22px 22px 22px;
-		position: relative;
+#header {
+	padding: _size(side-margin) _size(side-margin) _size(side-margin) _size(side-margin);
+	position: relative;
+	display: flex;
 
-		.logo {
-			border-bottom: 0;
-			color: inherit;
-			font-family: _font(family-heading);
-			font-size: 1.125em;
+	@include breakpoint(large) {
+		flex-direction: column;
+		padding: _size(side-margin) _size(side-margin) 0px _size(side-margin);
+	}
+
+	#headline {
+		display: flex;
+		flex-direction: row;
+
+		h1 {
+			font-size: _font(large-size);
+			line-height: 52px;
+			letter-spacing: -2px;
+			border-top: solid 2px _palette(fg);
+			border-bottom: solid 2px _palette(fg);
+			min-width: _size(sidebar-width);
+			max-width: _size(sidebar-width);
+			height: _size(header-height);
+			margin-right: _size(column-gap);
+
+			@include breakpoint(large) {
+				display: flex;
+				border-bottom: 0px;
+				min-width: _size(sidebar-width-alt);
+				height: initial;
+				margin-bottom: _size(side-margin) * 3;
+			}
 		}
 
-		.icons {
-			text-align: right;
-		}
+		#secretmenu {
+			min-width: _size(column-width-alt);
+			max-width: _size(column-width-alt);
+			font-size: _font(medium-size);
+			display: none;
 
-		@include breakpoint(xlarge) {
-			padding-top: 5em;
-		}
-
-		@include breakpoint(small) {
-			padding-top: 6.5em;
-
-			.icons {
-				height: calc(6.25em / 1.25);
-				line-height: calc(6.25em / 1.25);
-				position: absolute;
-				right: calc(-0.625em / 1.25);
-				top: 0;
+			@include breakpoint(large) {
+				display: flex;
 			}
 		}
 	}
+
+	#subheadline {
+		display: flex;
+		flex-direction: row;
+
+		h2 {
+			display: flex;
+			justify-content: center; /* horizontal centering */
+			align-items: center;     /* vertical centering */
+			font-family: _font(family-heading);
+			font-weight: _font(weight-bold);
+			font-size: _font(massive-size);
+			line-height: 40px;
+			letter-spacing: -3px;
+			color: _palette(accent);
+			text-align: center;
+			min-width: _size(column-width);
+			max-width: _size(column-width);
+			height: _size(header-height);
+			border: 2px solid _palette(fg);
+			margin-right: _size(column-gap);
+
+			@include breakpoint(large) {
+				min-width: _size(sidebar-width-alt);
+				max-width: _size(sidebar-width-alt);
+				height: 141px;
+				margin-bottom: 0.7em;
+			}
+		}
+
+		h3 {
+			display: flex;
+			width: _size(column-width);
+			font-family: _font(family);
+			font-weight: _font(weight-bold);
+			font-size: _font(large-size);
+			line-height: 100%;
+			letter-spacing: 0px;
+
+			@include breakpoint(large) {
+				margin-bottom: 0.2em;
+				font-size: _font(semi-size);
+			}
+
+			@include breakpoint(medium) {}
+
+			@include breakpoint(small) {}
+		}
+	}
+}

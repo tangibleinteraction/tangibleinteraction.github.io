@@ -14,21 +14,30 @@
 		border-radius:		0em,
 		element-height:		2em,
 		element-margin:		2em,
-		sidebar-width:		26em,
-		sidebar-width-alt:	24em,
+		sidebar-width:		330px,
+		sidebar-width-alt:	387px,
+		header-height:      174px,
 		gutter:				3em,
 		side-margin:        22px,
-		top-margin:         21px
+		top-margin:         21px,
+		column-width:       507px,
+		column-width-alt:   387px,
+		column-gap:         22px
 	);
 
 // Font.
 	$font: (
-		family:				('Geist Mono', monospace),
-		family-heading:		('InterVariable', serif),
+		family:				('Anuphan', serif),
+		family-heading:		('Anuphan', serif),
 		family-fixed:		('Courier New', monospace),
-		weight:				300,
+		standard-size:      18px,
+		medium-size:        24px,
+		semi-size:          30px,
+		large-size:         40px,
+		massive-size:       70px,
+		weight:				400,
 		weight-bold:		600,
-		weight-heading:		700,
+		weight-heading:		600,
 		weight-heading-alt:	400,
 		kerning-heading:	0.075em
 	);
@@ -38,9 +47,9 @@
 		bg:					#ffffff,
 		bg-alt:				#f5f6f7,
 		fg:					#000000,
-		fg-bold:			#3d4449,
+		fg-bold:			#000000,
 		fg-light:			#9fa3a6,
-		border:				rgba(210,215,217,0.75),
+		border:				#000000,
 		border-bg:			transparentize(#e6ebed, 0.75),
 		accent: #000000
 	);

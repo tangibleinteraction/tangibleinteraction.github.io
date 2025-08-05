@@ -1,3 +1,32 @@
+$breakpoints: (
+	large: '(max-width: 1432px)',
+	medium: '(max-width: 800px)',
+	small: '(max-width: 736px)',
+	) !global;
+
+@mixin breakpoint($breakpoint: null, $queries: null) {
+
+	$query: 'screen';
+
+	// Breakpoint.
+	@if $breakpoint and map-has-key($breakpoints, $breakpoint) {
+		$query: $query + ' and ' + map-get($breakpoints, $breakpoint
+		);
+}
+
+// Queries.
+@if $queries {
+	@each $k, $v in $queries {
+		$query: $query + ' and (' + $k + ':' + $v + ')';
+	}
+}
+
+@media #{$query} {
+	@content;
+}
+
+}
+
 /// Makes an element's :before pseudoelement a FontAwesome icon.
 /// @param {string} $content Optional content value to use.
 /// @param {string} $where Optional pseudoelement to target (before or after).
@@ -27,16 +56,16 @@
 /// @param {mixed} $lr Left/right padding.
 /// @param {list} $pad Optional extra padding (in the following order top, right, bottom, left)
 /// @param {bool} $important If true, adds !important.
-@mixin padding($tb, $lr, $pad: (0,0,0,0), $important: null) {
+@mixin padding($tb, $lr, $pad: (0, 0, 0, 0), $important: null) {
 
 	@if $important {
 		$important: '!important';
 	}
 
-	$one: nth($pad,1) * 1em;
-	$two: nth($pad,2) * 1em;
-	$three: nth($pad,4) * 1em;
-	$four: nth($pad,4) * 1em;
+	$one: nth($pad, 1) * 1em;
+	$two: nth($pad, 2) * 1em;
+	$three: nth($pad, 4) * 1em;
+	$four: nth($pad, 4) * 1em;
 
 	padding: calc(#{$tb} + #{$one}) calc(#{$lr} + #{$two}) max(0.1em, #{$tb} - #{_size(element-margin)} + #{$three}) calc(#{$lr} + #{$four}) #{$important};
 
@@ -47,17 +76,42 @@
 /// Encodes a SVG data URL so IE doesn't choke (via codepen.io/jakob-e/pen/YXXBrp).
 /// @param {string} $svg SVG data URL.
 /// @return {string} Encoded SVG data URL.
-@function svg-url($svg) {
+@function svg-url($svg){
 
-	$svg: str-replace($svg, '"', '\'');
-	$svg: str-replace($svg, '<', '%3C');
-	$svg: str-replace($svg, '>', '%3E');
-	$svg: str-replace($svg, '&', '%26');
-	$svg: str-replace($svg, '#', '%23');
-	$svg: str-replace($svg, '{', '%7B');
-	$svg: str-replace($svg, '}', '%7D');
-	$svg: str-replace($svg, ';', '%3B');
+$svg: str-replace($svg, '"', '\'');
+$svg: str-replace($svg, '<', '%3C');
+$svg: str-replace($svg, '>', '%3E');
+$svg: str-replace($svg, '&', '%26');
+$svg: str-replace($svg, '#', '%23');
+$svg: str-replace($svg, '{', '%7B');
+$svg: str-replace($svg, '}', '%7D');
+$svg: str-replace($svg, ';', '%3B');
 
-	@return url("data:image/svg+xml;charset=utf8,#{$svg}");
+@return url("data:image/svg+xml;charset=utf8,#{$svg}");
+
+}
+
+/// Wraps @content in a @media block using a given breakpoint.
+/// @param {string} $breakpoint Breakpoint.
+/// @param {map} $queries Additional queries.
+@mixin breakpoint($breakpoint: null, $queries: null) {
+
+	$query: 'screen';
+
+	// Breakpoint.
+	@if $breakpoint and map-has-key($breakpoints, $breakpoint) {
+		$query: $query + ' and ' + map-get($breakpoints, $breakpoint);
+	}
+
+	// Queries.
+	@if $queries {
+		@each $k, $v in $queries {
+			$query: $query + ' and (' + $k + ':' + $v + ')';
+		}
+	}
+
+	@media #{$query} {
+		@content;
+	}
 
 }

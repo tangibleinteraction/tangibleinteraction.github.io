@@ -5,11 +5,6 @@
 ///
 
 /* Form */
-
-	form {
-		margin: 0 0 _size(element-margin) 0;
-	}
-
 	label {
 		color: _palette(fg-bold);
 		display: block;
@@ -17,6 +12,8 @@
 		font-weight: _font(weight-bold);
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
 	}
+
+	input::placeholder { text-align: center; }
 
 	input[type="text"],
 	input[type="password"],
@@ -26,11 +23,9 @@
 	input[type="url"],
 	select,
 	textarea {
-		@include vendor('appearance', 'none');
 		background: _palette(bg);
 		border-radius: _size(border-radius);
-		border: none;
-		border: solid 1px _palette(border);
+		border: solid 2px _palette(border);
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -88,7 +83,6 @@
 
 	input[type="checkbox"],
 	input[type="radio"] {
-		@include vendor('appearance', 'none');
 		display: block;
 		float: left;
 		margin-right: -2em;

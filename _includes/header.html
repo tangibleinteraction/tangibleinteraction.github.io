@@ -1,13 +1,36 @@
-<div class="w-full">
-    <header id="header" class="flex justify-between items-center w-full">
-        <h1 id="title" class="lg:w-90 md:w-70">
-            <a href="{{ '' | absolute_url }}">
-                {% assign words = site.title | split: ' ' %}
-                {% for word in words %}
-                <span>{{ word }}</span>
-                {% endfor %}
-            </a>
-            <span class="dividing-line"></span>
-        </h1>
+<div>
+    <header id="header">
+        <div id="headline">
+            <h1 id="title">
+                <a href="{{ '' | absolute_url }}">
+                    {{ site.title }}
+                </a>
+            </h1>
+            <div id="secretmenu">
+                <span>
+                    Find out, what it is all <a href="{{ 'about' | absolute_url }}" class="bold">about</a>, <a href="{{ 'projects' | absolute_url }}" class="bold">projects</a> and <a href="{{ 'theses' | absolute_url }}" class="bold">theses</a>
+                </a>
+                </span>
+            </div>
+        </div>
+        <div id="subheadline">
+            <h2>
+                {% if page.title %}
+                    {{ page.title }}
+                {% else %}
+                    find out
+                {% endif %}
+            </h2>
+            {% assign path_parts = page.url | split: '/' %}
+            {% if page.title and path_parts.size == 3 %}
+                <h3>
+                    {{ page.title }}
+                </h3>
+            {% else %}
+                <h3>
+                    {{ site.subtitle }}
+                </h3>
+            {% endif %}
+        </div>
     </header>
 </div>
