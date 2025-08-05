@@ -6,6 +6,10 @@
 
 /* Image */
 
+	img {
+		width: 100%;
+	}
+
 	.image {
 		border-radius: _size(border-radius);
 		border: 0;
@@ -55,20 +59,6 @@
 
 			img {
 				width: 100%;
-			}
-		}
-	}
-
-	a.image {
-		overflow: hidden;
-
-		img {
-			@include vendor('transition', 'transform #{_duration(transition)} ease');
-		}
-
-		&:hover {
-			img {
-				@include vendor('transform', 'scale(1.075)');
 			}
 		}
 	}

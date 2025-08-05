@@ -6,54 +6,59 @@
 
 /* Main */
 
-	#main {
-		@include vendor('flex-grow', '1');
-		@include vendor('flex-shrink', '1');
-		width: 100%;
-		padding-bottom: 2rem;
+#content {
+	margin-left: _size(side-margin);
+	margin-right: _size(side-margin);
+	
+	@include breakpoint(large) {
+		order: 0;
 
-		> .inner {
-			@include padding(0em, 6em);
-			margin: 0 auto;
-			max-width: 110em;
-
-			> section {
-				@include padding(6em, 0em);
-				border-top: solid 2px _palette(border);
-
-				&:first-of-type {
-				 	border-top: 0 !important;
-				}
-			}
-		}
-
-		@include breakpoint(xlarge) {
-			> .inner {
-				@include padding(0em, 5em);
-
-				> section {
-					@include padding(5em, 0em);
-				}
-			}
-		}
-
-		@include breakpoint(large) {
-			> .inner {
-				@include padding(0em, 4em);
-
-				> section {
-					@include padding(4em, 0em);
-				}
-			}
-		}
-
-		@include breakpoint(small) {
-			> .inner {
-				@include padding(0em, 2em);
-
-				> section {
-					@include padding(3em, 0em);
-				}
-			}
+		&.index {
+			display: none;
 		}
 	}
+
+	@include breakpoint(medium) {
+		font-size: _font(standard-size);
+	}
+}
+
+#main {
+	width: 100%;
+	padding-bottom: 20rem;
+}
+
+.container {
+	display: flex;
+	height: 100vh;
+
+	@include breakpoint(large) {
+		flex-direction: column;
+	}
+}
+
+.standard-grid {
+	display: flex;
+	justify-content: left;
+
+	@include breakpoint(medium) {
+		flex-direction: column;
+	}
+}
+
+.standard-column {
+	width: _size(column-width);
+	margin-right: _size(column-gap);
+
+	@include breakpoint(large) {
+		margin-right: 0;
+		max-width: _size(column-width-alt);
+		min-width: _size(column-width-alt);
+	}
+
+	@include breakpoint(medium) {
+		max-width: auto;
+		min-width: auto;
+		width: 100%;
+	}
+}

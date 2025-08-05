@@ -4,7 +4,7 @@ title: TinyTrails
 authors: Lara Loreen Balkanski, Lea Sophie Rochner
 description: TinyTrails is a tangible learning toy for children aged 4 and up that teaches basic programming concepts through storytelling, music, and exploration on an interactive play carpet.
 teaser: teaser.jpg
-images: 
+images:
   - image: Cubetto Testing
     url: tiny-trails-1.jpg
     space-above: 80

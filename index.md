@@ -3,7 +3,3 @@ layout: default
 ---
 
 Tangible Interaction explores the fusion of digital technology with the physical world, where data and computation are made graspable through objects, surfaces, and spaces. It is an interdisciplinary field at the intersection of design and computer science, focusing on how people interact with information beyond the screen.
-{: class="w-12/16"}
-
-This website presents a collection of learning and teaching experiences in Tangible Interaction, including student projects, thesis work, and collaborative explorations. It showcases how creative and technical perspectives come together to shape new forms of interaction.
-{: class="w-12/16"}

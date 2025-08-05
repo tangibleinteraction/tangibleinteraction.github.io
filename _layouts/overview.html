@@ -18,45 +18,39 @@
 
             {% include header.html %}
 
-            <div class="w-full px-4">
+            <div class="container">
                
-                <h2 class="large-subheading">[{{ page.title | upcase }}]</h2>
+                {% include sidebar.html %}
 
-                <div class="flex h-screen">
+                <div class="project-columns">                
+                    {% assign sorted_pages = site.pages | sort: 'menu-order' %}
+                    {% for item in sorted_pages %}
+                        {% assign path_parts = item.url | split: '/' %}
 
-                    {% include sidebar.html %}
-
-                    <main class="flex flex-1 justify-center">
-                        <div class="flex gap-6 w-full max-w-6xl justify-center">
+                        {% if item.url == '/projects/' and page.url contains '/projects/' %}
                         
-                            {% assign sorted_pages = site.pages | sort: 'menu-order' %}
-                            {% for item in sorted_pages %}
-                                {% assign path_parts = item.url | split: '/' %}
-
-                                {% if item.url == '/projects/' and page.url contains '/projects/' %}
-                                <div class="flex flex-wrap gap-6 justify-center">
-                                    {% for subitem in sorted_pages %}
-                                    {% assign sub_path_parts = subitem.url | split: '/' %}
-                                    {% if sub_path_parts.size == 3 and subitem.name == 'index.md' and sub_path_parts[1] == 'projects' %}
-                                    <a href="{{ subitem.url | relative_url }}" class="flex flex-col items-start w-80 hover:opacity-90 transition-opacity">
-                                        <div class="w-full bg-gray-300">
-                                            <img src="/assets/images/{{ subitem.title | downcase }}.jpg">
-                                        </div>
-                                        <p class="project-description">
-                                            <strong>{{ subitem.title }}</strong><br />
-                                            {{ subitem.description }},<br/>{{ subitem.time }}
-                                        </p>
-                                    </a>
-                                    {% endif %}
-                                    {% endfor %}
+                        {% for subitem in sorted_pages %}
+                        {% assign sub_path_parts = subitem.url | split: '/' %}
+                        {% if sub_path_parts.size == 3 and subitem.name == 'index.md' and sub_path_parts[1] == 'projects' %}
+                        <div class="project-column">
+                            <a href="{{ subitem.url | relative_url }}">
+                                <div class="project-column-image-container">
+                                    <img src="/assets/images/{{ subitem.title | downcase }}.jpg">
                                 </div>
-                                {% endif %}
-                            {% endfor %}
-
-                            {{ content }}
-                            
+                                <p class="project-description">
+                                    <strong>{{ subitem.title }}</strong><br />
+                                    {{ subitem.description }},<br/>{{ subitem.time }}
+                                </p>
+                            </a>
                         </div>
-                    </main>
+                        {% endif %}
+                        {% endfor %}
+                        
+                        {% endif %}
+                    {% endfor %}
+
+                    {{ content }}
+                    
                 </div>
             </div>
         </div>

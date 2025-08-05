@@ -1,13 +1,46 @@
-<div class="w-full">
-    <header id="header" class="flex justify-between items-center w-full">
-        <h1 id="title" class="lg:w-90 md:w-70">
-            <a href="{{ '' | absolute_url }}">
-                {% assign words = site.title | split: ' ' %}
-                {% for word in words %}
-                <span>{{ word }}</span>
-                {% endfor %}
-            </a>
-            <span class="dividing-line"></span>
-        </h1>
+<div>
+    <header id="header">
+        <div id="headline">
+            <h1 id="title">
+                <a href="{{ '' | absolute_url }}">
+                    {{ site.title }}
+                </a>
+            </h1>
+            <div id="secretmenu">
+                <span>
+                    Find out, what it is all <a href="{{ 'about' | absolute_url }}" class="bold">about</a>, <a href="{{ 'projects' | absolute_url }}" class="bold">projects</a> and <a href="{{ 'theses' | absolute_url }}" class="bold">theses</a>
+                </a>
+                </span>
+            </div>
+        </div>
+        <div id="subheadline">
+            {% assign path_parts = page.url | split: '/' %}
+            <h2>
+                {% if path_parts.size > 1 %}
+                    {{ path_parts[1] }}
+                {% else %}
+                    find out
+                {% endif %}
+            </h2>
+            <div class="subheadline-subtitle">
+            {% if page.title contains "about" or page.url == "/" %}
+                <h3>
+                    {{ site.subtitle }}
+                </h3>
+            {% elsif path_parts.size > 2 %}
+                <h3>
+                    {{ page.title | downcase }}
+                </h3>
+                {% if page.authors != '' %}
+                <div>
+                    {% assign authors = page.authors | split: ', ' %}
+                    {% for author in authors %}
+                        <p>{{ author }}</p>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            {% endif %}
+            </div>
+        </div>
     </header>
 </div>
