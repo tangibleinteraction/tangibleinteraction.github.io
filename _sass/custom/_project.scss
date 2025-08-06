@@ -58,6 +58,12 @@
     flex-direction: column;
   }
 
+  .project-image {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 12px;
+  }
+
   .project-images {
     min-width: _size(column-width);
     max-width: _size(column-width);
