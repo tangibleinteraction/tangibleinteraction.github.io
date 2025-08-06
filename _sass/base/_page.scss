@@ -14,4 +14,6 @@
 // MSIE: Prevents scrollbar from overlapping content.
 body {
 	-ms-overflow-style: scrollbar;
+	padding: 0;
+	margin: 0;
 }
