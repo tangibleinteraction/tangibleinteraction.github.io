@@ -26,6 +26,12 @@
 #main {
 	width: 100%;
 	padding-bottom: 2em;
+
+	@include breakpoint(medium) {
+		justify-self: center;
+		width: auto;
+	}
+
 }
 
 .container {
@@ -33,6 +39,10 @@
 
 	@include breakpoint(large) {
 		flex-direction: column;
+	}
+
+	@include breakpoint(medium) {
+		max-width: _size(column-width-mobile) + _size(side-margin) * 2;
 	}
 }
 
@@ -55,7 +65,7 @@
 	}
 
 	@include breakpoint(medium) {
-		max-width: auto;
+		max-width: _size(column-width-mobile);
 		min-width: auto;
 		width: 100%;
 	}

@@ -44,6 +44,7 @@
 			@include breakpoint(medium) {
 				width: 100%;
 				min-width: auto;
+				max-width: _size(column-width-mobile);
 				max-height: auto;
 				font-size: 36px;
 				height: auto;
@@ -63,7 +64,7 @@
 
 			@include breakpoint(medium) {
 				width: 100%;
-				max-width: auto;
+				max-width: _size(column-width-mobile);
 				min-width: auto;
 				display: flex;
 				margin-bottom: 44px;
@@ -106,7 +107,7 @@
 			@include breakpoint(medium) {
 				width: 100%;
 				min-width: auto;
-				max-width: _size(sidebar-width);
+				max-width: _size(column-width-mobile);
 				max-height: auto;
 				font-size: 60px;
 			}
@@ -129,7 +130,9 @@
 			}
 
 			@include breakpoint(medium) {
-				max-width: _size(sidebar-width-alt);
+				min-width: auto;
+				max-width: _size(column-width-mobile);
+				width: 100%;
 			}
 
 			@include breakpoint(small) {}
@@ -144,6 +147,12 @@
 				font-size: _font(medium-size);
 				margin: 0px;
 				padding-bottom: 4px;
+			}
+
+			@include breakpoint(medium) {
+				div {
+					max-width: _size(column-width-mobile);
+				}
 			}
 		}
 	}

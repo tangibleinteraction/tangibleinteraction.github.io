@@ -8,4 +8,9 @@
 
 #wrapper {
 	display: flex;
+
+	@include breakpoint(medium) {
+		justify-content: center;
+	}
+
 }

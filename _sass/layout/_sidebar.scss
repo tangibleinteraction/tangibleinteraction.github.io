@@ -49,7 +49,7 @@ nav {
 	}
 
 	@include breakpoint(medium) {
-		margin-right: _size(side-margin);
+		margin-right: _size(column-width-mobile);
 		min-width: auto;
 		max-width: auto;
 		width: auto;
@@ -80,6 +80,8 @@ nav {
 		}
 
 		&.sidebar-bottom-menu {
+			min-width: _size(sidebar-width);
+
 			@include breakpoint(large) {
 				width: 100%;
 				text-align: center;

@@ -21,9 +21,7 @@
     }
 
     @include breakpoint(medium) {
-      // width: 100%;
-      // min-width: auto;
-      // max-width: none;
+      max-width: _size(column-width-mobile);
     }
 
     a {
@@ -73,7 +71,7 @@
 
     @include breakpoint(medium) {
       min-width: auto;
-      max-width: auto;
+      max-width: _size(column-width-mobile);
       width: 100%;
     }
   }
@@ -89,7 +87,7 @@
 
     @include breakpoint(medium) {
       min-width: auto;
-      max-width: auto;
+      max-width: _size(column-width-mobile);
       width: 100%;
     }
 
@@ -263,8 +261,6 @@
       p {
         margin: 0px;
       }
-
-      @include breakpoint(medium) {}
     }
   }
 }
