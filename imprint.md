@@ -11,10 +11,13 @@ Friedrich-List-Platz 1\
 01069 Dresden, Germany
 
 **Online Editorial Team:**\
-Prof. Joanna Dauner, Prof. Dr. Dietrich Kammer, and others
+Joanna Dauner, Dietrich Kammer, and others
 
-**Design & Implementation:**\
-Prof. Dr. Dietrich Kammer, Jonas Lorenz, and others
+**Design:**\
+Joanna Dauner
+
+**Implementation:**\
+Dietrich Kammer, Jonas Lorenz, and others
 
 ---
 

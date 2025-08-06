@@ -233,6 +233,7 @@
       h3 {
         font-size: _font(demi-size);
         font-weight: _font(weight-bold);
+        line-height: 1.2;
       }
 
       @include breakpoint(medium) {
