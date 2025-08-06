@@ -93,6 +93,16 @@
       width: 100%;
     }
 
+    p {
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-word;
+      -ms-hyphens: auto;
+      -moz-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto;
+    }
+
     h2 {
       font-family: _font(family);
       font-size: inherit;
