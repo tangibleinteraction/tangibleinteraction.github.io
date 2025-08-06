@@ -1,10 +1,10 @@
-# 🚀 How to Create a Project Page
+# How to Create a Project Page
 
 Welcome! This guide explains how to build your own project page for the site. Follow these steps to get started:
 
 ---
 
-## 🧩 Step 1: Copy the Template Folder
+## Step 1: Copy the Template Folder
 
 - Go to `assets/template/`
 - Copy the folder named `template_project` to the main project directory in `projects/.../<your-project>`.
@@ -12,7 +12,7 @@ Welcome! This guide explains how to build your own project page for the site. Fo
 
 ---
 
-## 📸 Step 2: Insert Your Images
+## Step 2: Insert Your Images
 
 - Add all your project images into the new folder
 - Delete the default `echoes.jpg` image
@@ -20,7 +20,7 @@ Welcome! This guide explains how to build your own project page for the site. Fo
 
 ---
 
-## 🖋 Step 3: Edit the Template Metadata
+## Step 3: Edit the Template Metadata
 
 At the top of the `index.md` file, update the front matter:
 

@@ -39,8 +39,6 @@
       display: flex;
       // width: 100%;
       background-color: _palette(fg-light);
-
-      img {}
     }
   }
 }
@@ -93,6 +91,16 @@
       min-width: auto;
       max-width: auto;
       width: 100%;
+    }
+
+    p {
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-word;
+      -ms-hyphens: auto;
+      -moz-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto;
     }
 
     h2 {
@@ -233,6 +241,7 @@
       h3 {
         font-size: _font(demi-size);
         font-weight: _font(weight-bold);
+        line-height: 1.2;
       }
 
       @include breakpoint(medium) {
