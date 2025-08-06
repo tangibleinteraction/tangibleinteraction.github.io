@@ -18,61 +18,55 @@
 
             {% include header.html %}
 
-            <div class="w-full px-4">                
-                
-                <h2 class="medium-subheading">[{{ page.title }}]</h2>
+            <div class="main">                
 
-                <div class="flex h-screen">
+                <div class="container">
                     
                     {% include sidebar.html %}
 
-                    <main class="flex-1 flex flex-col gap-6 margin-right">
-                        <div class="flex justify-center mb-6">
-                            <div class="w-full max-w-6xl mb-[60px]!">
-                                <div class="ml-[12vw]!">
-                                    {{ content }}
-                                </div>
-                            </div>
+                    <div class="project-list">
+                        
+                        <div class="project-teaser">
+                            {{ content }}
                         </div>
-                        <div class="flex justify-center w-full">
-                            <div class="w-full max-w-6xl mx-auto flex flex-col gap-4">
+                
+                        <div class="project-table">
+                            <div class="project-table-entries">
                                 {% for project in site.pages %}
                                     {% assign projectsname = page.title | downcase %}
                                     {% if project.url contains projectsname and project.url != page.url %}
 
-                                        <div class="flex gap-6 p-4 project-card">
+                                        <div class="project-card">
                                             <!-- Image (fixed square) -->
-                                            <div class="lg:w-[330px] lg:h-[330px] flex-shrink-0 sm:w-[280px] sm:h-[280px] md:w-[240px] md:h-[240px]">
-                                                <a href="{{ project.url }}"><img src="{{ project.teaser | prepend: project.url | replace: 'index.html', '' }}" alt="Project image" class="w-full h-full object-cover" /></a>
+                                            <div class="project-card-image">
+                                                <a href="{{ project.url }}"><img src="{{ project.teaser | prepend: project.url | replace: 'index.html', '' }}" alt="Project image"/></a>
                                             </div>
-
+                                            
                                             <!-- Title -->
-                                            <div class="flex items-start pt-2 w-4/12 mt-2!">
+                                            <div class="project-card-title">
                                                 <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
                                             </div>
 
-                                            <!-- Author info (top) + Description (bottom) -->
-                                            <div class="flex flex-col justify-between w-5/12 mt-2! project-text">
-                                                <div>
-                                                    <p>
-                                                        {% assign authors = project.authors | split: ', ' %}
-                                                        {% for author in authors %}
-                                                        <span class="block mb-[20px]!">{{ author }}</span>
-                                                        {% endfor %}
-                                                    </p>
-                                                </div>
-                                                <div>
-                                                    <p class="mb-[0px]!">
-                                                        {{ project.description }}
-                                                    </p>
-                                                </div>
+                                            <div  class="project-card-authors">
+                                                <p>
+                                                    {% assign authors = project.authors | split: ', ' %}
+                                                    {% for author in authors %}
+                                                    <span class="block">{{ author }}</span>
+                                                    {% endfor %}
+                                                </p>
+                                            </div>
+
+                                            <div class="project-text">
+                                                <p>
+                                                    {{ project.description }}
+                                                </p>
                                             </div>
                                         </div>
                                     {% endif %}
                                 {% endfor %}
                             </div>
                         </div>
-                    </main>
+                    </div>
                 </div>
             </div>
         </div>

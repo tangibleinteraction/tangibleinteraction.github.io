@@ -22,7 +22,7 @@
   {% for page in pages %}
    {
       "title": "{{ page.title | escape }}",
-      "terms": "{{ page.title | escape }}",
+      "terms": "{{ page.title | escape }} {{ page.authors | split: ',' | join: '' }}",
       "url": "{{ page.url | prepend: site.baseurl | remove_last: ".html" }}"
    },
   {% endfor %}

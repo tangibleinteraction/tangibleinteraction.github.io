@@ -18,43 +18,32 @@
 
             {% include header.html %}
 
-            <div class="w-full px-4">                
+            <div class="container">
                 
-                <h2 class="medium-subheading">{{ page.title }}</h2>
+                {% include sidebar.html %}
 
-                <div class="flex h-screen">
+                <div class="project-container">
                     
-                    {% include sidebar.html %}
+                    <div class="project-images">
+                        <img src="{{ page.teaser | prepend: project.url | replace: 'index.html', '' }}" alt="Project image" class="project-image"/>
 
-                    <main class="flex flex-1 justify-center">
-                        <div class="flex gap-6 w-full max-w-6xl">
-                            <div class="w-1/2">
-                                <img src="{{ page.teaser | prepend: project.url | replace: 'index.html', '' }}" alt="Project image" class="w-full object-cover mb-8!"/>
-
-                                {% for image in page.images %}
-                                    {% unless image.space-above == null or image.space-above == "" %}
-                                        <div class="lg:h-{{ image.space-above }}!"></div>
-                                    {% endunless %}
-                                    <img src="{{ image.url | prepend: project.url | replace: 'index.html', '' }}" alt="{{ image.image }}" class="w-full object-cover mb-8!"/>
-                                    {% unless image.space-below == null or image.space-below == "" %}
-                                        <div class="lg:h-{{ image.space-below }}!"></div>
-                                    {% endunless %}
-                                {% endfor %}
-                            </div>
-                            <div class="w-1/2 project-contents">
-                                {% assign authors = page.authors | split: ', ' %}
-                                {% for author in authors %}
-                                    <span class="block mb-[20px]!">{{ author }}</span>
-                                {% endfor %}
-                                <p class="mt-[60px]!">
-                                    <strong>{{ page.description }}</strong>
-                                </p>
-                                {{ content }}
-                                <div class="h-22!"></div>
-                            </div>
-                        </div>                        
-                    </main>
-                </div>                
+                        {% for image in page.images %}
+                        {% unless image.space-above == null or image.space-above == "" %}
+                            <div class="lg:h-{{ image.space-above }}!"></div>
+                            {% endunless %}
+                            <img src="{{ image.url | prepend: project.url | replace: 'index.html', '' }}" alt="{{ image.image }}" class="project-image"/>
+                            {% unless image.space-below == null or image.space-below == "" %}
+                                <div class="lg:h-{{ image.space-below }}!"></div>
+                            {% endunless %}
+                        {% endfor %}
+                    </div>
+                    <div class="project-contents">
+                        <p>
+                            <strong>{{ page.description }}</strong>
+                        </p>
+                        {{ content }}
+                    </div>
+                </div>
             </div>
         </div>
     </div>

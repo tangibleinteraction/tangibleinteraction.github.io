@@ -9,7 +9,6 @@
 	ol {
 		list-style: decimal;
 		margin: 0 0 0 0;
-		padding-left: 1.75em;
 
 		li {
 			padding-left: 0.25em;
@@ -23,7 +22,6 @@
 	ul {
 		list-style: disc;
 		margin: 0 0 0 0;
-		padding-left: 1em;
 
 		li {
 			padding-left: 0.5em;
@@ -191,10 +189,6 @@
 				vertical-align: middle;
 
 				> .page {
-					@include vendor('transition', (
-						'background-color #{_duration(transition)} ease-in-out',
-						'color #{_duration(transition)} ease-in-out'
-					));
 					border-bottom: 0;
 					border-radius: _size(border-radius);
 					display: inline-block;
