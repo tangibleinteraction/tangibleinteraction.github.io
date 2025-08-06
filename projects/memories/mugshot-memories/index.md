@@ -5,6 +5,8 @@ authors: Amelie Gruhn, Gabriel Pechstein
 description: Mugshot Memories is an interactive paper model with Arduino that lets users build faces by pressing buttons to combine different features. Playful and intuitive, it explores memory, identity, and creativity – designed especially for children.
 teaser: mugshot-memories-2.jpg
 images:
+  - image: Final prototype side view
+    url: mugshot-memories-3.jpg
   - image: Final prototype
     url: mugshot-memories-1.jpg
 ---
