@@ -29,7 +29,7 @@
 			letter-spacing: -2px;
 			border-top: solid 2px _palette(fg);
 			border-bottom: solid 2px _palette(fg);
-			min-width: _size(sidebar-width);
+			// min-width: _size(sidebar-width);
 			max-width: _size(sidebar-width);
 			height: _size(header-height);
 			margin-right: _size(column-gap);
@@ -53,7 +53,7 @@
 		}
 
 		#secretmenu {
-			min-width: _size(column-width-alt);
+			// min-width: _size(column-width-alt);
 			max-width: _size(column-width-alt);
 			font-size: _font(medium-size);
 			display: none;
@@ -120,16 +120,17 @@
 			font-weight: _font(weight-bold);
 			font-size: _font(large-size);
 			line-height: 100%;
-			letter-spacing: 0px;
-			
+			letter-spacing: 0px;			
 
 			@include breakpoint(large) {
 				margin-bottom: 0.2em;
 				font-size: _font(semi-size);
 				padding-bottom: 22px;
+				width: _size(column-width-alt);
 			}
 
 			@include breakpoint(medium) {
+				max-width: _size(sidebar-width-alt);
 			}
 
 			@include breakpoint(small) {}

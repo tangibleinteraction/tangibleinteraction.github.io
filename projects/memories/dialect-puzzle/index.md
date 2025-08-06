@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Dialect Puzzle
-authors:  Caro, Tatyana, Lilia
+authors:  Caroline Kortrijk, Tatyana Vervekina, Lilia Schneider
 description: Dialect Puzzle brings the diversity of German dialects to life. Children playfully discover language evolution, break down prejudices, and experience how vibrant and valuable dialects are.
 teaser: teaser.png
 images:
