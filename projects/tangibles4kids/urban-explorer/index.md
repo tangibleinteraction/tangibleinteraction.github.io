@@ -165,7 +165,7 @@ Context-sensitive questioning (e.g., why electricity costs money) might provide 
 Conclusion
 Many children only experience electricity in their daily lives (lights, appliances) and don't grasp it as a technical concept. A large proportion of children don't understand that electricity is generated through energy conversion. However, such a fundamental understanding is a prerequisite for making informed decisions later on, for example, regarding sustainable energy consumption.
 
-Qualter. 2016. A source of power: Young children's understanding of where electricity comes from, in: https://www.tandfonline.com/doi/epdf/10.1080/0263514950130207?needAccess=true (10/07/2025)
+Qualter. 2016. A source of power: Young children's understanding of where electricity comes from, in: [https://www.tandfonline.com/doi/epdf/10.1080/0263514950130207?needAccess=true](https://www.tandfonline.com/doi/epdf/10.1080/0263514950130207?needAccess=true) (10/07/2025)
 
 The paper "Young children’s ideas of energy compared with the scientific energy concept" by Franziska Detken (2023) investigates how children aged 6 to 8 (first and second grade in Switzerland) think about the concept of energy—before they receive formal science instruction on it.
 Study Aim
@@ -205,7 +205,7 @@ In primary school, energy should initially be taught in a context-related and il
 Conclusion
 Children develop intuitive, context-bound models of energy even before formal schooling. These can be systematically identified and used to develop age-appropriate educational offerings. The developed category system provides a tool for further research and diagnostics.
 
-Detken, 2023, in: https://www.tandfonline.com/doi/abs/10.1080/0263514950130207 (10/07/2025, 23:07)
+Detken, 2023, in: [https://www.tandfonline.com/doi/abs/10.1080/0263514950130207](https://www.tandfonline.com/doi/abs/10.1080/0263514950130207) (10/07/2025, 23:07)
 
 
 According to the article "A source of power: Young children's understanding of where electricity comes from" by Anne Qualter, children have a very vague understanding of where electricity comes from and how it reaches our daily lives. Many associate electricity with visible phenomena like lightning or electric fences; concrete knowledge about power plants, electricity grids, or renewable energies is rare and often inaccurate. Conversations with our target group in kindergarten also confirmed this: even frequently seen objects like wind turbines are rarely linked to electricity generation.
