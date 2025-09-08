@@ -1,8 +1,8 @@
 ---
 layout: project
-title: Silly Season
+title: Sommerloch
 authors: Héléa Kuschnig, Christina Epple
-description: The interactive installation Silly Season awakens the collective memory of a visit to the public pool. Lifting the fries triggers sound that, together with the design, evoke nostalgic memories of kiosk fries and carefree summer days.
+description: The interactive installation Sommerloch awakens the collective memory of a visit to the public pool. Lifting the fries triggers sound that, together with the design, evoke nostalgic memories of kiosk fries and carefree summer days.
 teaser: Teaser.JPG
 images:
   - image: Concept Sketch
@@ -23,7 +23,7 @@ What memories does it evoke? The public outdoor pool of childhood. From small to
 
 ## Interaction Concept
 
-This interactive installation takes the shape of a bowl of fries, just like the ones from the poolside kiosk. Three fries stick out and can be lifted. Each movement triggers a distinct sound, evoking shared memories of a day at the public pool, capturing the atmosphere and sensory experience of those timeless summer moments. As more fries are removed, multiple soundscapes begin to overlap, creating a layered auditory memory of summer: the rustling of trees, distant volleyball games, the sharp trill of a whistle, or the echo of underwater acoustics. Together, they form a sound collage of a day at the pool.
+This interactive installation (Sommerloch, English: Silly Season) takes the shape of a bowl of fries, just like the ones from the poolside kiosk. Three fries stick out and can be lifted. Each movement triggers a distinct sound, evoking shared memories of a day at the public pool, capturing the atmosphere and sensory experience of those timeless summer moments. As more fries are removed, multiple soundscapes begin to overlap, creating a layered auditory memory of summer: the rustling of trees, distant volleyball games, the sharp trill of a whistle, or the echo of underwater acoustics. Together, they form a sound collage of a day at the pool.
 
 ## Technical Implementation
 
