@@ -2,29 +2,42 @@ $breakpoints: (
 	large: '(max-width: 1432px)',
 	medium: '(max-width: 840px)',
 	small: '(max-width: 736px)',
-	) !global;
+) !global;
 
+$breakpoints-up: (
+  	large: '(min-width: 1433px)',
+  	medium: '(min-width: 841px)',
+  	small: '(min-width: 737px)'
+) !global;
+
+/// Wraps @content in a @media block using a given breakpoint.
+/// @param {string} $breakpoint Breakpoint.
+/// @param {map} $queries Additional queries.
 @mixin breakpoint($breakpoint: null, $queries: null) {
 
 	$query: 'screen';
 
 	// Breakpoint.
 	@if $breakpoint and map-has-key($breakpoints, $breakpoint) {
-		$query: $query + ' and ' + map-get($breakpoints, $breakpoint
-		);
-}
+		$query: $query + ' and ' + map-get($breakpoints, $breakpoint);
+	}
 
-// Queries.
-@if $queries {
-	@each $k, $v in $queries {
-		$query: $query + ' and (' + $k + ':' + $v + ')';
+	// Queries.
+	@if $queries {
+		@each $k, $v in $queries {
+			$query: $query + ' and (' + $k + ':' + $v + ')';
+		}
+	}
+
+	@media #{$query} {
+		@content;
 	}
 }
 
-@media #{$query} {
-	@content;
-}
-
+@mixin breakpoint-up($breakpoint) {
+  @media screen and #{map-get($breakpoints-up, $breakpoint)} {
+    @content;
+  }
 }
 
 /// Makes an element's :before pseudoelement a FontAwesome icon.
@@ -91,27 +104,44 @@ $svg: str-replace($svg, ';', '%3B');
 
 }
 
-/// Wraps @content in a @media block using a given breakpoint.
-/// @param {string} $breakpoint Breakpoint.
-/// @param {map} $queries Additional queries.
-@mixin breakpoint($breakpoint: null, $queries: null) {
+$heights: (
+  0: 0,
+  1: 1rem,
+  2: 2rem,
+  3: 3.25rem,
+  4: 4.5rem,
+  5: 5.75rem,
+  6: 7rem,
+  7: 8.5rem,
+  8: 10rem,
+  9: 11.75rem,
+  10: 13.5rem,
+  11: 15.5rem,
+  12: 17.5rem,
+  13: 19.75rem,
+  14: 22rem,
+  15: 24.5rem,
+  16: 27rem,
+  17: 30rem,
+  18: 33rem,
+  19: 36.5rem,
+  20: 40rem,
+  21: 43.75rem,
+  22: 47.5rem,
+  23: 51.5rem,
+  24: 55.5rem,
+  25: 59.75rem,
+  26: 64rem,
+  27: 68.5rem,
+  28: 73rem,
+  29: 77.75rem,
+  30: 82.5rem
+);
 
-	$query: 'screen';
-
-	// Breakpoint.
-	@if $breakpoint and map-has-key($breakpoints, $breakpoint) {
-		$query: $query + ' and ' + map-get($breakpoints, $breakpoint);
-	}
-
-	// Queries.
-	@if $queries {
-		@each $k, $v in $queries {
-			$query: $query + ' and (' + $k + ':' + $v + ')';
-		}
-	}
-
-	@media #{$query} {
-		@content;
-	}
-
+@include breakpoint-up(large) {
+  @each $name, $value in $heights {
+    .lg\:h-#{$name}\! {
+      height: $value !important;
+    }
+  }
 }

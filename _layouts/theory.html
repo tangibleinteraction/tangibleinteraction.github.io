@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+{% include head.html %}
+
+<body>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+
+            {% include header.html %}
+
+            <div class="main">
+
+                <div class="container">
+
+                    {% include sidebar.html %}
+
+                    <div class="project-list">
+
+                        <div class="project-teaser">
+                            {{ content }}
+                        </div>
+
+                        <div class="project-table">
+                            <div class="project-table-entries">
+                                {% for blog in site.pages %}
+                                {% assign blogname = page.title | downcase %}
+                                {% if blog.url contains blogname and blog.url != page.url %}
+
+                                <div class="blog-card">
+                                    <div class="blog-card-title">
+                                        <h3><a href="{{ blog.url }}">{{ blog.title }}</a></h3>
+                                    </div>
+
+                                    <div class="blog-card-meta">
+                                        {% if blog.authors %}
+                                        <div class="blog-card-authors">
+                                            <p>
+                                                {% assign authors = blog.authors | split: ", " %}
+                                                {% for author in authors %}
+                                                <span class="block">{{ author }}</span>
+                                                {% endfor %}
+                                            </p>
+                                        </div>
+                                        {% endif %}
+
+                                        <div class="blog-text">
+                                            <p>{{ blog.description }}</p>
+                                        </div>
+                                        <div class="blog-card-date">
+                                            <p>{{ blog.date | date: "%d.%m.%Y" }}</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>
