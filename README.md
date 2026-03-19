@@ -35,10 +35,6 @@ You can preview the site locally by following these steps:
 
 3. **View the site** at `http://localhost:4000`
 
-### Tailwind
-
-This site uses [Tailwind](https://tailwindcss.com/) for easy styling.
-
 ## Theme Credits
 
 This website is based on the following theme. See links for more details.
@@ -47,13 +43,11 @@ This website is based on the following theme. See links for more details.
 
 A Jekyll version of the "Editorial" theme by [HTML5 UP](https://html5up.net/). Find the original here. [https://github.com/andrewbanchich/editorial-jekyll-theme](https://github.com/andrewbanchich/editorial-jekyll-theme).
 
-![Editorial Theme](assets/images/screenshot.jpg "Editorial Theme")
-
 ### Credits
 
 Original README from HTML5 UP:
 
-```
+```text
 Editorial by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
