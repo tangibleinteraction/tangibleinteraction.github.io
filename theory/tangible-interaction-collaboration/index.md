@@ -1,5 +1,5 @@
 ---
-title: Designing for Shared Action: How Tangible Interaction Supports Collaboration
+title: Designing for Shared Action&colon; How Tangible Interaction Supports Collaboration
 authors: Laura Richter, Josina Andrees, Frederic Schneider
 date: 2026/04/01
 description: How tangible interaction supports collaboration through visibility, shared action, and design. 
@@ -7,7 +7,7 @@ layout: blog
 order: 2
 ---
 
-_“with tangible interfaces we act within and touch the interface itself”_  
+_“With tangible interfaces we act within and touch the interface itself.”_
 (Eva Hornecker & Jacob Buur)
 
 Physical artifacts can play an important role in collaborative interaction. Unlike screens, keyboards, and mice, tangible and spatial interfaces create a shared space of action that several people can perceive and manipulate together. They therefore matter not only for individual usability, but also for social coordination. At the core of this idea is a simple observation: collaboration becomes easier when actions, intentions, and system states are visible to others. Tangible interaction moves activity into objects, movements, and spatial arrangements, turning individual action into part of a shared interaction setting.
@@ -35,6 +35,7 @@ At the same time, interaction is influenced by the social situation in which the
 A common design mistake is to assume that simultaneous access automatically creates collaboration. In practice, many systems are technically interactive for more than one person, but still structured around single-user logic.
 
 Several problems can emerge:
+
 - interaction may become hard to coordinate,
 - individual users may dominate,
 - people may act in parallel without truly collaborating,
@@ -48,6 +49,7 @@ These problems show that collaboration does not arise automatically from technic
 For this reason, social interaction should be treated as a central design concern. Systems intended for shared use need to be designed not only for individual operation, but for joint action.
 
 This involves several principles:
+
 - support multiple users through distributed access and shared visibility,
 - keep states and action histories legible,
 - use spatial arrangement to structure cooperation,
@@ -66,9 +68,9 @@ An important open question remains: how much structure is needed to support coll
 
 ## References
 
-Heath, C., vom Lehn, D. & Osborne, J. (2005): *Interaction and interactives: collaboration and participation with computer-based exhibits*. *Public Understanding of Science, 14*, 91–101. Available at: `journals.sagepub.com/doi/abs/10.1177/0963662505047343` (accessed 01.04.2026).
+Heath, C., vom Lehn, D. & Osborne, J. (2005): _Interaction and interactives: collaboration and participation with computer-based exhibits_. Public Understanding of Science, 14, 91–101. Available at: <https://journals.sagepub.com/doi/abs/10.1177/0963662505047343> (accessed 01.04.2026).
 
-Hespanhol, L. & Dalsgaard, P. (2017): *Social Interaction Design Patterns for Urban Media Architecture*. In: *INTERACT 2017*. Available at: `peterdalsgaard.com/documents/publications/Hespanhol%20-%20Social%20Interaction%20Patterns.pdf` (accessed 01.04.2026).
+Hespanhol, L. & Dalsgaard, P. (2017): *Social Interaction Design Patterns for Urban Media Architecture*. In: *INTERACT 2017*. Available at: <https://peterdalsgaard.com/documents/publications/Hespanhol%20-%20Social%20Interaction%20Patterns.pdf> (accessed 01.04.2026).
 
 Hornecker, E. & Buur, J. (2006): *Getting a Grip on Tangible Interaction: A Framework on Physical Space and Social Interaction*. In: *Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI 2006)*. Available at: `ehornecker.de/Papers/FrameworkCHI.pdf` (accessed 01.04.2026).
 
