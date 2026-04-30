@@ -57,11 +57,7 @@ In the list of `images` you have to add an image caption (for the `alt` text). B
 
 Inside index.md, you can add your content using strict Markdown (or Kramdown) syntax:
 
-```md
-### Project Overview
-
-This text appears on the right side of the project page. You can adjust the image positioning of the images on the left side (which is generated automatically from the list in the front matter above) by applying `space-above` and `space-below` to match this text.
-```
+The content area of thhe file appears on the right side of the project page. You can adjust the image positioning of the images on the left side (which is generated automatically from the list in the front matter above) by applying `space-above` and `space-below` to match this text.
 
 Note that the author names and description text is automatically added as the first content, along with the teaser image.
 
