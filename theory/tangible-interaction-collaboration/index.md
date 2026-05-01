@@ -70,15 +70,15 @@ An important open question remains: how much structure is needed to support coll
 
 Heath, C., vom Lehn, D. & Osborne, J. (2005): _Interaction and interactives: collaboration and participation with computer-based exhibits_. Public Understanding of Science, 14, 91–101. Available at: <https://journals.sagepub.com/doi/abs/10.1177/0963662505047343> (accessed 01.04.2026).
 
-Hespanhol, L. & Dalsgaard, P. (2017): *Social Interaction Design Patterns for Urban Media Architecture*. In: *INTERACT 2017*. Available at: <https://peterdalsgaard.com/documents/publications/Hespanhol%20-%20Social%20Interaction%20Patterns.pdf> (accessed 01.04.2026).
+Hespanhol, L. & Dalsgaard, P. (2017): _Social Interaction Design Patterns for Urban Media Architecture_. In: INTERACT 2017. Available at: <https://peterdalsgaard.com/documents/publications/Hespanhol%20-%20Social%20Interaction%20Patterns.pdf> (accessed 01.04.2026).
 
-Hornecker, E. & Buur, J. (2006): *Getting a Grip on Tangible Interaction: A Framework on Physical Space and Social Interaction*. In: *Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI 2006)*. Available at: `ehornecker.de/Papers/FrameworkCHI.pdf` (accessed 01.04.2026).
+Hornecker, E. & Buur, J. (2006): _Getting a Grip on Tangible Interaction: A Framework on Physical Space and Social Interaction_. In: Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI 2006). Available at: <https://ehornecker.de/Papers/FrameworkCHI.pdf> (accessed 01.04.2026).
 
-Marshall, P., Price, S. & Rogers, Y. (2003): *Conceptualising tangibles to support learning*. In: *Proceedings of IDC 2003*. Available at: `dl.acm.org/doi/epdf/10.1145/953536.953551` (accessed 01.04.2026).
+Marshall, P., Price, S. & Rogers, Y. (2003): _Conceptualising tangibles to support learning_. In: Proceedings of IDC 2003. Available at: <https://dl.acm.org/doi/epdf/10.1145/953536.953551> (accessed 01.04.2026).
 
-Reyes-Flores, A., Mezura-Godoy, C. & Benítez-Guerrero, E. (2019): *Understanding social interactions for the design of tangible user interfaces*. In: *Proceedings of CLIHC ’19*. Available at: `dl.acm.org/doi/epdf/10.1145/3358961.3358968` (accessed 01.04.2026).
+Reyes-Flores, A., Mezura-Godoy, C. & Benítez-Guerrero, E. (2019): _Understanding social interactions for the design of tangible user interfaces_. In: Proceedings of CLIHC ’19. Available at: <https://dl.acm.org/doi/epdf/10.1145/3358961.3358968> (accessed 01.04.2026).
 
-Yuill, N. & Rogers, Y. (2012): *Mechanisms for collaboration: A design and evaluation framework for multi-user interfaces*. *ACM Transactions on Computer-Human Interaction, 19*(1). Available at: `dl.acm.org/doi/10.1145/2147783.2147784` (accessed 01.04.2026).
+Yuill, N. & Rogers, Y. (2012): _Mechanisms for collaboration: A design and evaluation framework for multi-user interfaces_. ACM Transactions on Computer-Human Interaction, 19(1). Available at: <https://dl.acm.org/doi/10.1145/2147783.2147784> (accessed 01.04.2026).
 
 ## Disclosure Statement
 
