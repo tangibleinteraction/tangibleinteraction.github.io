@@ -9,12 +9,12 @@ images:
   - image: Figure 1&colon; Neural correlates of handwriting and typewriting by Marano et al. (2025)
     url: writing_vs_typing.jpg
     space-above: 23
-  - image: Figure 1&colon; TUI setup by Hany (2023)
+  - image: Figure 2&colon; TUI setup by Hany (2023)
     url: hany.png
     space-above: 8
-  - image: Figure 2&colon; Results of TUI study by De Raffaele et al. (2018)
+  - image: Figure 3&colon; Results of TUI study by De Raffaele et al. (2018)
     url: deraffaele2018_results.png
-  - image: Figure 3&colon; reacTIVision diagram by Kaltenbrunner & Bencina (2007)
+  - image: Figure 4&colon; reacTIVision diagram by Kaltenbrunner & Bencina (2007)
     url: reactivision.jpeg
     space-above: 17
 ---
