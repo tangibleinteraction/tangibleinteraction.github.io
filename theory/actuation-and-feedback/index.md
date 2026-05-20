@@ -5,6 +5,16 @@ date: date in 2026/05/04 format such as 2026/03/17
 description: Actuation and feedback create a bidirectional link between digital data and physical matter, enabling intuitive interactions.
 layout: blog
 order: 3
+images:
+  - image: Figure 1&colon; Lumen Shape Display (photograph by Makoto Fujii, courtesy AXIS magazine)
+    url: Lumen.png
+    space-above: 25
+  - image: Figure 2&colon; Topobo – Kinectic Toy that records and replays movement (adapted from [Raffle et. al 2004])
+    url: Topobo.jpg
+  - image: Figure 3&colon; TangibleCircuits (adapted from [Davis et. al 2020])
+    url: TangibleCircuits.jpg
+  - image: Figure 4&colon; Inflatable Mouse (adapted from [Kim et. al 2008])
+    url: TangibleCircuits.jpg
 ---
 
 _"Recently, a growing number of de-signers and researchers have been taking the next logical step: creating interfaces where physical, tangible elements are not merely dynamically coupled to the digital attributes and information, but are themselves dynamic, self-reconfigurable devices that can change their physical prop-erties depending on the state of the interfaces, the user, or the environment."_
@@ -30,7 +40,7 @@ Actuation and feedback transform TUIs from a "one-way street" into a **bidirecti
 ## Forms of Feedback
 
 TUIs provide a **multisensorially rich experience** through various feedback forms (Krestanova et al. 2021):
-- **Visual Feedback**: Projections or lights on objects to signal state. Examples: The **RGBH model** (Red, Green, Blue + Height) in shape displays like Lumen, or LEDs on a salt-analysis table that turn green for correct actions and red for errors.
+- **Visual Feedback**: Projections or lights on objects to signal state. Examples: The **RGBH model** (Red, Green, Blue + Height) in shape displays like Lumen (Poupyrev et al. 2004), or LEDs on a salt-analysis table that turn green for correct actions and red for errors.
 - **Auditive Feedback**: Sound or voice cues to guide interaction. Examples: TangibleCircuits providing **voice annotations** for blind users, or "sonic sculptures" that react physically to environmental sounds.
 - **Haptic Feedback**: Physical sensations like **vibration**, **resistance**, or changes in **texture** and **firmness**. Examples: The Inflatable Mouse, which simulates a heartbeat to create tension during a game, or the SPATA calipers that provide positional feedback through motorized sliders (Rasmussen et al. 2012).
 - **Kinetic Feedback**: Information conveyed through the **parameters of motion**. Examples: Pinwheels where rotation speed represents network traffic flow, or the BMW museum sculpture, which uses the vertical movement of 714 metal spheres to create fluid 3D forms.
@@ -56,14 +66,19 @@ The integration of **actuation** and **feedback** is the **"next frontier"** for
 
 ## References
 
-Poupyrev, I., Nashida, T., & Okabe, M. (2007). Actuation and tangible user interfaces: The Vaucanson duck, robots, and shape displays. Proceedings of TEI 2007, 205–212.
-
-Rasmussen, M. K., Pedersen, E. W., Petersen, M. G., & Hornbæk, K. (2012). Shape-changing interfaces: A review of the design space and open research questions. Proceedings of CHI 2012, 735–744.
+Davis, J. U., Wu, T.-Y., Shi, B., Lu, H., Panotopoulou, A., Whiting, E., & Yang, X.-D. (2020). TangibleCircuits: An interactive 3D printed circuit education tool for people with visual impairments. Proceedings of CHI 2020, 1–13
 
 Hornecker, E. (2004). Tangible User Interfaces als kooperationsunterstützendes Medium. Dissertation, Universität Bremen.
 
+Kim, S., Kim, H., Lee, B., Nam, T.-J., & Lee, W. (2008). Inflatable mouse: Volume-adjustable mouse with air-pressure-sensitive input and haptic feedback. Proceedings of CHI 2008, 211–214
+
 Krestanova, A., Cerny, M., & Augustynek, M. (2021). Review: Development and Technical Design of Tangible User Interfaces in Wide-Field Areas of Application. Sensors (Basel, Switzerland), 21(13), 4258. https://doi.org/10.3390/s21134258
 
+Poupyrev, I., Nashida, T., Maruyama, S., Rekimoto, J., & Yamaji, Y. (2004). Lumen: Interactive visual and shape display for calm computing. SIGGRAPH '04 Conference Abstracts and Applications
+
+Poupyrev, I., Nashida, T., & Okabe, M. (2007). Actuation and tangible user interfaces: The Vaucanson duck, robots, and shape displays. Proceedings of TEI 2007, 205–212.
+
+Rasmussen, M. K., Pedersen, E. W., Petersen, M. G., & Hornbæk, K. (2012). Shape-changing interfaces: A review of the design space and open research questions. Proceedings of CHI 2012, 735–744.
 
 ## Disclosure Statement
 
