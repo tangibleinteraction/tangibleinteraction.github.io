@@ -8,13 +8,16 @@ order: 3
 images:
   - image: Figure 1&colon; Lumen Shape Display (photograph by Makoto Fujii, courtesy AXIS magazine)
     url: Lumen.png
-    space-above: 25
+    space-above: 8
   - image: Figure 2&colon; Topobo – Kinectic Toy that records and replays movement (adapted from [Raffle et. al 2004])
     url: Topobo.jpg
+    space-above: 5
   - image: Figure 3&colon; TangibleCircuits (adapted from [Davis et. al 2020])
-    url: TangibleCircuits.jpg
+    url: TangibleCircuits.png
+    space-above: 4
   - image: Figure 4&colon; Inflatable Mouse (adapted from [Kim et. al 2008])
-    url: TangibleCircuits.jpg
+    url: Mouse.png
+    space-above: 4
 ---
 
 _"Recently, a growing number of de-signers and researchers have been taking the next logical step: creating interfaces where physical, tangible elements are not merely dynamically coupled to the digital attributes and information, but are themselves dynamic, self-reconfigurable devices that can change their physical prop-erties depending on the state of the interfaces, the user, or the environment."_
