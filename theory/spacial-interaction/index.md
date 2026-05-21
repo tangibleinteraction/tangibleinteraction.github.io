@@ -31,21 +31,12 @@ Space-centered interaction leads with the question: "Where am I in the context o
 Another form of spatial interaction is object-centered interaction. In this case, the question is: “How do I relate to this device?” This concerns the relationship between discrete entitities, such as between a person, a device, and an object. The objects relate to one another across five proxemic dimensions (distance, orientation, movement, identity, and location). The technology responds to relative approaches or movements away. An example would be a display, that shows more details the closer you get to it.
 
 
-|  | Space-Centric <br>
-
-<br> *"Where am I located in the spatial context?"* | Object-Centric <br>
-
-<br> *"How am I positioned relative to this device?"* |
+| Aspect | Space-Centric | Object-Centric |
 | --- | --- | --- |
+| **Core Question** | *"Where am I located in the spatial context?"* | *"How am I positioned relative to this device?"* |
 | **Focus** | The space as a medium or "Blended Space" | Distance and relationship between entities (human/device, etc.) |
 | **Design Elements** | Fixed and semi-fixed features, topology of the space (e.g., walls, furniture) | Distances and discrete zones, orientation, and identity |
-| **Interaction Logic** | Interaction takes place "in" the space <br>
-
-<br> → the system reacts to the position within the spatial structure (e.g., thresholds/doorways) | Interaction takes place "with" or "between" objects <br>
-
-<br> → based on their relative proximity to each other <br>
-
-<br> → four distance zones (Hall) |
+| **Interaction Logic** | Interaction takes place "in" the space, the system reacts to position within spatial structures (e.g., thresholds). | Interaction takes place "with" or "between" objects based on their relative proximity (e.g., Hall's four distance zones). |
 
 
 ## Requirements in public or collaborative spaces
