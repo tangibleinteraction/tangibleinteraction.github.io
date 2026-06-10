@@ -9,14 +9,27 @@ images:
   
 ---
 
-_"citation here"_  
-(author here)
+_"When you walk up to your computer, does the screen saver stop and the working windows reveal themselves?Does it even know if you are there? How hard would it be to change this? Is it not ironic that, in this egard, a motion-sensing light switch is “smarter” than any of the switches in the computer…?_"
+(Bill Buxton)
 
 introduction text
 
 ## Characteristics of spatial interaction
 
-text
+To merge a physical space with a computer system, the characteristics of spatial interaction must first be defined. This abstraction allows the physical properties to be translated into digital ones. The properties of a space are topology, ontology, volatility, and agency. (Benyon, 2012)
+
+The topology of a space describes the distances between objects within that space as well as their relative orientations. In the context of geography, for example, topology can describe the locations of landmarks in a city. It can also specify the arrangement of desks and chairs in a classroom. (Benyon, 2012)
+
+An ontology describes the categorization of objects within a domain. It can be either fine-grained or coarse-grained. Depending on its level of granularity, it determines how different objects can be from one another while still belonging to the same category. In a fine-grained ontology, there are more objects that differ from one another. In a coarse-grained ontology, there are many objects that are similar. 
+Using a website as an example, the ontology would determine how many objects are found under a search category. For instance, a shopping site might feature categories such as women’s and men’s clothing. A more granular ontology would already offer several specific objects here, such as women’s pants, women’s T-shirts, men’s pants, and men’s T-shirts. The ontology can accordingly determine how many objects are present in the space at the same time. (Benyon, 2012)
+
+Volatility indicates how often changes occur within the domain. Frequent changes mean that the domain is considered unstable, i.e., highly volatile. Unstable domains require an interface tailored to the specific use case.
+For a stable space with low volatility, an ontology should be chosen that defines sufficiently broad distinctions between objects. Changes to an object are then less likely to cause a change in its type. This allows for the creation of a stable space in which changeable content can be presented more clearly. (Benyon, 2012)
+
+Agency describes the possibilities for interaction within a room. It indicates whether the user is in the room with other users and how they can interact with one another. For example, they can be in the same room at the same time without being able to see each other. The reverse scenario is also possible: users may not be in the room at the same time, but they can see and interact with traces left by others. (Benyon, 2012)
+
+One example of how physical space and a computer system can be incorporated is the creation of a walking tour that tells the story of Robert Louis Stevenson’s (RLS) last day in Edinburgh. QR codes were placed at RLS’s favorite locations, linking to relevant excerpts from his writings. Here, digital information is connected to the physical space via the QR codes.
+The ontology here consists of the physical locations and RLS’s texts that describe the location. The topology is determined by the geographical location of the sites. Volatility is very low, as no changes are made to the space during the system’s runtime. There is no agent activity. The user is alone in the digital space. (Benyon, 2012)
 
 ## The role of position, proximity, orientation, and movement
 
