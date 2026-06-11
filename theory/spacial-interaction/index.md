@@ -33,7 +33,28 @@ The ontology here consists of the physical locations and RLS’s texts that desc
 
 ## The role of position, proximity, orientation, and movement
 
-text
+Edward T. Hall studied how people use social distance to convey their relationships with others. The distance a person tries to maintain from another depends on their culture, age and personal relationships. 
+With the term “proxemics”, he established the theoretical basis for spatial interaction in modern computer systems. To this end, four culture-dependent zones of personal space were identified. Different degrees of interpersonal closeness are associated with these zones. (Marquardt, 2012)
+
+| Zone | Distance |
+| --- | --- |
+| Intimate | 0–50cm |
+| Personal | 0.5–1m |
+| Social | 1–4m |
+| Public | < 4m | 
+
+(Hall, 1966)
+
+If one person’s personal space is invaded by another, the person affected would try to compensate for the lack of space. An example of such compensation would be turning away from one another in a cramped lift. 
+Taking a physical display screen as an example, different information could be shown depending on the distance between the device and the user, taking into account the proximity zones. In this way, sensitive information could be displayed when the user is in close proximity, whilst remaining hidden at a greater distance. This principle will be illustrated later using the Proxemic Media Player. (Wang, 2011, Marquardt 2012)
+
+The concept of proxemic dimensions is applied in ubiquitous computing (Ubicomp). It is used as a mechanism to help integrate technology into everyday environments. By taking this concept into account, the aim is for technology to be perceived as less intrusive and to feel natural. The aim of Greenberg and Marquardt’s work is to make the concept of proxemics tangible for this purpose. By capturing proxemic dimensions, devices can detect the relationships between entities within an environment. (Wang, 2011)
+
+The dimension of distance describes the measurable distance between entities. Rather than using continuous values, one should simply specify, in discrete terms, which proxemic distance zone an entity is located in. (Wang, 2011)
+Similarly, the orientation of entities relative to one another can be specified. It is stated discretely whether an entity is facing another, facing something, or turned away. Continuous values can be used to specify the angle or rotation of an entity. (Wang, 2011)
+The movement of entities is the change over time in the distance and orientation of the entities. In this context, both the speed and the direction of movement must be measured. (Wang, 2011)
+A system’s ability to recognise who or what an entity is is described by the dimension of identity. When determining the identity of an entity, a decision must first be made as to whether detailed measurements for precise identification or merely minimal measurements for rough differentiation of the entities are required. (Wang, 2011)
+The interpretation of the information from each of these four dimensions depends on the location. This specifies the physical context of the space. Information can have different meanings in different spaces. For example, a short distance between people in a lift would be expected, whereas in front of a cash machine it could indicate a breach of the rules. (Wang, 2011)
 
 ## Space-centered and object-centered forms of interaction
 
