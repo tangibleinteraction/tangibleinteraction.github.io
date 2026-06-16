@@ -12,8 +12,6 @@ images:
 _"When you walk up to your computer, does the screen saver stop and the working windows reveal themselves?Does it even know if you are there? How hard would it be to change this? Is it not ironic that, in this egard, a motion-sensing light switch is “smarter” than any of the switches in the computer…?_"
 (Bill Buxton)
 
-introduction text
-
 ## Characteristics of spatial interaction
 
 To merge a physical space with a computer system, the characteristics of spatial interaction must first be defined. This abstraction allows the physical properties to be translated into digital ones. The properties of a space are topology, ontology, volatility, and agency. (Benyon, 2012)
