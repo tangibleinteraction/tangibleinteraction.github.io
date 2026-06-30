@@ -7,10 +7,11 @@ layout: blog
 order: 1
 images:
   - image: Proxemic display; An example implementation of proxemic dimensions (Marquardt, 2012). 
-    url: attention.jpg
+    url: attention.png
     space-above: 20
     space-below: 30
 ---
+
 
 _"When you walk up to your computer, does the screen saver stop and the working windows reveal themselves?Does it even know if you are there? How hard would it be to change this? Is it not ironic that, in this egard, a motion-sensing light switch is “smarter” than any of the switches in the computer…?_"
 (Bill Buxton)
@@ -49,7 +50,6 @@ With the term “proxemics”, he established the theoretical basis for spatial 
 If one person’s personal space is invaded by another, the person affected would try to compensate for the lack of space. An example of such compensation would be turning away from one another in a cramped lift. 
 Taking a physical display screen as an example, different information could be shown depending on the distance between the device and the user, taking into account the proximity zones. In this way, sensitive information could be displayed when the user is in close proximity, whilst remaining hidden at a greater distance. This principle will be illustrated later using the Proxemic Media Player. (Wang, 2011, Marquardt, 2012)
 
-![Alt text](attention.png)
 
 The concept of proxemic dimensions is applied in ubiquitous computing (Ubicomp). It is used as a mechanism to help integrate technology into everyday environments. By taking this concept into account, the aim is for technology to be perceived as less intrusive and to feel natural. The aim of Greenberg and Marquardt’s work is to make the concept of proxemics tangible for this purpose. By capturing proxemic dimensions, devices can detect the relationships between entities within an environment. (Wang, 2011)
 
