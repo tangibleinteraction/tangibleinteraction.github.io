@@ -32,7 +32,8 @@
 
                         <div class="project-table">
                             <div class="project-table-entries">
-                                {% for blog in site.pages %}
+                                {% assign sorted_pages = site.pages | sort: 'date' | reverse %}
+                                {% for blog in sorted_pages %}
                                 {% assign blogname = page.title | downcase %}
                                 {% if blog.url contains blogname and blog.url != page.url and blog.url contains "/theory/" %}
 
