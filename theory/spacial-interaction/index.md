@@ -1,6 +1,6 @@
 ---
-title: Spacial Interaction - Space, Position, and Movement 
-authors: Julia Schuster, Enrico Hasenclever, Oliver Mey
+title: Spatial Interaction - Space, Position, and Movement 
+authors: Julia Schuster, Oliver Mey
 date: 2026/05/10
 description: How space, distance, orientation, movement, and body awareness are used as central design elements in interactive systems. 
 layout: blog
@@ -13,7 +13,7 @@ images:
 ---
 
 
-_"When you walk up to your computer, does the screen saver stop and the working windows reveal themselves?Does it even know if you are there? How hard would it be to change this? Is it not ironic that, in this egard, a motion-sensing light switch is “smarter” than any of the switches in the computer…?_"
+_"When you walk up to your computer, does the screen saver stop and the working windows reveal themselves? Does it even know if you are there? How hard would it be to change this? Is it not ironic that, in this regard, a motion-sensing light switch is “smarter” than any of the switches in the computer…?_"
 (Bill Buxton)
 
 ## Characteristics of spatial interaction
@@ -96,15 +96,6 @@ The sixth requirement is support through spatial arrangement. The nature of coll
 For collaborative tasks, people tend to sit side by side. For competitive tasks or conversations, however, people tend to sit across from each other or at angle positions. (Marquardt, 2012)
 
 In summary, the more technology merges with our physical world, the more developers and designers must take into account not only technological factors, but also social, psychological, and architectural ones. (Marquardt, 2012, Benyon, 2012)
-
-
-## Case Study (The Proxemic Media Player)
-
-text
-
-## Conclusion (Opportunities, Limitations)
-
-text
 
 
 ## References
