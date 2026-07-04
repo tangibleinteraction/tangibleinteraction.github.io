@@ -10,6 +10,21 @@ images:
     url: attention.png
     space-above: 20
     space-below: 30
+
+  - image: HIER NOCH BESCHREIBUNG FÜR PROXEMIC ZONES 
+    url: zones.png
+    space-above: 20
+    space-below: 30
+
+  - image: HIER NOCH BESCHREIBUNG FÜR PROXEMIC DIMENSIONEN 
+    url: zones.png
+    space-above: 20
+    space-below: 30
+
+  - image: An illustration for the article "The Rat Studies that Foretold a Nightmarish Human Future" (Um, 2024).
+    url: rats.png
+    space-above: 20
+    space-below: 30
 ---
 
 
@@ -107,3 +122,5 @@ Marquardt, N., & Greenberg, S. (2012). Informing the design of proxemic interact
 Wang, M. (2011). Proxemic interactions: The new ubicomp? Interactions, 18(1), 42–50.
 
 Hall, E. T. (1966). The Hidden Dimension. Doubleday.
+
+Um, T. (2024). [Illustration for the article "The Rat Studies that Foretold a Nightmarish Human Future" by E. Kolbert]. The New Yorker. https://www.newyorker.com/magazine/2024/10/07/dr-calhouns-mousery-lee-alan-dugatkin-book-reviews-rat-city-edmund-ramsden-and-jon-adams
