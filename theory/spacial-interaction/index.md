@@ -6,25 +6,25 @@ description: How space, distance, orientation, movement, and body awareness are 
 layout: blog
 order: 1
 images:
-  - image: Proxemic display; An example implementation of proxemic dimensions (Wang, 2011). 
+  - image: Proxemic display; An example implementation of proxemic dimensions (Marquardt, 2012). 
     url: attention.png
     space-above: 20
-    space-below: 30
+    space-below: 10
 
   - image: The four proxemic zones of personal space marking the area for different grades of interpersonal connection. (Marquardt, 2012)
     url: zones.png
     space-above: 20
-    space-below: 30
+    space-below: 10
 
   - image: Pictured are the proxemic dimensions orientation (upper left), distance (upper right), identity (lower left) and movement (lower right) (Marquardt, 2012).
-    url: dimensions.png
+    url: zones.png
     space-above: 20
-    space-below: 30
+    space-below: 10
 
   - image: An illustration for the article "The Rat Studies that Foretold a Nightmarish Human Future" (Um, 2024).
-    url: rats.png
+    url: rats.webp
     space-above: 20
-    space-below: 30
+    space-below: 10
 ---
 
 
