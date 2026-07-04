@@ -58,15 +58,15 @@ A first group of tools focuses on simple, direct and accessible forms of prototy
 
 Such approaches are useful when the goal is to explore an idea quickly, involve people with different levels of technical knowledge, or focus on the physical form of an interaction. Mellis et al. (2013) describe how microcontrollers, paper, conductive ink and electronic components can be treated as design materials. This perspective is relevant for tangible interaction because it lowers the entry barrier and connects electronic prototyping with craft-based practices.
 
-A beginner-friendly electronic platform is the *micro:bit*. It combines a small programmable board with built-in input and output possibilities, such as buttons, an LED matrix, sensors and wireless communication (Micro:bit Educational Foundation, n.d.). This makes it suitable for first interactive prototypes, educational contexts and quick experiments with physical input, movement or simple feedback.
+A beginner-friendly electronic platform is the *micro:bit*. It combines a small programmable board with built-in input and output possibilities, such as buttons, an LED matrix, sensors and wireless communication (Micro:bit Educational Foundation, 2026). This makes it suitable for first interactive prototypes, educational contexts and quick experiments with physical input, movement or simple feedback.
 
 ## Microcontroller and Computing Platforms
 
-When a prototype requires more technical control, microcontroller platforms become important. Arduino is one of the most common examples. Arduino boards can read input from sensors and control outputs such as LEDs, motors, speakers or displays (Arduino, n.d.). For tangible interaction, Arduino is useful when physical events should trigger digital behavior or when digital systems should influence physical objects (see Figure 3).
+When a prototype requires more technical control, microcontroller platforms become important. Arduino is one of the most common examples. Arduino boards can read input from sensors and control outputs such as LEDs, motors, speakers or displays (Arduino, 2026). For tangible interaction, Arduino is useful when physical events should trigger digital behavior or when digital systems should influence physical objects (see Figure 3).
 
 A typical example would be a knock-sensitive object: a piezo sensor detects vibrations on a surface and an Arduino translates this input into visual, acoustic or mechanical feedback. This makes Arduino suitable for sensor-actuator prototypes and physical computing projects. Mellis et al. (2007) describe Arduino as an open electronic prototyping platform, which explains its relevance in design, media and interaction contexts.
 
-Raspberry Pi represents a different type of platform. While Arduino is mainly a microcontroller, Raspberry Pi is closer to a small computer. It can run an operating system, process camera input, connect to networks, host local applications and use programming languages such as Python (Raspberry Pi, n.d.). This makes it useful for prototypes involving computer vision, web interfaces, local servers or more complex software components (see Figure 4). Mathe et al. (2024) also describe Raspberry Pi as a flexible platform used across a wide range of application areas.
+Raspberry Pi represents a different type of platform. While Arduino is mainly a microcontroller, Raspberry Pi is closer to a small computer. It can run an operating system, process camera input, connect to networks, host local applications and use programming languages such as Python (Raspberry Pi, 2026). This makes it useful for prototypes involving computer vision, web interfaces, local servers or more complex software components (see Figure 4). Mathe et al. (2024) also describe Raspberry Pi as a flexible platform used across a wide range of application areas.
 
 The choice between Arduino and Raspberry Pi therefore depends on the role of computation in the prototype. Arduino is often sufficient for direct sensor-actuator behavior, while Raspberry Pi becomes more useful when the prototype needs media processing, networking or software libraries.
 
@@ -74,15 +74,15 @@ The choice between Arduino and Raspberry Pi therefore depends on the role of com
 
 Not every step of prototyping has to happen directly with physical hardware. Digital tools can support the process through simulation, documentation and visual planning. They are useful when a team wants to plan a circuit, communicate a setup, test code or avoid wiring mistakes before building the real prototype.
 
-Fritzing is a documentation-oriented tool that helps to visualize circuits and breadboard layouts (Fritzing, n.d.). This is especially helpful in student projects, where wiring can quickly become confusing and where prototypes need to be explained to others (see Figure 5).
+Fritzing is a documentation-oriented tool that helps to visualize circuits and breadboard layouts (Fritzing, 2026). This is especially helpful in student projects, where wiring can quickly become confusing and where prototypes need to be explained to others (see Figure 5).
 
-Wokwi follows a more simulation-oriented approach. It allows users to simulate microcontroller projects directly in the browser (Wokwi, n.d.). This can be useful when hardware is not available, when teams work remotely, or when code should be tested before using real components. Similar browser-based tools such as withdiode also support early experimentation by making circuits visible and testable in a virtual environment (withdiode, n.d.).
+Wokwi follows a more simulation-oriented approach. It allows users to simulate microcontroller projects directly in the browser (Wokwi, 2026). This can be useful when hardware is not available, when teams work remotely, or when code should be tested before using real components. Similar browser-based tools such as withdiode also support early experimentation by making circuits visible and testable in a virtual environment (withdiode, 2026).
 
 Another relevant example is d.tools. Instead of focusing only on circuit construction, it addresses the broader design process by connecting design, testing and analysis. Hartmann et al. (2006) describe this as reflective physical prototyping. This is important because tangible interaction prototypes should not only function technically, but also be observed, evaluated and improved through interaction.
 
 ## Modular Development Ecosystems
 
-A further category consists of modular development ecosystems such as M5Stack. These platforms combine microcontroller-based development with ready-made modules, displays, sensors, cases and expansion units. The goal is to reduce the amount of wiring and mechanical construction needed to build a functional prototype. M5Stack describes itself as a provider of modular open-source solutions for IoT development (M5Stack, n.d.).
+A further category consists of modular development ecosystems such as M5Stack. These platforms combine microcontroller-based development with ready-made modules, displays, sensors, cases and expansion units. The goal is to reduce the amount of wiring and mechanical construction needed to build a functional prototype. M5Stack describes itself as a provider of modular open-source solutions for IoT development (M5Stack, 2026).
 
 M5Stack is useful when a prototype should become compact, robust and presentable quickly. Instead of combining many loose components on a breadboard, designers can use stackable modules and ready-made units. This can be helpful for IoT prototypes, small interactive objects or exhibition setups where the prototype should look more stable than an open wiring setup (see Figure 6).
 
@@ -100,9 +100,9 @@ For tangible interaction projects, the most useful tool is not always the most p
 
 ## References
 
-Arduino. (n.d.). *What is Arduino?* Retrieved June 23, 2026, from https://docs.arduino.cc/learn/starting-guide/whats-arduino/
+Arduino. (2026). *What is Arduino?* Retrieved June 23, 2026, from https://docs.arduino.cc/learn/starting-guide/whats-arduino/
 
-Fritzing. (n.d.). *Welcome to Fritzing*. Retrieved June 23, 2026, from https://fritzing.org/
+Fritzing. (2026). *Welcome to Fritzing*. Retrieved June 23, 2026, from https://fritzing.org/
 
 Hartmann, B., Klemmer, S. R., Bernstein, M., Abdulla, L., Burr, B., Robinson-Mosher, A., & Gee, J. (2006). Reflective physical prototyping through integrated design, test and analysis. In *Proceedings of the 19th Annual ACM Symposium on User Interface Software and Technology* (pp. 299–308). Association for Computing Machinery. https://doi.org/10.1145/1166253.1166300
 
@@ -114,21 +114,21 @@ Mellis, D. A., Banzi, M., Cuartielles, D., & Igoe, T. (2007). Arduino: An open e
 
 Mellis, D. A., Jacoby, S., Buechley, L., Perner-Wilson, H., & Qi, J. (2013). Microcontrollers as material: Crafting circuits with paper, conductive ink, electronic components and an “untoolkit”. In *Proceedings of the 7th International Conference on Tangible, Embedded and Embodied Interaction* (pp. 83–90). Association for Computing Machinery. https://doi.org/10.1145/2460625.2460638
 
-Micro:bit Educational Foundation. (n.d.). *Meet the BBC micro:bit*. Retrieved June 23, 2026, from https://microbit.org/get-started/user-guide/overview/
+Micro:bit Educational Foundation. (2026). *Meet the BBC micro:bit*. Retrieved June 23, 2026, from https://microbit.org/get-started/user-guide/overview/
 
-M5Stack. (n.d.). *About M5Stack*. Retrieved June 23, 2026, from https://m5stack.com/about-us
+M5Stack. (2026). *About M5Stack*. Retrieved June 23, 2026, from https://m5stack.com/about-us
 
-Raspberry Pi. (n.d.). *Raspberry Pi*. Retrieved June 23, 2026, from https://www.raspberrypi.com/
+Raspberry Pi. (2026). *Raspberry Pi*. Retrieved June 23, 2026, from https://www.raspberrypi.com/
 
 Shaer, O., & Hornecker, E. (2010). Tangible user interfaces: Past, present, and future directions. *Foundations and Trends in Human-Computer Interaction, 3*(1–2), 1–137. https://doi.org/10.1561/1100000026
 
-withdiode. (n.d.). *withdiode*. Retrieved June 23, 2026 ("development is currently paused"), from https://www.withdiode.com/
+withdiode. (2026). *withdiode*. Retrieved June 23, 2026 ("development is currently paused"), from https://www.withdiode.com/
 
-Wokwi. (n.d.). *Wokwi: Online ESP32, STM32, Arduino simulator*. Retrieved June 23, 2026, from https://wokwi.com/projects
+Wokwi. (2026). *Wokwi: Online ESP32, STM32, Arduino simulator*. Retrieved June 23, 2026, from https://wokwi.com/projects
 
 ## Image Credits
 
-Rapid Prototyping Lab. (n.d.). *Purpose of prototyping*. Retrieved June 23, 2026, from https://prototypinglab.in/purpose-of-prototyping/
+Rapid Prototyping Lab. (2026). *Purpose of prototyping*. Retrieved June 23, 2026, from https://prototypinglab.in/purpose-of-prototyping/
 
 Mosborne01. (2016). *Paper circuit.jpg*. Wikimedia Commons. Licensed under CC BY-SA 3.0. https://commons.wikimedia.org/wiki/File:Paper_circuit.jpg
 
@@ -138,7 +138,7 @@ Michael H. / Laserlicht. (2019). *Raspberry Pi 4 Model B - Side.jpg*. Wikimedia 
 
 fritzing.org. (2014). *Fritzing-breadboard.svg*. Wikimedia Commons. Licensed under CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Fritzing-breadboard.svg
 
-M5Stack. (n.d.). *M5Stack Developer Center*. Retrieved June 23, 2026, from https://docs.m5stack.switch-science.com/en/start
+M5Stack. (2026). *M5Stack Developer Center*. Retrieved June 23, 2026, from https://docs.m5stack.switch-science.com/en/start
 
 ## Disclosure Statement
 
