@@ -1,10 +1,9 @@
 ---
 title: Spatial Interaction - Space, Position, and Movement 
 authors: Julia Schuster, Oliver Mey
-date: 2026/05/10
+date: "2026-05-10"
 description: How space, distance, orientation, movement, and body awareness are used as central design elements in interactive systems. 
 layout: blog
-order: 1
 images:
   - image: Proxemic display; An example implementation of proxemic dimensions (Marquardt, 2012). 
     url: attention.png

@@ -1,11 +1,9 @@
 ---
-
 title: Prototyping Tools and Development Platforms for Tangible Interaction
 authors: Benno Ulitzka, Niklas Kothe, Johannes Horn
-date: 2026/06/23
+date: "2026-06-23"
 description: An overview of prototyping tools and development platforms for tangible interaction, focusing on fast experimentation, tool categories and criteria for choosing the right platform.
 layout: blog
-order: 6
 images:
   - image: "Figure 1: The purpose of prototyping as an early process for testing ideas, collecting feedback and improving a concept before final development. Source: Rapid Prototyping Lab."
     url: prototype-cycle-diagram.png

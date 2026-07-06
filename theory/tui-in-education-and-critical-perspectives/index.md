@@ -1,7 +1,7 @@
 ---
 title: Tangible User Interfaces – The Future of Education and Learning?
 authors: Finja Adam, Janek Engel, Clara Frick
-date: 2026/05/09
+date: "2026-05-09"
 description: Will TUIs reshape how we learn? What do critical voices say?
 layout: blog
 images:
