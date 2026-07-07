@@ -16,7 +16,7 @@ images:
     space-below: 10
 
   - image: Pictured are the proxemic dimensions orientation (upper left), distance (upper right), identity (lower left) and movement (lower right) (Marquardt, 2012).
-    url: zones.png
+    url: dimensions.png
     space-above: 20
     space-below: 10
 
