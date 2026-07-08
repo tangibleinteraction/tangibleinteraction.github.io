@@ -5,6 +5,7 @@ date: "2026-07-06"
 description: An overview of the communication protocol stack, server-side business logic, and visualization architecture developed by the interface group for the MAMAgotchi tangible interaction project.
 layout: blog
 order: 1
+teaser: teaser.png
 images:
   - image: "Figure 1: Overview of the infrastructure and the used components (own figure)."
     url: overview-mamagotchi-infrastructure.png
