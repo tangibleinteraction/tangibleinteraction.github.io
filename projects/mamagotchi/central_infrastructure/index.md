@@ -29,13 +29,13 @@ MAMAgotchi is a distributed tangible interaction system in which physical statio
 
 ## System Architecture
 
-The system is organized into three tiers: distributed **stations**, a central  M5Stack AtomS3R **controller** [(M5Stack, 2026)](#m5stack), and a **Raspberry Pi 5** [(Raspberry Pi Foundation, 2026)](#raspi) as shown in _Figure 1_. Stations communicate wirelessly with the controller, which in turn forwards all data to the Raspberry Pi over a wired connection. The Raspberry Pi hosts both the business logic that maintains the MAMAgotchi's state and the visualization presented to the user.
+The system is organized into three tiers: distributed **stations**, a central  M5Stack AtomS3R **controller** [(M5Stack, 2026)](#m5stack), and a **Raspberry Pi 5** [(Raspberry Pi Foundation, 2026)](#raspi) as shown in _Figure 1_. Stations communicate wirelessly with the controller, which in turn forwards all data to the Raspberry Pi over a wired connection. The Raspberry Pi hosts both the business logic that maintains the MAMAgotchi's state and the visualization presented to the user. 
 
 ### Station-to-Controller Communication: ESP-NOW
 
 Communication between individual stations and the AtomS3R controller is implemented using **ESP-NOW**, a connectionless, low-latency wireless protocol designed for ESP32-based microcontrollers [(Espressif Systems, 2026)](#espressif). ESP-NOW was selected primarily because the station hardware was built on the M5Stack platform, for which ESP-NOW is natively supported as a connectionless communication protocol. This made it the most direct and low-effort choice for wireless communication between stations and the controller, without requiring an additional network stack or infrastructure such as a WiFi access point.
 
-To reduce the integration effort for the station groups, we developed a dedicated **Arduino library** that abstracts the ESP-NOW protocol and is distributed together with example code and accompanying documentation. This allowed station groups to integrate their hardware without requiring in-depth knowledge of the underlying wireless communication stack (_see Figure 1_).
+To reduce the integration effort for the station groups, we developed a dedicated **Arduino library**[(see library repository)](#repo-library) that abstracts the ESP-NOW protocol and is distributed together with example code and accompanying documentation. This allowed station groups to integrate their hardware without requiring in-depth knowledge of the underlying wireless communication stack (_see Figure 1_).
 
 Station identification is handled automatically: upon transmitting its first message, a station's MAC address is registered by the controller, eliminating the need for manual configuration of station identities. All payloads are transmitted using a shared C++ structure, `tangible_dto`, comprising the following fields:
 
@@ -63,7 +63,7 @@ The Raspberry Pi is structured into three cooperating modules:
 3. **Visualization module**<br>
     A JavaScript-based front end that consumes the state produced by the business logic module and renders it accordingly (_see step 4 upward arrow in Figure 3_). Our contribution consisted of implementing and integrating the given design into a functioning front end driven by the live system state.
 
-Communication between the business logic and visualization modules is unidirectional and provided via a local web server, from which the JavaScript-implementation of the visualization periodically fetches the current state.
+Communication between the business logic and visualization modules is unidirectional and provided via a local web server, from which the JavaScript-implementation of the visualization periodically fetches the current state [(see Raspberry Pi repository)](#repo-raspi).
 
 
 ### Business-Logic: Need-Based State Model
@@ -96,17 +96,31 @@ The interface group's contribution to MAMAgotchi was the "brain" of the system. 
 
 ## References
 
-<a id="chuckmash"></a>
+<a id="chuckmash" href="https://github.com/ChuckMash/ESPythoNOW">
 ChuckMash (2026): *ESPythoNOW*, Retrieved July 6, 2026, from https://github.com/ChuckMash/ESPythoNOW
+</a>
 
-<a id="espressif"></a>
+<a id="espressif" href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/network/esp_now.html">
 Espressif Systems (2026): *ESP-NOW Overview*. ESP-IDF Programming Guide. Retrieved July 6, 2026, from https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/network/esp_now.html
+</a>
 
-<a id="m5stack"></a>
+<a id="m5stack" href="https://docs.m5stack.com/en/core/AtomS3R">
 M5Stack (2026): *AtomS3R Documentation*. Retrieved July 6, 2026, from https://docs.m5stack.com/en/core/AtomS3R
+</a>
 
-<a id="raspi"></a>
+<a id="raspi" href="https://www.raspberrypi.com/products/raspberry-pi-5/">
 Raspberry Pi Foundation (2026): *Raspberry Pi 5 Product Specification*. Retrieved July 6, 2026, from https://www.raspberrypi.com/products/raspberry-pi-5/
+</a>
+
+### Repositories
+
+<a id="repo-library" href="https://iversion.informatik.htw-dresden.de/s91174/tangible-schnittstelle">
+  Repository for the Arduino library API between stations and AtomS3R (central controller): https://iversion.informatik.htw-dresden.de/s91174/tangible-schnittstelle
+</a>
+
+<a id="repo-raspi" href="https://iversion.informatik.htw-dresden.de/s91174/tangible-zentrale-visualisierung">
+  Repository for the code on the Raspberry Pi: https://iversion.informatik.htw-dresden.de/s91174/tangible-zentrale-visualisierung
+</a>
 
 ## Disclosure Statement
 
