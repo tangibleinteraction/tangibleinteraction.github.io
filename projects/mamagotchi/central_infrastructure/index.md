@@ -1,5 +1,5 @@
 ---
-title: "The Interface Layer of MAMAgotchi: Communication Infrastructure and State Visualization"
+title: "Communication Infrastructure and State Visualization"
 authors: Julia-Robin Schuster, Janek Engel, Hong Lâm Nguyen, Finja Adam
 date: "2026-07-06"
 description: An overview of the communication protocol stack, server-side business logic, and visualization architecture developed by the interface group for the MAMAgotchi tangible interaction project.
@@ -15,28 +15,24 @@ images:
   - image: "Figure 3: Server-Side Architecture with a Python server and different modules (own figure)."
     url: raspberry-pi-content.png
     space-above: 8
-  # NOTICE:
-  # The space-above parameter cannot be >30! To display the visual gap, I added an empty image
-  - image:
-    space-above: 3
   - image: "Figure 4: Screenshot of the implemented visualization."
     url: visualization-final.png
     space-above: 30
 ---
 
-This article documents the contribution of the interface group to the MAMAgotchi tangible interaction project. While the accompanying station groups were responsible for the physical hardware placed throughout the apartment, our group designed and implemented the underlying **communication infrastructure** and the **server-side business logic** that translate physical interactions into the behavior of a virtual companion. In addition, we were responsible for the technical **implementation and integration of the visualization**, whose conceptual design was developed by a separate group within the project. This post describes the architectural decisions made, the protocols evaluated, and the technical realization of the visualization component as well as the business logic of the MAMAgotchi.
+This article documents the contribution of the interface group to the MAMAgotchi tangible interaction project. While the accompanying station groups were responsible for the physical hardware placed throughout the different rooms, our group designed and implemented the underlying **communication infrastructure** and the **server-side business logic** that translates physical interactions into the behavior of a virtual companion. In addition, we were responsible for the technical **implementation and integration of the visualization**, the conceptual design of which was developed by a separate group within the project. This post describes the architectural decisions made, the protocols evaluated, and the technical realization of the visualization components as well as the business logic of the MAMAgotchi.
 
 ## Project Context
 
-MAMAgotchi is a distributed tangible interaction system in which physical stations located in different rooms (the bedroom, kitchen, dance room, and playroom) register the completion of everyday tasks and translate them into a shared score. This score determines the mood and appearance of a virtual pet, the _MAMAgotchi_, displayed on a central screen. The individual station hardware and interaction concepts are described in the respective station groups' contributions; this article focuses exclusively on the infrastructure connecting these stations to a coherent, centrally maintained system state.
+MAMAgotchi is a distributed tangible interaction system in which physical stations located in different rooms (the bedroom, kitchen, dance room, and playroom) register the completion of everyday tasks and translate them into a shared score. This score determines the mood and appearance of a virtual pet, the _MAMAgotchi_, displayed on a central screen. The individual station hardware and interaction concepts are described in the respective station groups' contributions; this article focuses exclusively on the infrastructure connecting these stations to a coherent, centrally maintained system.
 
 ## System Architecture
 
-The system is organized into three tiers: distributed **stations**, a central  M5Stack AtomS3R **controller** (M5Stack (2026).), and a **python server** running on a Raspberry Pi 5 (Raspberry Pi Foundation 2026) as shown in _Figure 1_. Stations communicate wirelessly with the controller, which in turn forwards all data to the server over a wired connection. The server hosts both the business logic that maintains the MAMAgotchi's state and the visualization presented to the user.
+The system is organized into three tiers: distributed **stations**, a central  M5Stack AtomS3R **controller** [(M5Stack, 2026)](#m5stack), and a **Raspberry Pi 5** [(Raspberry Pi Foundation, 2026)](#raspi) as shown in _Figure 1_. Stations communicate wirelessly with the controller, which in turn forwards all data to the Raspberry Pi over a wired connection. The Raspberry Pi hosts both the business logic that maintains the MAMAgotchi's state and the visualization presented to the user.
 
 ### Station-to-Controller Communication: ESP-NOW
 
-Communication between individual stations and the AtomS3R controller is implemented using **ESP-NOW**, a connectionless, low-latency wireless protocol designed for ESP32-based microcontrollers (Espressif Systems, 2026). ESP-NOW was selected primarily because the station hardware was built on the M5Stack platform, for which ESP-NOW is natively supported as a connectionless communication protocol. This made it the most direct and low-effort choice for wireless communication between stations and the controller, without requiring an additional network stack or infrastructure such as a WiFi access point.
+Communication between individual stations and the AtomS3R controller is implemented using **ESP-NOW**, a connectionless, low-latency wireless protocol designed for ESP32-based microcontrollers [(Espressif Systems, 2026)](#espressif). ESP-NOW was selected primarily because the station hardware was built on the M5Stack platform, for which ESP-NOW is natively supported as a connectionless communication protocol. This made it the most direct and low-effort choice for wireless communication between stations and the controller, without requiring an additional network stack or infrastructure such as a WiFi access point.
 
 To reduce the integration effort for the station groups, we developed a dedicated **Arduino library** that abstracts the ESP-NOW protocol and is distributed together with example code and accompanying documentation. This allowed station groups to integrate their hardware without requiring in-depth knowledge of the underlying wireless communication stack (_see Figure 1_).
 
@@ -49,7 +45,7 @@ Station identification is handled automatically: upon transmitting its first mes
 
 ### Controller-to-Server Communication: USB Serial
 
-Establishing reliable communication between the AtomS3R controller and the Raspberry Pi server required more extensive evaluation than initially anticipated. Two alternative approaches were prototyped and subsequently discarded: a UDP-based server architecture, and a Python reimplementation of the ESP-NOW protocol ("ESPythoNOW"). Both approaches introduced either excessive implementation complexity or insufficient reliability for the scope of this project.
+Establishing reliable communication between the AtomS3R controller and the Raspberry Pi server required more extensive evaluation than initially anticipated. Two alternative approaches were prototyped and subsequently discarded: a UDP-based server architecture, and a Python reimplementation of the ESP-NOW protocol [(ChuckMash, 2026)](#chuckmash). Both approaches introduced either excessive implementation complexity or insufficient reliability for the scope of this project.
 
 The final architecture instead relies on **USB serial communication**, transmitting a compressed JSON string between controller and server. Although the serial interface of ESP32-based controllers is conventionally reserved for debugging output, repurposing it for application-level communication proved to be the more robust and maintainable solution. Communication in both directions is **event-driven**: updates are transmitted only when the underlying state changes, minimizing communication overhead and latency. For the two-sided communication, USB serial communication was a reliable and stable choice.
 
@@ -57,16 +53,16 @@ The result of the various communication protocols and the data sent over the con
 
 ## Server-Side Architecture
 
-The Python server, running on the Raspberry Pi, is structured into three cooperating modules:
+The Raspberry Pi is structured into three cooperating modules:
 
 1. **Interface module**<br>
-    Receives and parses incoming JSON messages relayed from the stations via the controller and sends it to the business logic module (_see step 1 and 2 in Figure 3). Receive state changes from business logic module and sends it to the stations and the visualization (_see step 13 and 4 in Figure 3).
+    Receives and parses incoming JSON messages relayed from the stations via the controller and sends it to the business logic module (_see step 1 and 2 in Figure 3_). Receives state changes from the business logic module and sends it back to the controller and the visualization (_see step 3 and 4 in Figure 3_). Written in Python.
 2. **Business logic module**<br>
-    Maintains the authoritative state of the MAMAgotchi and reconstructs its JSON representation whenever new station data is received (e.g., following the completion of a task at a station) or the state is updated over time. Sends the updated states to the interface module (_see step 3 in Figure 3)
+    Maintains the authoritative state of the MAMAgotchi and reconstructs its JSON representation whenever new station data is received (e.g., following the completion of a task at a station) or the state is updated over time. Sends the updated states to the interface module (_see step 3 in Figure 3_). Written in Python.
 3. **Visualization module**<br>
-    A JavaScript-based front end that consumes the state produced by the business logic module and renders it accordingly (_see step 4 in top in Figure 3). Our contribution consisted of implementing and integrating the given design into a functioning front end driven by the live system state.
+    A JavaScript-based front end that consumes the state produced by the business logic module and renders it accordingly (_see step 4 upward arrow in Figure 3_). Our contribution consisted of implementing and integrating the given design into a functioning front end driven by the live system state.
 
-Communication between the business logic and visualization modules is unidirectional and is triggered exclusively by state changes, ensuring that the displayed representation remains consistent with the underlying system state without continuous polling.
+Communication between the business logic and visualization modules is unidirectional and provided via a local web server, from which the JavaScript-implementation of the visualization periodically fetches the current state.
 
 
 ### Business-Logic: Need-Based State Model
@@ -78,7 +74,7 @@ In addition to this continuous mood state, individual needs can trigger a blocki
 
 To simplify deployment, the Raspberry Pi is configured to start the entire system automatically without manual intervention. Once connected to a power supply and a display, the server components are launched inside **Docker containers**, ensuring a consistent runtime environment. Immediately afterwards, Firefox is started automatically and directed to the local visualization endpoint, so that the MAMAgotchi interface is displayed on screen without requiring any further setup steps. This approach significantly reduces the effort needed to bring the system up in stressful contexts, where no tech-specialists may be present, e.g. in exhibitions.
 
-If a controller needs to be replaced, all that's needed is the code. A connection to the main station can be established at any time with no additional effort and requires no extra setup.
+If a controller needs to be replaced, the only needed requirement is the ability to communicate via ESP-NOW, so any ESP32-Controller with a WIFI-module integrated into the chip can be used. 
 
 ## Visualization Implementation
 
@@ -99,10 +95,16 @@ The interface group's contribution to MAMAgotchi was the "brain" of the system. 
 
 ## References
 
+<a id="chuckmash"></a>
+ChuckMash (2026): *ESPythoNOW*, Retrieved July 6, 2026, from https://github.com/ChuckMash/ESPythoNOW
+
+<a id="espressif"></a>
 Espressif Systems (2026): *ESP-NOW Overview*. ESP-IDF Programming Guide. Retrieved July 6, 2026, from https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/network/esp_now.html
 
+<a id="m5stack"></a>
 M5Stack (2026): *AtomS3R Documentation*. Retrieved July 6, 2026, from https://docs.m5stack.com/en/core/AtomS3R
 
+<a id="raspi"></a>
 Raspberry Pi Foundation (2026): *Raspberry Pi 5 Product Specification*. Retrieved July 6, 2026, from https://www.raspberrypi.com/products/raspberry-pi-5/
 
 ## Disclosure Statement
