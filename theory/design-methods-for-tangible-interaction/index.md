@@ -1,7 +1,7 @@
 ---
 title: Design Methods for Tangible Interaction
 authors: Lisa-Marie Müller, Weixi Song, Sophia Katrin Reutner
-date: 2026-06-23
+date: "2026-06-23"
 description: Which design methods are particularly suitable for tangible and spatial interaction? 
 layout: blog
 images:
