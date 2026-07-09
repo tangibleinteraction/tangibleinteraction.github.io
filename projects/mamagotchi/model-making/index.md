@@ -9,22 +9,26 @@ images:
     url: image1.png
   - image: Bedroom
     url: image2.png
-  - image: Kitchen
+  - image: Bedroom
     url: image3.png
   - image: Kitchen
     url: image4.png
   - image: Kitchen
     url: image5.png
-  - image: Dance Studio
+  - image: Kitchen
     url: image6.png
   - image: Dance Studio
     url: image7.png
-  - image: Playroom 
+  - image: Dance Studio
     url: image8.png
-  - image: Playroom 
+  - image: Dance Studio
     url: image9.png
   - image: Playroom 
-    url: image10.png  
+    url: image10.png
+  - image: Playroom 
+    url: image11.png
+  - image: Playroom 
+    url: image12.png  
 ---
 
 ## Model Making: Rooms
@@ -36,27 +40,27 @@ For each of the four rooms, concepts were implemented and the required models ar
 
 For the bedroom, the  work began with **material research** and familiarization with the 3D modeling software **Shapr3D**. A central task was adapting the design to fit **M5Stack components** while coordinating closely with the Visual Arts group regarding the representation of a sleeping Tamagotchi.
 
-A **3D-printable bed model** with several integrated functional features was devoloped: a recess on the back for a **light control slider**, channels for **LED wiring** beneath the bed, and a dedicated space for a **Hall sensor** and the **Tamagotchi device**. 
-Additionally, a **textile blanket** was sewn and equipped with embedded **magnets** to interact with the sensor system.
+A **3D-printable bed model** with several integrated functional features was devoloped: a recess on the back for a **light control slider**, channels for **LED wiring**, and a dedicated space for a **Hall sensor**. Additionally, a **textile blanket** was sewn and equipped with a embedded **magnet** to interact with the sensor system.
 
-In a later stage, the design was changed into a **wooden prototype**, incorporating techniques such as milling, drilling, sawing and manual finishing. Leftover wood was reused for environmental sustainability. The wood was processed accordingly for the **bed frame** (including the sides, footboard, and headboard). A **foam mat** was cut to size for the **mattress**. **Linen fabric** was selected for the final **bedding surface** to enhance material authenticity. The foam mat was fixed onto a **thin board** using staple clips and then inserted into the bed frame. **Wooden spheres** were added as bed legs. The **3D-printed Tamagotchi**, created by the Visual Arts group, was attached to the bed using **superglue** to prevent easy removal by children.
+In a later stage, the design was changed into a **wooden prototype**, incorporating techniques such as milling, drilling, sawing and manual finishing. Leftover wood was reused for environmental sustainability. The wood was processed accordingly for the **bed frame** (including the sides, footboard, and headboard). A **foam mat** was cut to size for the **mattress**. **Linen fabric** was selected for the final **bedding surface** to enhance material authenticity. The foam mat was fixed onto a **thin board** using staple clips and then inserted into the bed frame. **Wooden spheres** were added as bed legs. The **3D-printed Tamagotchi**, created by the Visual Arts group, was attached to the bed using **superglue** to prevent easy removal by children. Parts of the bed were also treated with **furniture oil** to improve their **durability**. 
 
 
 ### Kitchen
 
 The kitchen required an in-depth understanding of its **mechanical components**. The main task was the development of the **conveyor mechanism** with **3D-printing**.
-The single **3D-components** of the conveyor are visible in Shapr3D.
 
 Due to initial **quality issues**, multiple **iterations** were necessary. Adjustments were also made manually using **cutting tools** to achieve the required fit and functionality. The finalized component was then integrated into the overall **kitchen model**.
 
 
 ### Dance Studio
 
- The dance studio required the development of **stepping plates**. A model was created in Shapr3D and subsequently 3D-printed. In total, **six pressure-sensitive stepping plates** for integrated LED feedback were designed. These plates included **internal channels** for wiring and dedicated spaces for sensors. The dance studio required the use of **diverse materials**.  **Transparent polycarbonate** was used to make the **LED lighting** visible.
+ The dance studio required the development of **stepping plates**. A model was created in Shapr3D and subsequently 3D-printed. In total, **six stepping plates** for integrated LED feedback were designed. These plates included **internal channels** for wiring and dedicated spaces for sensors. **Transparent PET** was used as 3D-printing material to make the **LED lighting** visible.
 
-Following initial prototyping, the design was iteratively refined based on **testing** and **feedback**. Key improvements included widening LED channels, modifying sensor integration (switching from light sensors to ToF sensors), optimizing dimensions, and reducing material usage by thinning structural elements. **Anti-slip mats** were incorporated beneath the stepping surfaces to ensure **user safety**.
+Following initial prototyping, the design was iteratively refined based on **testing** and **feedback**. Key improvements included widening LED channels, modifying sensor integration (switching from light sensors to ToF sensors), reducing dimension to reduce material usage. For example the plates meassurments  where reduced from 20 x 30 cm to 6,66 x 10 cm. **Anti-slip mats** were incorporated beneath the stepping surfaces to ensure **user safety**.
 
-Additionally, the Visual Arts Group helped with the production of a **3D-printed CD player** component, enabling music playback triggered through **NFC chip recognition**.
+First, the threads were glued in place with hot glue. The glue then ended up inside the threads, which rendered them unusable. The solution was to remove threads and glue. Threads were then built in using a **soldering iron**.
+
+Additionally, the Visual Arts Group helped with the production of a **3D-printed CD player** component utilizing their private 3d-printer, enabling music playback triggered through **NFC chip recognition**.
 
 ### Playroom 
 
@@ -66,7 +70,7 @@ Holes were drilled into the **lid of the box** to accommodate the components. To
 
 Additional materials included **LEDs**, **spacers** for a Raspberry Pi, and an **anti-slip-mat**. The result was a compact yet robust interactive unit.
 
-## Outlook
+## Outlook and Future Work
 
 The work of the model making group demonstrates the importance of **iterative prototyping** and **collaboration** in the development of interactive exhibition concepts. **Communication** between the different groups and interface teams is essential. **Future steps** include further **refinement** of prototypes and **durability testing**.
 
