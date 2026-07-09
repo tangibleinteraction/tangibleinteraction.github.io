@@ -7,11 +7,11 @@ layout: blog
 images:
 - image: Figure 1&colon; Depth Camera setup - dSensingNI (Klompmaker, 2012)
   url: DepthCamera.png
-  space-above: 2
+  space-above: 19
   space-below: 1
 - image: Figure 2&colon; Outside In Tracking - Tangible Tiles (Waldner, 2006)
   url: OutsideIn_TangibleTiles.png
-  space-above: 2
+  space-above: 5
   space-below: 1
 - image: Figure 3&colon; Inside Out Tracking - Dothraki (Schüsselbauer, 2021)
   url: InsideOut_Dothraki.png
@@ -42,7 +42,7 @@ One of the most common sensing approaches for tangible interfaces is the use of 
 Frameworks like dSensingNI use this information to detect hands, fingers, arms, and physical objects in interactive environments. Unlike many tabletop systems, depth cameras can also be used on vertical displays such as interactive walls or whiteboards, allowing users to interact with digital content through gestures, touch, or physical objects.
 
 The main advantage of depth cameras is their flexibility. They are relatively easy to set up and support natural interaction without requiring markers attached to every object. However, they also have limitations. Hands or other objects can block the camera's view (known as occlusion), reducing tracking accuracy. In addition, noisy depth data and limited precision make fine-grained interactions more difficult than simple gestures.
-(Klompmaker, 2012)
+(Klompmaker, 2012) (See Figure 1)
 
 ## Tracking Physical Objects: Outside-In vs. Inside-Out
 
@@ -55,7 +55,7 @@ Outside-in systems rely on external cameras that observe passive objects equippe
 This approach works particularly well in collaborative environments. Users can freely rotate, combine, and rearrange physical objects while interacting with shared digital content. Studies have shown that tangible tiles often provide a more natural and haptic experience than traditional touchscreens.
 
 The downside is the dependence on external infrastructure. Occlusion, lighting conditions, shadows, and camera positioning can all negatively affect tracking performance.
-(Waldner, 2006)
+(Waldner, 2006) (See Figure 2)
 
 ## Inside-Out Tracking
 
@@ -64,7 +64,7 @@ Inside-out tracking takes the opposite approach by placing the sensing technolog
 Instead of relying on external cameras, the object continuously analyzes a specially designed surface pattern called a De Bruijn Torus, allowing it to determine its own position with sub-millimeter precision.
 
 Because no direct line of sight is required, inside-out tracking is much more robust against occlusion. It also enables flexible deployment without installing external cameras. However, embedding sensors into every object increases hardware complexity and requires additional image processing.
-(Schüsselbauer, 2021)
+(Schüsselbauer, 2021) (See Figure 3)
 
 ## Beyond Cameras: Alternative Sensor Technologies
 
@@ -75,14 +75,14 @@ Although cameras dominate many tangible interface systems, researchers continue 
 Ultrasonic Frequency Modulated Continuous Wave (FMCW) sensors use sound waves instead of light. By analyzing returning echoes, they can accurately determine both the distance and movement speed of a user's hand.
 
 Because they do not depend on lighting conditions, ultrasonic sensors work even in complete darkness and can recognize micro-gestures with remarkable precision. Their main drawbacks are limited operating range and the computational effort required to interpret the signals using machine learning.
-(Kong, 2022)
+(Kong, 2022) (See Figure 4)
 
 ## Capacitive Sensing
 
 Capacitive sensing creates an invisible electric field beneath an interactive surface. As a hand approaches, it disturbs the field, allowing the system to detect not only touch but also proximity and even the overall shape of the hand.
 
 This technology supports multiple users simultaneously and can be integrated into various surfaces and materials. However, it requires dedicated hardware beneath the interaction surface and primarily responds to conductive objects such as human hands.
-(Rekimoto, 2002)
+(Rekimoto, 2002) (See Figure 5)
 
 ## Wearable Sensors
 
@@ -91,7 +91,7 @@ Wearable devices increasingly combine Inertial Measurement Units (IMUs) with nea
 IMUs use accelerometers, gyroscopes, and sometimes magnetometers to measure movement and orientation, making them highly suitable for continuous motion tracking. Near-infrared sensors complement this by detecting subtle tissue movements around the wrist that correspond to hand gestures. Machine learning algorithms combine both sensor streams to classify gestures with high accuracy.
 
 While this combination enables reliable gesture recognition, it also introduces challenges. IMUs accumulate positioning errors over time, and infrared sensors require careful calibration depending on how the device is worn.
-(Cofer, 2022)
+(Cofer, 2022) (See Figure 6)
 
 ## Acoustic and Pressure Sensors
 
