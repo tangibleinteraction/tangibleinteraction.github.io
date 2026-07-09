@@ -111,6 +111,7 @@ For collaborative tasks, people tend to sit side by side. For competitive tasks 
 
 In summary, the more technology merges with our physical world, the more developers and designers must take into account not only technological factors, but also social, psychological, and architectural ones. (Marquardt, 2012, Benyon, 2012)
 
+The content of slides 16–19 is based on the scientific publications by Greenberg et al. (2011) and Marquardt & Greenberg (2012) on *Proxemic Interactions*. The information presented has been summarized, structured, and adapted by me from the original sources for the purposes of this presentation. The case study, *The Proxemic Media Player*, together with the concluding discussion of its opportunities and limitations, is intended to illustrate the theoretical concepts through a practical example.
 
 ## References
 
