@@ -111,7 +111,10 @@ For collaborative tasks, people tend to sit side by side. For competitive tasks 
 
 In summary, the more technology merges with our physical world, the more developers and designers must take into account not only technological factors, but also social, psychological, and architectural ones. (Marquardt, 2012, Benyon, 2012)
 
-The content of slides 16–19 is based on the scientific publications by Greenberg et al. (2011) and Marquardt & Greenberg (2012) on *Proxemic Interactions*. The information presented has been summarized, structured, and adapted by me from the original sources for the purposes of this presentation. The case study, *The Proxemic Media Player*, together with the concluding discussion of its opportunities and limitations, is intended to illustrate the theoretical concepts through a practical example.
+The content of slides 16–19 is based on the scientific publications by Greenberg et al. (2011) and Marquardt & Greenberg (2012) on proxemic interactions. The literature describes how digital systems can use spatial information such as distance, orientation, movement, identity, and a person’s location to adapt their behavior to the respective situation. As a practical example, the case study “The Proxemic Media Player” demonstrates how a media system can automatically adjust its content and interaction possibilities according to the users’ spatial position.
+
+The case study illustrates how proxemic interactions can contribute to making digital systems more intuitive and context-aware. At the same time, such technologies raise further questions, as the adaptation of the system relies on the collection of spatial information through sensors. Therefore, aspects such as data privacy, privacy protection, and technical requirements were included as a critical reflection to highlight possible limitations and challenges of this form of interaction. These points represent a further consideration of the presented technology and complement the findings from the scientific sources.
+
 
 ## References
 
