@@ -24,7 +24,7 @@ images:
   space-below: 1
 - image: Figure 5&colon; Final prototype with food 
   url: final_1.jpeg
-  space-above: 1
+  space-above: 2
   space-below: 1
 ---
 
