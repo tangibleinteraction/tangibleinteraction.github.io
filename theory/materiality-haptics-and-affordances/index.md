@@ -1,10 +1,9 @@
 ---
 title: Materiality, Haptics and Affordances
 authors: Aaron Pech, Marco Rudolph, Sandra Beckert
-date: 2026/04/20
+date: "2026-04-20"
 description: Theory of how materiality and haptics influence user perception and interaction, while affordances guide intuitive use, highlighting their combined role in creating meaningful and functional design experiences. 
 layout: blog
-order: 1
 images:
   - image: Figure 1&colon; Associations of materials in interaction design e.g. wood, metal, ceramic, glass by Magnific
     url: assoziations.png
