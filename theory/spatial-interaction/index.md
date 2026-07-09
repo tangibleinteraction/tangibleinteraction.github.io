@@ -1,6 +1,6 @@
 ---
 title: Spatial Interaction - Space, Position, and Movement 
-authors: Julia Schuster, Oliver Mey
+authors: Julia Schuster, Oliver Mey, Hasenclever Enrico
 date: "2026-05-10"
 description: How space, distance, orientation, movement, and body awareness are used as central design elements in interactive systems. 
 layout: blog
@@ -111,9 +111,11 @@ For collaborative tasks, people tend to sit side by side. For competitive tasks 
 
 In summary, the more technology merges with our physical world, the more developers and designers must take into account not only technological factors, but also social, psychological, and architectural ones. (Marquardt, 2012, Benyon, 2012)
 
-The content of slides 16–19 is based on the scientific publications by Greenberg et al. (2011) and Marquardt & Greenberg (2012) on proxemic interactions. The literature describes how digital systems can use spatial information such as distance, orientation, movement, identity, and a person’s location to adapt their behavior to the respective situation. As a practical example, the case study “The Proxemic Media Player” demonstrates how a media system can automatically adjust its content and interaction possibilities according to the users’ spatial position.
+#Case Study: The Proxemic Media Player
 
-The case study illustrates how proxemic interactions can contribute to making digital systems more intuitive and context-aware. At the same time, such technologies raise further questions, as the adaptation of the system relies on the collection of spatial information through sensors. Therefore, aspects such as data privacy, privacy protection, and technical requirements were included as a critical reflection to highlight possible limitations and challenges of this form of interaction. These points represent a further consideration of the presented technology and complement the findings from the scientific sources.
+The case study **“The Proxemic Media Player”**, presented by Greenberg et al. (2011) and further discussed by Marquardt and Greenberg (2012), demonstrates how digital systems can adapt their behavior based on a user’s spatial relationship to a display. The concept of proxemic interaction uses information such as distance, orientation, movement, identity, and location to automatically adjust the amount of displayed information and the available interaction options. This approach aims to make human–computer interaction more intuitive and context-aware by responding to users’ natural movements rather than requiring explicit input.
+
+The case study highlights the potential of proxemic interaction to improve usability and create more seamless user experiences. At the same time, it also raises important questions regarding the implementation of such systems. Since they rely on sensors to detect users’ spatial information, aspects such as data privacy, privacy protection, and technical requirements were discussed as part of a critical reflection. These considerations were included to highlight potential limitations and challenges of applying proxemic interaction in real-world scenarios and complement the findings presented in the scientific literature.
 
 
 ## References
