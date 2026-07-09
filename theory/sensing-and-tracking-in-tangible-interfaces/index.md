@@ -5,7 +5,30 @@ date: "2026-07-09"
 description: Sensors act as the bridge between the physical and digital world.
 layout: blog
 images:
-
+- image: Figure 1&colon; Depth Camera setup - dSensingNI (Klompmaker, 2012)
+  url: DepthCamera.png
+  space-above: 2
+  space-below: 1
+- image: Figure 2&colon; Outside In Tracking - Tangible Tiles (Waldner, 2006)
+  url: OutsideIn_TangibleTiles.png
+  space-above: 2
+  space-below: 1
+- image: Figure 3&colon; Inside Out Tracking - Dothraki (Schüsselbauer, 2021)
+  url: InsideOut_Dothraki.png
+  space-above: 2
+  space-below: 1
+- image: Figure 4&colon; Detection System of Ultrasonic FMCW Sensors (Kong, 2022)
+  url: ultrasonicSensor.png
+  space-above: 2
+  space-below: 1
+- image: Figure 5&colon;  Capacitive Sensing - SmartSkin (Rekimoto, 2002)
+  url: CapacitiveSensing.png
+  space-above: 2
+  space-below: 1
+- image: Figure 6&colon; Wearables (Cofer, 2022)
+  url: Wearables.png
+  space-above: 2
+  space-below: 1
 ---
 
 The core idea behind Tangible User Interfaces (TUIs) is controlling digital content simply by moving, rotating, or touching physical objects, where everyday interactions with real objects become intuitive ways of interacting with digital systems. Making this possible requires one essential ingredient: sensor technology.
