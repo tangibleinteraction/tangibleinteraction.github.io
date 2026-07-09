@@ -9,11 +9,11 @@ images:
   url: DepthCamera.png
   space-above: 19
   space-below: 1
-- image: Figure 2&colon; Outside In Tracking - Tangible Tiles (Waldner, 2006)
+- image: Figure 2&colon; Outside-In Tracking - Tangible Tiles (Waldner, 2006)
   url: OutsideIn_TangibleTiles.png
   space-above: 5
   space-below: 1
-- image: Figure 3&colon; Inside Out Tracking - Dothraki (Schüsselbauer, 2021)
+- image: Figure 3&colon; Inside-Out Tracking - Dothraki (Schüsselbauer, 2021)
   url: InsideOut_Dothraki.png
   space-above: 2
   space-below: 1
