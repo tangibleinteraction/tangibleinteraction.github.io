@@ -111,7 +111,7 @@ For collaborative tasks, people tend to sit side by side. For competitive tasks 
 
 In summary, the more technology merges with our physical world, the more developers and designers must take into account not only technological factors, but also social, psychological, and architectural ones. (Marquardt, 2012, Benyon, 2012)
 
-#Case Study: The Proxemic Media Player
+## Case Study: The Proxemic Media Player
 
 The case study **“The Proxemic Media Player”**, presented by Greenberg et al. (2011) and further discussed by Marquardt and Greenberg (2012), demonstrates how digital systems can adapt their behavior based on a user’s spatial relationship to a display. The concept of proxemic interaction uses information such as distance, orientation, movement, identity, and location to automatically adjust the amount of displayed information and the available interaction options. This approach aims to make human–computer interaction more intuitive and context-aware by responding to users’ natural movements rather than requiring explicit input.
 
