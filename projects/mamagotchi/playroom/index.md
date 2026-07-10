@@ -150,8 +150,6 @@ The stretch between "a first prototype" and "a stable exhibition piece" was domi
 
 **The "everything broke" day.** Shortly before the show, a session where "nothing worked anymore" turned out to be a combination of the power issue above and **loose cables** - once re-seated (and with the strong supply), all eight arcade buttons, the three level buttons and all the LEDs worked again.
 
-
-
 ## Limitations and future work
 
 Several parts of the current build are deliberately "good enough for the exhibition" rather than final:
@@ -180,9 +178,8 @@ pinout. (2026). Raspberry Pi GPIO / 40-pin header reference. <https://pinout.xyz
 
 Espressif. (2026). *ESP-NOW* protocol overview. <https://www.espressif.com/en/products/software/esp-now/overview>
 
-**Repository** 
+**Repository**
 The full source code for the playroom game: [PhilipPoplutz/MAMgotchi-Spielzimmer](https://github.com/PhilipPoplutz/MAMgotchi-Spielzimmer).
 
-**Disclosure statement.** 
+**Disclosure statement.**
 This text was prepared with the assistance of the AI language model Claude (Anthropic), which was used for drafting and linguistic revision. The authors defined the content and remain responsible for the final version.
-
