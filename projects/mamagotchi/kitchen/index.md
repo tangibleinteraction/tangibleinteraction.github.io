@@ -1,9 +1,9 @@
 ---
-layout: blog
+layout: project
 title: MAMAgotchi - Kitchen
 authors: Emma Kirchner, Maja Ruprecht, Mohamad Kadabashi
 description: The kitchen station is responsible for feeding the MAMAgotchi via playful interactions.
-date: "2026-07-09"
+order: 4
 teaser: final_2.jpeg
 images:
 - image: Figure 1&colon; Final prototype

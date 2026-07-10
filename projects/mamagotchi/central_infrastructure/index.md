@@ -1,9 +1,8 @@
 ---
 title: "Communication Infrastructure and State Visualization"
 authors: Julia-Robin Schuster, Janek Engel, Hong Lâm Nguyen, Finja Adam
-date: "2026-07-06"
 description: An overview of the communication protocol stack, server-side business logic, and visualization architecture developed by the interface group for the MAMAgotchi tangible interaction project.
-layout: blog
+layout: project
 order: 1
 teaser: teaser.png
 images:
