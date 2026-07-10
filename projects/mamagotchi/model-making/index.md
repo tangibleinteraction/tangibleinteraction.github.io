@@ -4,6 +4,7 @@ title: Model Making
 authors: Aaron Pech, Oliver Mey, Sandra Beckert
 description: The model making group within the MAMAgotchi project was responsible for material research, procurement, 3D printing, and the physical construction of models. Our primary objective was to translate the conceptual ideas developed by the individual room groups into tangible, functional prototypes. Acting as an interface between design concepts and their physical realization, we ensured that each spatial idea could be experienced in a material and interactive form.
 teaser: image.png
+order: 2
 images: 
   - image: Bedroom
     url: image1.png

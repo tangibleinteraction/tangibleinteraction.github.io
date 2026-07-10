@@ -32,7 +32,8 @@
                 
                         <div class="project-table">
                             <div class="project-table-entries">
-                                {% for project in site.pages %}
+                                {% assign sorted_pages = site.pages | sort: 'order' %}
+                                {% for project in sorted_pages %}
                                     {% assign projectsname = page.title | downcase %}
                                     {% if project.url contains projectsname and project.url != page.url %}
 
