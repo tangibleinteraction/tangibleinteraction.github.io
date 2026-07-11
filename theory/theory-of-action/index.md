@@ -1,7 +1,7 @@
 ---
 title: Norman's Theory of Action
 authors: Dietrich Kammer
-date: 2026/03/17
+date: "2026-03-17"
 description: Donald Norman's theory of action describes how system state is interpreted and manipulated by humans. 
 layout: blog
 order: 1
