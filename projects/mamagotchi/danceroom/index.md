@@ -4,15 +4,12 @@ title: Burning Feet
 authors: Frederic Schneider, Laura Richter, Josina Andrees, Marco Rudolph
 description: How can a museum installation invite children to move, play together and care for a digital creature without relying on a screen? Burning Feet is an interactive dance station that turns music, movement and collaboration into a playful care activity for MAMAgotchi.
 teaser: setup.png
+order: 7
 images:
-  - image: Setup
-    url: setup.png
-	space-above: 1
-	space-below: 1
   - image: Construct
     url: construct.jpg
-	space-above: 1
-	space-below: 1
+    space-above: 1
+    space-below: 1
 ---
 
 ## Burning Feet – A Tangible Dance Game for MAMAgotchi
