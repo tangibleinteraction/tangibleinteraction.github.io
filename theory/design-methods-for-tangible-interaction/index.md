@@ -29,14 +29,12 @@ This paper asks which design methods are particularly suitable for tangible and 
 ## Main Design Methods
 
 ### Research through Design (RtD)
-
 Research through Design is a central approach in tangible interaction research. Rather than treating design as a final outcome, RtD views the design process itself as a means of generating knowledge. Designers create and iteratively refine prototypes while simultaneously investigating new interaction possibilities and design principles.
 This approach is particularly valuable for tangible interaction because it enables the exploration of materiality, bodily engagement, and spatial experiences. Knowledge is generated through making, testing, and reflecting on artifacts. The outcomes are often design concepts, frameworks, or principles rather than traditional experimental results.
 The quality of RtD can be evaluated through four lenses: the transparency of the design process, the novelty of the invention, its relevance to the field, and the extent to which future work can build upon the generated knowledge.
 This is important for tangible interaction because material qualities and bodily experiences often only become visible when a prototype is actually built and tested. [(Zimmerman, J. et al, 2007)](#zimmerman) 
 
 ### Bodystorming
-
 Bodystorming is an ideation method that emphasizes physically experiencing a situation from the user's perspective. Instead of discussing ideas abstractly, designers act out scenarios within realistic environments.
 The method helps participants understand spatial, temporal, cognitive, and emotional aspects of user experiences. By immersing themselves in the context of use, designers often discover needs and challenges that would remain hidden in conventional brainstorming sessions.
 Bodystorming is especially useful during the early stages of a project when user requirements and contextual factors are not yet fully understood. For tangible and spatial interaction systems, it allows designers to identify issues such as restricted movement, awkward gestures, or environmental constraints before building functional prototypes.
@@ -47,14 +45,12 @@ Example:
 During the redesign of the interactive exhibition hall “Light of Discovery” at the Shanghai Science and Technology Museum, the design team reconstructed the exhibition space at a 1:1 scale using simple materials. Designers, children, and parents then physically enacted the visitor experience by walking through the hall, interacting with exhibits, and exploring different movement paths. This bodystorming process helped identify spatial and interaction-related issues early in the design phase. This example shows how bodystorming can make spatial movement, visitor behavior, and interaction problems visible before the final implementation.
 
 ### Experience Prototyping
-
 Experience Prototyping focuses on creating representations that allow designers and users to experience how interaction with a product, space, or system might feel. These prototypes may include aspects such as weight, texture, material quality, and physical feedback.
 According to Buchenau and Suri, an experience prototype can be any representation that helps people understand, explore, or communicate a future interaction experience. The method serves three main purposes: understanding existing user experiences and contexts, exploring and evaluating design ideas, and communicating concepts to stakeholders.
 Because tangible interaction heavily relies on physical qualities and sensory experiences, Experience Prototyping is particularly effective for evaluating how users perceive and interact with artifacts in realistic situations.
 It helps designers test not only functionality, but also how an interaction feels. These prototypes do not have to be technically complete. Even simple materials such as cardboard, foam, paper, or everyday objects can be used to test size, weight, movement, and feedback. [(Buchenau, M., 2000)](#buchenau)
 
 ### Co-Design
-
 Co-Design actively involves end users in the design process. Instead of designing for users, designers collaborate with them to develop solutions together.
 Participants contribute their experiences, needs, and ideas throughout the development process. Workshops often use simple materials such as paper, cardboard, or modeling tools to enable participants without design expertise to create and communicate their ideas.
 For tangible interaction, Co-Design is especially valuable because physical interaction patterns and preferences vary greatly among users. Direct involvement helps ensure that resulting designs align with users' natural behaviors and expectations.
@@ -63,7 +59,6 @@ For example, in a co-design workshop, users could arrange cardboard objects, woo
 [(Grumpelmaler-Mach, W., 2019)](#grumpelmaler)
 
 ### Wizard-of-Oz Prototyping
-
 Wizard-of-Oz is a research and prototyping method in which users interact with a system that appears to operate autonomously, while parts of its functionality are controlled by a hidden human operator. The name originates from The Wizard of Oz, where the seemingly powerful wizard is revealed to be an ordinary person operating machinery behind a curtain.
 The method is commonly used to simulate digital or intelligent system behavior before the underlying technology has been implemented. This allows designers to evaluate interaction concepts, user expectations, and usability without investing in costly development.
 A typical Wizard-of-Oz study involves three roles: the user, who interacts with the prototype; the wizard, who secretly controls the system responses; and a moderator, who guides the study and observes participants.
@@ -82,7 +77,6 @@ Iterations are typically more time-consuming because physical prototypes need to
 While classical interface design aims to optimize task efficiency and screen usability, tangible interaction design seeks to create meaningful, intuitive, and embodied experiences.
 
 ### Design Artifacts
-
 A variety of artifacts are created during the design process of tangible interaction systems. These include:
 - Sketches and conceptual drawings
 - Storyboards and usage scenarios
@@ -97,13 +91,11 @@ These artifacts are important because they help designers document physical expe
 Unlike commercial product development, the primary goal of many tangible interaction research projects is not only to create a functional artifact but also to generate transferable knowledge for future research and design practice.
 
 ## Limitations of the Methods
-
 These methods also have limitations. Bodystorming can feel artificial if the simulated situation is not realistic enough. Experience prototypes may not fully represent the final technical system. Co-Design results need interpretation, because user ideas cannot always be directly transformed into final design solutions. Wizard-of-Oz testing also depends on the consistency of the hidden operator. If the simulated reactions are too slow or unrealistic, the test results may be misleading.
 In conclusion, tangible interaction design requires methods that make physical, spatial, and embodied experiences visible. Methods such as Bodystorming, Experience Prototyping, Co-Design, Wizard-of-Oz, and Research through Design help designers move from abstract ideas to testable physical experiences. Compared with classical interface design, the focus shifts from screens and visual usability to bodies, objects, materials, and real contexts. In this way, tangible interaction concepts are developed through repeated cycles of making, testing, observing, and refining.
 
 
 ## References
-
 <a id="bednar"></a>
 Bednar, P.M., Welch, C. (2009). Contextual Inquiry and Requirements Shaping. In: Wojtkowski, W., Wojtkowski, G., Lang, M., Conboy, K., Barry, C. (eds) Information Systems Development. Springer, Boston, MA. <https://doi.org/10.1007/978-0-387-68772-8_18>
 
@@ -146,6 +138,6 @@ Learning Loop. (2026). Wizard of Oz. <https://learningloop.io/plays/wizard-of-oz
 <a id=""></a>
  Feltham, F. Vetere, F., Wensveen, S. (2007). Designing tangible artefacts for playful interactions and dialogues. <https://doi.org/10.1145/1314161.1314167>
 
-## Disclosure Statement
 
+## Disclosure Statement
 This text was prepared with the assistance of the AI language model GPT-5.3, which was used for drafting and linguistic revision. The authors defined the content requirements and remain responsible for the final version.
