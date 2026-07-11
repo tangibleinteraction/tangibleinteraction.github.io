@@ -1,7 +1,7 @@
 ---
 title: My Blog Title Capitalized
 authors: The author or authors of the blog post
-date: date in "YYYY-MM-DD" format such as "2026-03-17" (with quotes!)
+date: date in YYYY/MM/DD format such as 2026/03/17
 description: Short teaser text for the blog entry to be displayed on the overview page. 
 layout: blog
 order: 1
