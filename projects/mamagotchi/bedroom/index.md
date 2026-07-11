@@ -4,6 +4,7 @@ title: Bedroom
 authors: Niklas Kothe, Johannes Horn, Torben Warnke, Enrico Hasenclever
 description: A tangible bedroom station for the Mamagotchi system, where users create a calm sleeping situation through touch, light, covering and an alarm clock interaction.
 teaser: bedroom-x-teaser.jpg
+order: 5
 images:
   - image: Tinkercad bed draft
     url: bedroom-1-tinkercad-draft.png

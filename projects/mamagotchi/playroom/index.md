@@ -4,7 +4,7 @@ title: MAMAgotchi - Playroom
 authors: Sophia Katrin Reutner, Philip Poplutz, Weixi Song
 description: MAMAgotchi – Playroom is a tangible-interaction project built for the playroom within the larger Tangible Interaction course. The playroom station is resposible for entertaining the MAMAgotchi via rhythm games. 
 teaser: teaser-playroom.jpg 
-order: 3
+order: 7
 images:
   - image: Figure 1&colon; Early concept rendering. Note two ideas we later dropped&colon; wooden blocks for level selection (left) and a magnetic "progress tower" (right).
     url: Figure1-concept-sketch.png
