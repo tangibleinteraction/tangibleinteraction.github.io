@@ -1,43 +1,41 @@
 ---
-layout: blog
+layout: project
 title: MAMAgotchi - Playroom
 authors: Sophia Katrin Reutner, Philip Poplutz, Weixi Song
 description: MAMAgotchi – Playroom is a tangible-interaction project built for the playroom within the larger Tangible Interaction course. The playroom station is resposible for entertaining the MAMAgotchi via rhythm games. 
-date: "2026-07-09"
 teaser: teaser-playroom.jpg 
-
+order: 3
 images:
-- image: Figure 1&colon; Early concept rendering. Note two ideas we later dropped: wooden blocks for level selection (left) and a magnetic "progress tower" (right).*
-  url: Figure1-concept-sketch.png
-  space-above: 24
-- image: Figure 2&colon; First 3D visualisation of the box design.
-  url: Figure2-3d-render.png
-  space-above: 8
-- image: Figure 3&colon; The first working prototype on a breadboard - two buttons switching two LEDs, driven by a short script.
-  url: Figure3-first-prototype.jpg
-  space-above: 14
-- image: Figure 4&colon; Cardboard mock-up used to check the real button spacing and colour arrangement.
-  url: Figure4-layout-mockup.jpg
-  space-above: 5
-- image: Figure 5&colon; The drilled case with the 3–2–3 hole pattern and aluminium reinforcement.
-  url: Figure5-box-construction.jpg
-  space-above: 2
-- image: Figure 6&colon; Hand-drawn wiring plan mapping each cable to a Raspberry Pi pin.
-  url: Figure6-wiring-plan.jpg
-  space-above: 5
-- image: Figure 7&colon; The complete pin assignment, worked out on a printed Raspberry Pi header diagram.
-  url: Figure7-pin-plan.jpg
-  space-above: 0
-- image: Figure 8&colon; Buttons mounted and wiring in progress inside the case.
-  url: Figure8-wiring-inside.jpg
-  space-above: 0
-- image: Figure 9&colon; The assembled inside - the Raspberry Pi 3B+ and the speaker below the wired lid.
-  url: Figure9-inside-pi-speaker.jpg
-  space-above: 0
-- image: Figure 10&colon; A development / integration session: the game on the monitor, the code on the laptop, and the wired box on the right.
-  url: Figure10-integration-test.jpg
-  space-above: 12
-
+  - image: Figure 1&colon; Early concept rendering. Note two ideas we later dropped&colon; wooden blocks for level selection (left) and a magnetic "progress tower" (right).
+    url: Figure1-concept-sketch.png
+    space-above: 24
+  - image: Figure 2&colon; First 3D visualisation of the box design.
+    url: Figure2-3d-render.png
+    space-above: 8
+  - image: Figure 3&colon; The first working prototype on a breadboard - two buttons switching two LEDs, driven by a short script.
+    url: Figure3-first-prototype.jpg
+    space-above: 14
+  - image: Figure 4&colon; Cardboard mock-up used to check the real button spacing and colour arrangement.
+    url: Figure4-layout-mockup.jpg
+    space-above: 5
+  - image: Figure 5&colon; The drilled case with the 3–2–3 hole pattern and aluminium reinforcement.
+    url: Figure5-box-construction.jpg
+    space-above: 2
+  - image: Figure 6&colon; Hand-drawn wiring plan mapping each cable to a Raspberry Pi pin.
+    url: Figure6-wiring-plan.jpg
+    space-above: 5
+  - image: Figure 7&colon; The complete pin assignment, worked out on a printed Raspberry Pi header diagram.
+    url: Figure7-pin-plan.jpg
+    space-above: 0
+  - image: Figure 8&colon; Buttons mounted and wiring in progress inside the case.
+    url: Figure8-wiring-inside.jpg
+    space-above: 0
+  - image: Figure 9&colon; The assembled inside - the Raspberry Pi 3B+ and the speaker below the wired lid.
+    url: Figure9-inside-pi-speaker.jpg
+    space-above: 0
+  - image: Figure 10&colon; A development / integration session&colon; the game on the monitor, the code on the laptop, and the wired box on the right.
+    url: Figure10-integration-test.jpg
+    space-above: 12
 ---
 ## MAMAgotchi – Playroom
 
