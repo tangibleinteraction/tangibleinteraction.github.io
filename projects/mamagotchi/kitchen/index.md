@@ -6,10 +6,6 @@ description: The kitchen station is responsible for feeding the MAMAgotchi via p
 order: 4
 teaser: final_2.jpeg
 images:
-- image: Figure 1&colon; Final prototype
-  url: final_2.jpeg
-  space-above: 0
-  space-below: 1
 - image: Figure 2&colon; CAD model
   url: modell.png
   space-above: 1
