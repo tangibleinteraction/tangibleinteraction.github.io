@@ -1,10 +1,9 @@
 ---
 title: Spatial Interaction - Space, Position, and Movement 
-authors: Julia Schuster, Oliver Mey
-date: 2026/05/10
+authors: Julia Schuster, Oliver Mey, Enrico Hasenclever
+date: "2026-05-10"
 description: How space, distance, orientation, movement, and body awareness are used as central design elements in interactive systems. 
 layout: blog
-order: 1
 images:
   - image: Proxemic display; An example implementation of proxemic dimensions (Marquardt, 2012). 
     url: attention.png
@@ -17,7 +16,7 @@ images:
     space-below: 10
 
   - image: Pictured are the proxemic dimensions orientation (upper left), distance (upper right), identity (lower left) and movement (lower right) (Marquardt, 2012).
-    url: zones.png
+    url: dimensions.png
     space-above: 20
     space-below: 10
 
@@ -26,7 +25,6 @@ images:
     space-above: 20
     space-below: 10
 ---
-
 
 _"When you walk up to your computer, does the screen saver stop and the working windows reveal themselves? Does it even know if you are there? How hard would it be to change this? Is it not ironic that, in this regard, a motion-sensing light switch is “smarter” than any of the switches in the computer…?_"
 (Bill Buxton)
@@ -112,6 +110,11 @@ For collaborative tasks, people tend to sit side by side. For competitive tasks 
 
 In summary, the more technology merges with our physical world, the more developers and designers must take into account not only technological factors, but also social, psychological, and architectural ones. (Marquardt, 2012, Benyon, 2012)
 
+## Case Study
+
+The case study **“The Proxemic Media Player”**, presented by Greenberg et al. (2011) and further discussed by Marquardt and Greenberg (2012), demonstrates how digital systems can adapt their behavior based on a user’s spatial relationship to a display. The concept of proxemic interaction uses information such as distance, orientation, movement, identity, and location to automatically adjust the amount of displayed information and the available interaction options. This approach aims to make human–computer interaction more intuitive and context-aware by responding to users’ natural movements rather than requiring explicit input.
+
+The case study highlights the potential of proxemic interaction to improve usability and create more seamless user experiences. At the same time, it also raises important questions regarding the implementation of such systems. Since they rely on sensors to detect users’ spatial information, aspects such as data privacy, privacy protection, and technical requirements were discussed as part of a critical reflection. These considerations were included to highlight potential limitations and challenges of applying proxemic interaction in real-world scenarios and complement the findings presented in the scientific literature.
 
 ## References
 
