@@ -1,9 +1,9 @@
 ---
-layout: blog
+layout: project
 title: Visual Arts
 authors: Marcel Knauf, Lisa-Marie Müller, Benno Ulitzka
 description: The Visual Arts group was responsible for the visual design of the elements for the MAMAgotchi project.
-date: "2026-07-10"
+order: 3
 teaser: teaser.png
 images: 
   - image: "Figure 1: MAMAgotchi logo" 
@@ -34,7 +34,7 @@ images:
     space-above: 1
     space-below: 1
   - image: "Figure 8: animation timeline in After Effects"
-    url: screenshot02.png.png
+    url: screenshot02.png
     space-above: 1
     space-below: 1
   - image: "Figure 9: gotchi kitchen animations"
@@ -55,9 +55,10 @@ The visual arts team is responsible for branding, character design (including an
 
 ## Art Style
 
-The visual concept is based on a **layered paper cutout look** that bridges the gap between the digital screen and the physical room installation. The color palette draws directly from the classic arts-and-crafts cabinet: We use the full range of bold, rich colors found in traditional construction paper. The goal is a timeless, vibrant, and above all, tangible look. To precisely convey this analog character in the graphics, we employ three design principles: 
-- We layer the shapes on top of one another exactly as in real paper cutouts. 
-- Subtle drop shadows cleanly separate the individual layers without visually overloading the interface. 
+The visual concept is based on a **layered paper cutout look** that bridges the gap between the digital screen and the physical room installation. The color palette draws directly from the classic arts-and-crafts cabinet: We use the full range of bold, rich colors found in traditional construction paper. The goal is a timeless, vibrant, and above all, tangible look. To precisely convey this analog character in the graphics, we employ three design principles:
+
+- We layer the shapes on top of one another exactly as in real paper cutouts.
+- Subtle drop shadows cleanly separate the individual layers without visually overloading the interface.
 - Gentle textures break up the smooth digital color surfaces and provide the necessary visual grip.
 
 ## Logo
@@ -77,6 +78,7 @@ The **playroom** (_see Figure 3_) is designed for a significantly larger screen 
 The biggest challenge with the main view was to convey the **four status values** (saturation, energy, play, and movement) in an easy-to-understand way so that children could grasp the data immediately. To achieve this, two different design concepts (_see Figure 4_) were developed. Both versions place the Gotchi in the center and arrange the needs in a circle around it. Simple, minimalist icons ensure that users can quickly identify the individual stations.
 
 The concepts differ in the visual implementation of the displays:
+
 - Variant A uses **thought bubbles** in which a pie charts serves as a scaling system.
 - Variant B uses **speech bubbles** with classic bars as fill-level indicator.
 
@@ -97,6 +99,7 @@ One station got its own dedicated set of animations: the kitchen. Here, the Gotc
 ## Tool-Stack
 
 Various tools and collaborative methods were used throughout the design processes:
+
 - The team met in person for the first brainstorming sessions to agree on the core ideas, such as what art style to use and what the Gotchi should look like. On the collaborative platform *Miro*, these influences were compiled into a shared mood board to establish the stylistic direction within the team. Sources of inspiration included websites such as *Pinterest* and AI-generated content.
 - Some of the early interface sketches and concepts were developed in *Figma*. The final room backgrounds for the kitchen and the playroom were also created here as layer-based vector compositions (_see Figure 11_).
 - The Gotchi character was designed in *Inkscape* and refined in *Adobe Illustrator*.
