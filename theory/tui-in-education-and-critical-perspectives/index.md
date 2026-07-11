@@ -1,9 +1,10 @@
 ---
 title: Tangible User Interfaces – The Future of Education and Learning?
 authors: Finja Adam, Janek Engel, Clara Frick
-date: "2026-05-09"
+date: 2026/05/09
 description: Will TUIs reshape how we learn? What do critical voices say?
 layout: blog
+order: 11 #so the other blogposts can be inserted in the original order
 images:
   - image: Figure 1&colon; Neural correlates of handwriting and typewriting by Marano et al. (2025)
     url: writing_vs_typing.jpg

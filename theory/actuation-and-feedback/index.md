@@ -1,9 +1,10 @@
 ---
 title: Actuation and Feedback
 authors: Marcel Knauf, Hong Lâm Nguyen, Philip Poplutz
-date: "2026-05-04"
+date: date in 2026/05/04 format such as 2026/03/17
 description: Actuation and feedback create a bidirectional link between digital data and physical matter, enabling intuitive interactions.
 layout: blog
+order: 3
 images:
   - image: Figure 1&colon; Lumen Shape Display (photograph by Makoto Fujii, courtesy AXIS magazine)
     url: Lumen.png
