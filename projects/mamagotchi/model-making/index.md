@@ -8,16 +8,18 @@ order: 2
 images: 
   - image: Bedroom
     url: image1.png
+    space-above: 12
   - image: Bedroom
     url: image2.png
   - image: Kitchen
     url: image3.png
-  - image: Kitchen
-    url: image4.png
+    space-above: 1
   - image: Dance Studio
-    url: image5.png
+    url: image4.png
+    space-above: 2
   - image: Playroom 
-    url: image6.png
+    url: image5.png
+    space-above: 15
 ---
 
 ## Model Making: Rooms
