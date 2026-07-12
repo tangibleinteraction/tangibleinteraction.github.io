@@ -31,8 +31,11 @@ For the bedroom, the  work began with **material research** and familiarization 
 
 A **3D-printable bed model** with several integrated functional features was devoloped: a recess on the back for a **light control slider**, channels for **LED wiring**, and a dedicated space for a **Hall sensor**. Additionally, a **textile blanket** was sewn and equipped with a embedded **magnet** to interact with the sensor system.
 
-In a later stage, the design was changed into a **wooden prototype**, incorporating techniques such as milling, drilling, sawing and manual finishing. Leftover wood was reused for environmental sustainability. The wood was processed accordingly for the **bed frame** (including the sides, footboard, and headboard). A **foam mat** was cut to size for the **mattress**. **Linen fabric** was selected for the final **bedding surface** to enhance material authenticity. The foam mat was fixed onto a **thin board** using staple clips and then inserted into the bed frame. **Wooden spheres** were added as bed legs. The **3D-printed Tamagotchi**, created by the Visual Arts group, was attached to the bed using **superglue** to prevent easy removal by children. Parts of the bed were also treated with **furniture oil** to improve their **durability**. 
+In a later stage, the design was changed into a **wooden prototype**, incorporating techniques such as milling, drilling, sawing and manual finishing. Leftover wood was reused for environmental sustainability. The wood was processed accordingly for the **bed frame** (including the sides, footboard, and headboard). A **foam mat** was cut to size for the **mattress**. **Linen fabric** was selected for the final **bedding surface** to enhance material authenticity. The foam mat was fixed onto a **thin board** using staple clips and then inserted into the bed frame. **Wooden spheres** were added as bed legs. The **3D-printed Tamagotchi**, created by the Visual Arts group, was attached to the bed using **superglue** to prevent easy removal by children. Parts of the bed were also treated with **furniture oil** to improve their **durability**.
 
+Further information about the station can be found in the <a href="https://tangibleinteraction.github.io/projects/mamagotchi/bedroom/" style="text-decoration: underline;">
+  station’s blog post.
+</a>
 
 ### Kitchen
 
@@ -40,6 +43,9 @@ The kitchen required an in-depth understanding of its **mechanical components**.
 
 Due to initial **quality issues**, multiple **iterations** were necessary. Adjustments were also made manually using **cutting tools** to achieve the required fit and functionality. The finalized component was then integrated into the overall **kitchen model**.
 
+Further information about the station can be found in the <a href="https://tangibleinteraction.github.io/projects/mamagotchi/kitchen/" style="text-decoration: underline;">
+  station’s blog post.
+</a>
 
 ### Dance Studio
 
@@ -48,16 +54,22 @@ Due to initial **quality issues**, multiple **iterations** were necessary. Adjus
 Following initial prototyping, the design was iteratively refined based on **testing** and **feedback**. Key improvements included widening LED channels, modifying sensor integration (switching from light sensors to ToF sensors), reducing dimension to reduce material usage. For example the plates meassurments  where reduced from 20 x 30 cm to 6,66 x 10 cm. **Anti-slip mats** were incorporated beneath the stepping surfaces to ensure **user safety**.
 
 First, the threads were glued in place with hot glue. The glue then ended up inside the threads, which rendered them unusable. The solution was to remove threads and glue. Threads were then built in using a **soldering iron**.
-
 Additionally, the Visual Arts Group helped with the production of a **3D-printed CD player** component utilizing their private 3d-printer, enabling music playback triggered through **NFC chip recognition**.
+
+Further information about the station can be found in the <a href="https://tangibleinteraction.github.io/projects/mamagotchi/danceroom/" style="text-decoration: underline;">
+  station’s blog post.
+</a>
 
 ### Playroom 
 
 For the playroom, a **wooden box** was used as the primary structural element. The challenge lay in the **precise spatial arrangement** of components within limited space, as drilling errors could not be corrected. A **technical drawing** guided the placement of LED buttons, lighting elements, power connections, and mounting points.
 
 Holes were drilled into the **lid of the box** to accommodate the components. To ensure **structural stability**, **aluminum profiles** were integrated into the lid construction.
-
 Additional materials included **LEDs**, **spacers** for a Raspberry Pi, and an **anti-slip-mat**. The result was a compact yet robust interactive unit.
+
+Further information about the station can be found in the <a href="https://tangibleinteraction.github.io/projects/mamagotchi/playroom/" style="text-decoration: underline;">
+  station’s blog post.
+</a>
 
 ## Outlook and Future Work
 
