@@ -10,26 +10,14 @@ images:
     url: image1.png
   - image: Bedroom
     url: image2.png
-  - image: Bedroom
+  - image: Kitchen
     url: image3.png
   - image: Kitchen
     url: image4.png
-  - image: Kitchen
+  - image: Dance Studio
     url: image5.png
-  - image: Kitchen
+  - image: Playroom 
     url: image6.png
-  - image: Dance Studio
-    url: image7.png
-  - image: Dance Studio
-    url: image8.png
-  - image: Dance Studio
-    url: image9.png
-  - image: Playroom 
-    url: image10.png
-  - image: Playroom 
-    url: image11.png
-  - image: Playroom 
-    url: image12.png  
 ---
 
 ## Model Making: Rooms
