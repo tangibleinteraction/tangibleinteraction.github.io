@@ -4,7 +4,6 @@ authors: Dietrich Kammer
 date: "2026-03-17"
 description: Donald Norman's theory of action describes how system state is interpreted and manipulated by humans. 
 layout: blog
-order: 1
 images:
   - image: Figure 1&colon; The gulfs of execution and evaluation according to Norman (adapted from [Norman 1986])
     url: norman-theory-of-action-01.png

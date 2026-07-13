@@ -1,10 +1,9 @@
 ---
 title: My Blog Title Capitalized
 authors: The author or authors of the blog post
-date: date in YYYY/MM/DD format such as 2026/03/17
+date: date in "YYYY-MM-DD" format such as "2026-03-17" (with quotes!)
 description: Short teaser text for the blog entry to be displayed on the overview page. 
 layout: blog
-order: 1
 images:
   - image: Figure 1&colon; Provide an image description and possibly a copyright note or reference
     url: example.jpg

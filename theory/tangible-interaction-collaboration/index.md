@@ -4,7 +4,6 @@ authors: Laura Richter, Josina Andrees, Frederic Schneider
 date: "2026-04-01"
 description: How tangible interaction supports collaboration through visibility, shared action, and design. 
 layout: blog
-order: 2
 ---
 
 _“With tangible interfaces we act within and touch the interface itself.”_
