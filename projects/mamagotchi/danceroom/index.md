@@ -6,8 +6,20 @@ description: How can a museum installation invite children to move, play togethe
 teaser: setup.png
 order: 7
 images:
-  - image: Construct
-    url: construct.jpg
+  - image: Paper prototype
+    url: paper_prototyp.jpg
+    space-above: 1
+    space-below: 1
+  - image: 3d print plan
+    url: 3d-print.png
+    space-above: 1
+    space-below: 1
+  - image: Construct with short cables
+    url: construct_short_cable.jpg
+    space-above: 1
+    space-below: 1
+  - image: Construct with longer cables
+    url: construct_better_cable.jpg
     space-above: 1
     space-below: 1
 ---
